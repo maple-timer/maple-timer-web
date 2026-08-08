@@ -1,0 +1,28 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  Cache-Control: public, max-age=31536000, immutable
+
+/release-notes.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/fonts/*
+  Cross-Origin-Resource-Policy: same-origin
+
+/models/*
+  Cross-Origin-Resource-Policy: same-origin
+  Cache-Control: public, max-age=31536000, immutable
+
+/skill-icons/*
+  Cross-Origin-Resource-Policy: same-origin
+
+/timer-icons/*
+  Cross-Origin-Resource-Policy: same-origin
+
+/vendor/*
+  Cross-Origin-Resource-Policy: same-origin

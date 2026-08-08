@@ -1,0 +1,92 @@
+{
+  "kind": "buff-group-runtime-bundle-verification",
+  "generatedAt": "2026-07-11T06:47:54.072066+00:00",
+  "elapsedMs": 12442.612,
+  "ok": true,
+  "checks": {
+    "targetAll": true,
+    "targetTest": true,
+    "unknownAll": true,
+    "reviewNegativeHeldout": true,
+    "broadClosure": true,
+    "logitsParity": true,
+    "embeddingParity": true,
+    "embeddingNormalized": true,
+    "portableCopy": true
+  },
+  "artifactRoot": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime",
+  "bundleId": "buff-group-unionluck-deep-v1",
+  "targetGroup": "unionLuck",
+  "dataset": {
+    "targetAll": 3791,
+    "targetTest": 51,
+    "unknownAll": 17281,
+    "reviewNegativeHeldout": 8
+  },
+  "results": {
+    "targetAll": {
+      "rows": 3791,
+      "basePass": 3791,
+      "finalPass": 3791,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null
+    },
+    "targetTest": {
+      "rows": 51,
+      "basePass": 51,
+      "finalPass": 51,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null
+    },
+    "unknownAll": {
+      "rows": 17281,
+      "basePass": 0,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0
+    },
+    "reviewNegativeHeldout": {
+      "rows": 8,
+      "basePass": 0,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0
+    }
+  },
+  "broadClosure": {
+    "tested": 83307,
+    "candidates": 239,
+    "reviewedPositiveCandidates": 239,
+    "negativeCandidates": 0,
+    "ambiguousCandidates": 0,
+    "novelCandidates": 0
+  },
+  "parity": {
+    "logitsMaxAbsDiff": 4.0531e-06,
+    "embeddingMaxAbsDiff": 3.278e-07,
+    "embeddingNormMin": 0.99999982,
+    "embeddingNormMax": 1.00000024
+  },
+  "portability": {
+    "loaded": true,
+    "files": [
+      "buff-group-unionluck-deep-v1.onnx",
+      "buff-group-unionluck-deep-v1.onnx.data",
+      "policy.json",
+      "runtime-artifacts.json",
+      "unionluck-positive-gate.json",
+      "verify-report.json"
+    ]
+  },
+  "benchmark": {
+    "batchSize": 40,
+    "iterations": 120,
+    "averageMs": 12.7932,
+    "p95Ms": 16.6552,
+    "maxMs": 20.3442
+  }
+}

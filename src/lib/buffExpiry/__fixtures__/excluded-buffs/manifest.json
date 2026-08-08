@@ -1,0 +1,2418 @@
+{
+  "version": 2,
+  "source": [
+    "<local>/Downloads/countdown_refs.zip",
+    "feedback:49dfe2ab-febb-4845-a053-844fb4940c78"
+  ],
+  "groups": [
+    {
+      "id": "useful_hyper_body",
+      "label": "Useful Hyper Body",
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/useful_hyper_body/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/useful_hyper_body/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/useful_hyper_body/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/useful_hyper_body/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/useful_hyper_body/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/useful_hyper_body/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/useful_hyper_body/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/useful_hyper_body/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/useful_hyper_body/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/useful_hyper_body/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/useful_hyper_body/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/useful_hyper_body/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/useful_hyper_body/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/useful_hyper_body/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/useful_hyper_body/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/useful_hyper_body/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/useful_hyper_body/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/useful_hyper_body/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/useful_hyper_body/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/useful_hyper_body/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/useful_hyper_body/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/useful_hyper_body/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/useful_hyper_body/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/useful_hyper_body/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/useful_hyper_body/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/useful_hyper_body/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/useful_hyper_body/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/useful_hyper_body/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/useful_hyper_body/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/useful_hyper_body/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/useful_hyper_body/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/useful_hyper_body/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/useful_hyper_body/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/useful_hyper_body/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/useful_hyper_body/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/useful_hyper_body/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/useful_hyper_body/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/useful_hyper_body/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/useful_hyper_body/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/useful_hyper_body/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/useful_hyper_body/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/useful_hyper_body/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/useful_hyper_body/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/useful_hyper_body/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/useful_hyper_body/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/useful_hyper_body/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/useful_hyper_body/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/useful_hyper_body/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/useful_hyper_body/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/useful_hyper_body/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/useful_hyper_body/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/useful_hyper_body/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/useful_hyper_body/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/useful_hyper_body/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/useful_hyper_body/sec_059.png"
+        }
+      ],
+      "identityFile": "identity-icons/useful_hyper_body.png"
+    },
+    {
+      "id": "useful_sharp_eyes",
+      "label": "Useful Sharp Eyes",
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/useful_sharp_eyes/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/useful_sharp_eyes/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/useful_sharp_eyes/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/useful_sharp_eyes/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/useful_sharp_eyes/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/useful_sharp_eyes/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/useful_sharp_eyes/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/useful_sharp_eyes/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/useful_sharp_eyes/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/useful_sharp_eyes/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/useful_sharp_eyes/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/useful_sharp_eyes/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/useful_sharp_eyes/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/useful_sharp_eyes/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/useful_sharp_eyes/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/useful_sharp_eyes/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/useful_sharp_eyes/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/useful_sharp_eyes/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/useful_sharp_eyes/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/useful_sharp_eyes/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/useful_sharp_eyes/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/useful_sharp_eyes/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/useful_sharp_eyes/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/useful_sharp_eyes/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/useful_sharp_eyes/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/useful_sharp_eyes/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/useful_sharp_eyes/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/useful_sharp_eyes/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/useful_sharp_eyes/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/useful_sharp_eyes/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/useful_sharp_eyes/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/useful_sharp_eyes/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/useful_sharp_eyes/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/useful_sharp_eyes/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/useful_sharp_eyes/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/useful_sharp_eyes/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/useful_sharp_eyes/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/useful_sharp_eyes/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/useful_sharp_eyes/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/useful_sharp_eyes/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/useful_sharp_eyes/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/useful_sharp_eyes/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/useful_sharp_eyes/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/useful_sharp_eyes/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/useful_sharp_eyes/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/useful_sharp_eyes/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/useful_sharp_eyes/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/useful_sharp_eyes/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/useful_sharp_eyes/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/useful_sharp_eyes/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/useful_sharp_eyes/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/useful_sharp_eyes/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/useful_sharp_eyes/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/useful_sharp_eyes/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/useful_sharp_eyes/sec_059.png"
+        }
+      ],
+      "identityFile": "identity-icons/useful_sharp_eyes.png"
+    },
+    {
+      "id": "useful_combat_orders",
+      "label": "Useful Combat Orders",
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/useful_combat_orders/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/useful_combat_orders/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/useful_combat_orders/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/useful_combat_orders/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/useful_combat_orders/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/useful_combat_orders/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/useful_combat_orders/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/useful_combat_orders/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/useful_combat_orders/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/useful_combat_orders/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/useful_combat_orders/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/useful_combat_orders/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/useful_combat_orders/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/useful_combat_orders/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/useful_combat_orders/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/useful_combat_orders/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/useful_combat_orders/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/useful_combat_orders/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/useful_combat_orders/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/useful_combat_orders/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/useful_combat_orders/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/useful_combat_orders/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/useful_combat_orders/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/useful_combat_orders/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/useful_combat_orders/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/useful_combat_orders/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/useful_combat_orders/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/useful_combat_orders/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/useful_combat_orders/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/useful_combat_orders/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/useful_combat_orders/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/useful_combat_orders/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/useful_combat_orders/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/useful_combat_orders/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/useful_combat_orders/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/useful_combat_orders/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/useful_combat_orders/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/useful_combat_orders/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/useful_combat_orders/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/useful_combat_orders/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/useful_combat_orders/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/useful_combat_orders/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/useful_combat_orders/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/useful_combat_orders/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/useful_combat_orders/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/useful_combat_orders/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/useful_combat_orders/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/useful_combat_orders/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/useful_combat_orders/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/useful_combat_orders/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/useful_combat_orders/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/useful_combat_orders/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/useful_combat_orders/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/useful_combat_orders/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/useful_combat_orders/sec_059.png"
+        }
+      ],
+      "identityFiles": [
+        "identity-icons/useful_combat_orders/sec_005.png",
+        "identity-icons/useful_combat_orders/sec_006.png",
+        "identity-icons/useful_combat_orders/sec_007.png",
+        "identity-icons/useful_combat_orders/sec_008.png",
+        "identity-icons/useful_combat_orders/sec_009.png",
+        "identity-icons/useful_combat_orders/sec_010.png",
+        "identity-icons/useful_combat_orders/sec_011.png",
+        "identity-icons/useful_combat_orders/sec_012.png",
+        "identity-icons/useful_combat_orders/sec_013.png",
+        "identity-icons/useful_combat_orders/sec_014.png",
+        "identity-icons/useful_combat_orders/sec_015.png",
+        "identity-icons/useful_combat_orders/sec_016.png",
+        "identity-icons/useful_combat_orders/sec_017.png",
+        "identity-icons/useful_combat_orders/sec_018.png",
+        "identity-icons/useful_combat_orders/sec_019.png",
+        "identity-icons/useful_combat_orders/sec_020.png",
+        "identity-icons/useful_combat_orders/sec_021.png",
+        "identity-icons/useful_combat_orders/sec_022.png",
+        "identity-icons/useful_combat_orders/sec_023.png",
+        "identity-icons/useful_combat_orders/sec_024.png",
+        "identity-icons/useful_combat_orders/sec_025.png",
+        "identity-icons/useful_combat_orders/sec_026.png",
+        "identity-icons/useful_combat_orders/sec_027.png",
+        "identity-icons/useful_combat_orders/sec_028.png",
+        "identity-icons/useful_combat_orders/sec_029.png",
+        "identity-icons/useful_combat_orders/sec_030.png",
+        "identity-icons/useful_combat_orders/sec_031.png",
+        "identity-icons/useful_combat_orders/sec_032.png",
+        "identity-icons/useful_combat_orders/sec_033.png",
+        "identity-icons/useful_combat_orders/sec_034.png",
+        "identity-icons/useful_combat_orders/sec_035.png",
+        "identity-icons/useful_combat_orders/sec_036.png",
+        "identity-icons/useful_combat_orders/sec_037.png",
+        "identity-icons/useful_combat_orders/sec_038.png",
+        "identity-icons/useful_combat_orders/sec_039.png",
+        "identity-icons/useful_combat_orders/sec_040.png",
+        "identity-icons/useful_combat_orders/sec_041.png",
+        "identity-icons/useful_combat_orders/sec_042.png",
+        "identity-icons/useful_combat_orders/sec_043.png",
+        "identity-icons/useful_combat_orders/sec_044.png",
+        "identity-icons/useful_combat_orders/sec_045.png",
+        "identity-icons/useful_combat_orders/sec_046.png",
+        "identity-icons/useful_combat_orders/sec_047.png",
+        "identity-icons/useful_combat_orders/sec_048.png",
+        "identity-icons/useful_combat_orders/sec_049.png",
+        "identity-icons/useful_combat_orders/sec_050.png",
+        "identity-icons/useful_combat_orders/sec_051.png",
+        "identity-icons/useful_combat_orders/sec_052.png",
+        "identity-icons/useful_combat_orders/sec_053.png",
+        "identity-icons/useful_combat_orders/sec_054.png",
+        "identity-icons/useful_combat_orders/sec_055.png",
+        "identity-icons/useful_combat_orders/sec_056.png",
+        "identity-icons/useful_combat_orders/sec_057.png",
+        "identity-icons/useful_combat_orders/sec_058.png",
+        "identity-icons/useful_combat_orders/sec_059.png"
+      ]
+    },
+    {
+      "id": "useful_holy_symbol",
+      "label": "Useful Holy Symbol",
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/useful_holy_symbol/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/useful_holy_symbol/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/useful_holy_symbol/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/useful_holy_symbol/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/useful_holy_symbol/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/useful_holy_symbol/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/useful_holy_symbol/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/useful_holy_symbol/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/useful_holy_symbol/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/useful_holy_symbol/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/useful_holy_symbol/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/useful_holy_symbol/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/useful_holy_symbol/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/useful_holy_symbol/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/useful_holy_symbol/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/useful_holy_symbol/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/useful_holy_symbol/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/useful_holy_symbol/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/useful_holy_symbol/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/useful_holy_symbol/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/useful_holy_symbol/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/useful_holy_symbol/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/useful_holy_symbol/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/useful_holy_symbol/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/useful_holy_symbol/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/useful_holy_symbol/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/useful_holy_symbol/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/useful_holy_symbol/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/useful_holy_symbol/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/useful_holy_symbol/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/useful_holy_symbol/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/useful_holy_symbol/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/useful_holy_symbol/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/useful_holy_symbol/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/useful_holy_symbol/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/useful_holy_symbol/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/useful_holy_symbol/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/useful_holy_symbol/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/useful_holy_symbol/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/useful_holy_symbol/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/useful_holy_symbol/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/useful_holy_symbol/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/useful_holy_symbol/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/useful_holy_symbol/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/useful_holy_symbol/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/useful_holy_symbol/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/useful_holy_symbol/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/useful_holy_symbol/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/useful_holy_symbol/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/useful_holy_symbol/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/useful_holy_symbol/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/useful_holy_symbol/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/useful_holy_symbol/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/useful_holy_symbol/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/useful_holy_symbol/sec_059.png"
+        }
+      ],
+      "identityFile": "identity-icons/useful_holy_symbol.png"
+    },
+    {
+      "id": "extreme_gold",
+      "label": "Extreme Gold",
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/extreme_gold/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/extreme_gold/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/extreme_gold/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/extreme_gold/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/extreme_gold/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/extreme_gold/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/extreme_gold/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/extreme_gold/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/extreme_gold/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/extreme_gold/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/extreme_gold/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/extreme_gold/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/extreme_gold/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/extreme_gold/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/extreme_gold/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/extreme_gold/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/extreme_gold/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/extreme_gold/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/extreme_gold/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/extreme_gold/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/extreme_gold/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/extreme_gold/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/extreme_gold/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/extreme_gold/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/extreme_gold/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/extreme_gold/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/extreme_gold/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/extreme_gold/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/extreme_gold/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/extreme_gold/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/extreme_gold/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/extreme_gold/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/extreme_gold/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/extreme_gold/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/extreme_gold/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/extreme_gold/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/extreme_gold/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/extreme_gold/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/extreme_gold/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/extreme_gold/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/extreme_gold/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/extreme_gold/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/extreme_gold/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/extreme_gold/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/extreme_gold/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/extreme_gold/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/extreme_gold/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/extreme_gold/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/extreme_gold/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/extreme_gold/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/extreme_gold/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/extreme_gold/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/extreme_gold/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/extreme_gold/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/extreme_gold/sec_059.png"
+        }
+      ],
+      "identityFiles": [
+        "identity-icons/extreme_gold/sec_005.png",
+        "identity-icons/extreme_gold/sec_006.png",
+        "identity-icons/extreme_gold/sec_007.png",
+        "identity-icons/extreme_gold/sec_008.png",
+        "identity-icons/extreme_gold/sec_009.png",
+        "identity-icons/extreme_gold/sec_010.png",
+        "identity-icons/extreme_gold/sec_011.png",
+        "identity-icons/extreme_gold/sec_012.png",
+        "identity-icons/extreme_gold/sec_013.png",
+        "identity-icons/extreme_gold/sec_014.png",
+        "identity-icons/extreme_gold/sec_015.png",
+        "identity-icons/extreme_gold/sec_016.png",
+        "identity-icons/extreme_gold/sec_017.png",
+        "identity-icons/extreme_gold/sec_018.png",
+        "identity-icons/extreme_gold/sec_019.png",
+        "identity-icons/extreme_gold/sec_020.png",
+        "identity-icons/extreme_gold/sec_021.png",
+        "identity-icons/extreme_gold/sec_022.png",
+        "identity-icons/extreme_gold/sec_023.png",
+        "identity-icons/extreme_gold/sec_024.png",
+        "identity-icons/extreme_gold/sec_025.png",
+        "identity-icons/extreme_gold/sec_026.png",
+        "identity-icons/extreme_gold/sec_027.png",
+        "identity-icons/extreme_gold/sec_028.png",
+        "identity-icons/extreme_gold/sec_029.png",
+        "identity-icons/extreme_gold/sec_030.png",
+        "identity-icons/extreme_gold/sec_031.png",
+        "identity-icons/extreme_gold/sec_032.png",
+        "identity-icons/extreme_gold/sec_033.png",
+        "identity-icons/extreme_gold/sec_034.png",
+        "identity-icons/extreme_gold/sec_035.png",
+        "identity-icons/extreme_gold/sec_036.png",
+        "identity-icons/extreme_gold/sec_037.png",
+        "identity-icons/extreme_gold/sec_038.png",
+        "identity-icons/extreme_gold/sec_039.png",
+        "identity-icons/extreme_gold/sec_040.png",
+        "identity-icons/extreme_gold/sec_041.png",
+        "identity-icons/extreme_gold/sec_042.png",
+        "identity-icons/extreme_gold/sec_043.png",
+        "identity-icons/extreme_gold/sec_044.png",
+        "identity-icons/extreme_gold/sec_045.png",
+        "identity-icons/extreme_gold/sec_046.png",
+        "identity-icons/extreme_gold/sec_047.png",
+        "identity-icons/extreme_gold/sec_048.png",
+        "identity-icons/extreme_gold/sec_049.png",
+        "identity-icons/extreme_gold/sec_050.png",
+        "identity-icons/extreme_gold/sec_051.png",
+        "identity-icons/extreme_gold/sec_052.png",
+        "identity-icons/extreme_gold/sec_053.png",
+        "identity-icons/extreme_gold/sec_054.png",
+        "identity-icons/extreme_gold/sec_055.png",
+        "identity-icons/extreme_gold/sec_056.png",
+        "identity-icons/extreme_gold/sec_057.png",
+        "identity-icons/extreme_gold/sec_058.png",
+        "identity-icons/extreme_gold/sec_059.png"
+      ]
+    },
+    {
+      "id": "vip_exp_buff",
+      "label": "VIP EXP Buff",
+      "identityFiles": [
+        "identity-icons/vip_exp_buff/sec_005.png",
+        "identity-icons/vip_exp_buff/sec_006.png",
+        "identity-icons/vip_exp_buff/sec_007.png",
+        "identity-icons/vip_exp_buff/sec_008.png",
+        "identity-icons/vip_exp_buff/sec_009.png",
+        "identity-icons/vip_exp_buff/sec_010.png",
+        "identity-icons/vip_exp_buff/sec_011.png",
+        "identity-icons/vip_exp_buff/sec_012.png",
+        "identity-icons/vip_exp_buff/sec_013.png",
+        "identity-icons/vip_exp_buff/sec_014.png",
+        "identity-icons/vip_exp_buff/sec_015.png",
+        "identity-icons/vip_exp_buff/sec_016.png",
+        "identity-icons/vip_exp_buff/sec_017.png",
+        "identity-icons/vip_exp_buff/sec_018.png",
+        "identity-icons/vip_exp_buff/sec_019.png",
+        "identity-icons/vip_exp_buff/sec_020.png",
+        "identity-icons/vip_exp_buff/sec_021.png",
+        "identity-icons/vip_exp_buff/sec_022.png",
+        "identity-icons/vip_exp_buff/sec_023.png",
+        "identity-icons/vip_exp_buff/sec_024.png",
+        "identity-icons/vip_exp_buff/sec_025.png",
+        "identity-icons/vip_exp_buff/sec_026.png",
+        "identity-icons/vip_exp_buff/sec_027.png",
+        "identity-icons/vip_exp_buff/sec_028.png",
+        "identity-icons/vip_exp_buff/sec_029.png",
+        "identity-icons/vip_exp_buff/sec_030.png",
+        "identity-icons/vip_exp_buff/sec_031.png",
+        "identity-icons/vip_exp_buff/sec_032.png",
+        "identity-icons/vip_exp_buff/sec_033.png",
+        "identity-icons/vip_exp_buff/sec_034.png",
+        "identity-icons/vip_exp_buff/sec_035.png",
+        "identity-icons/vip_exp_buff/sec_036.png",
+        "identity-icons/vip_exp_buff/sec_037.png",
+        "identity-icons/vip_exp_buff/sec_038.png",
+        "identity-icons/vip_exp_buff/sec_039.png",
+        "identity-icons/vip_exp_buff/sec_040.png",
+        "identity-icons/vip_exp_buff/sec_041.png",
+        "identity-icons/vip_exp_buff/sec_042.png",
+        "identity-icons/vip_exp_buff/sec_043.png",
+        "identity-icons/vip_exp_buff/sec_044.png",
+        "identity-icons/vip_exp_buff/sec_045.png",
+        "identity-icons/vip_exp_buff/sec_046.png",
+        "identity-icons/vip_exp_buff/sec_047.png",
+        "identity-icons/vip_exp_buff/sec_048.png",
+        "identity-icons/vip_exp_buff/sec_049.png",
+        "identity-icons/vip_exp_buff/sec_050.png",
+        "identity-icons/vip_exp_buff/sec_051.png",
+        "identity-icons/vip_exp_buff/sec_052.png",
+        "identity-icons/vip_exp_buff/sec_053.png",
+        "identity-icons/vip_exp_buff/sec_054.png",
+        "identity-icons/vip_exp_buff/sec_055.png",
+        "identity-icons/vip_exp_buff/sec_056.png",
+        "identity-icons/vip_exp_buff/sec_057.png",
+        "identity-icons/vip_exp_buff/sec_058.png",
+        "identity-icons/vip_exp_buff/sec_059.png"
+      ],
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/vip_exp_buff/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/vip_exp_buff/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/vip_exp_buff/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/vip_exp_buff/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/vip_exp_buff/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/vip_exp_buff/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/vip_exp_buff/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/vip_exp_buff/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/vip_exp_buff/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/vip_exp_buff/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/vip_exp_buff/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/vip_exp_buff/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/vip_exp_buff/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/vip_exp_buff/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/vip_exp_buff/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/vip_exp_buff/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/vip_exp_buff/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/vip_exp_buff/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/vip_exp_buff/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/vip_exp_buff/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/vip_exp_buff/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/vip_exp_buff/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/vip_exp_buff/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/vip_exp_buff/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/vip_exp_buff/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/vip_exp_buff/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/vip_exp_buff/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/vip_exp_buff/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/vip_exp_buff/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/vip_exp_buff/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/vip_exp_buff/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/vip_exp_buff/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/vip_exp_buff/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/vip_exp_buff/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/vip_exp_buff/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/vip_exp_buff/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/vip_exp_buff/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/vip_exp_buff/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/vip_exp_buff/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/vip_exp_buff/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/vip_exp_buff/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/vip_exp_buff/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/vip_exp_buff/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/vip_exp_buff/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/vip_exp_buff/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/vip_exp_buff/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/vip_exp_buff/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/vip_exp_buff/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/vip_exp_buff/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/vip_exp_buff/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/vip_exp_buff/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/vip_exp_buff/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/vip_exp_buff/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/vip_exp_buff/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/vip_exp_buff/sec_059.png"
+        }
+      ]
+    },
+    {
+      "id": "cooldown",
+      "label": "Rune Cooldown",
+      "identityFiles": [
+        "identity-icons/cooldown/expiring_lt_005__cooldown__1080_video_sec_126_x1834_y57.png",
+        "identity-icons/cooldown/expiring_lt_005__cooldown__1080_video_sec_127_x1834_y57.png",
+        "identity-icons/cooldown/expiring_lt_005__cooldown__1080_video_sec_128_x1834_y57.png",
+        "identity-icons/cooldown/expiring_lt_005__cooldown__1080_video_sec_129_x1834_y57.png",
+        "identity-icons/cooldown/expiring_lt_005__cooldown__1080_video_sec_130_x1834_y57.png",
+        "identity-icons/cooldown/sec_005.png",
+        "identity-icons/cooldown/sec_006.png",
+        "identity-icons/cooldown/sec_007.png",
+        "identity-icons/cooldown/sec_008.png",
+        "identity-icons/cooldown/sec_009.png",
+        "identity-icons/cooldown/sec_010.png",
+        "identity-icons/cooldown/sec_011.png",
+        "identity-icons/cooldown/sec_012.png",
+        "identity-icons/cooldown/sec_013.png",
+        "identity-icons/cooldown/sec_014.png",
+        "identity-icons/cooldown/sec_015.png",
+        "identity-icons/cooldown/sec_016.png",
+        "identity-icons/cooldown/sec_017.png",
+        "identity-icons/cooldown/sec_018.png",
+        "identity-icons/cooldown/sec_019.png",
+        "identity-icons/cooldown/sec_020.png",
+        "identity-icons/cooldown/sec_021.png",
+        "identity-icons/cooldown/sec_022.png",
+        "identity-icons/cooldown/sec_023.png",
+        "identity-icons/cooldown/sec_024.png",
+        "identity-icons/cooldown/sec_025.png",
+        "identity-icons/cooldown/sec_026.png",
+        "identity-icons/cooldown/sec_027.png",
+        "identity-icons/cooldown/sec_028.png",
+        "identity-icons/cooldown/sec_029.png",
+        "identity-icons/cooldown/sec_030.png",
+        "identity-icons/cooldown/sec_031.png",
+        "identity-icons/cooldown/sec_032.png",
+        "identity-icons/cooldown/sec_033.png",
+        "identity-icons/cooldown/sec_034.png",
+        "identity-icons/cooldown/sec_035.png",
+        "identity-icons/cooldown/sec_036.png",
+        "identity-icons/cooldown/sec_037.png",
+        "identity-icons/cooldown/sec_038.png",
+        "identity-icons/cooldown/sec_039.png",
+        "identity-icons/cooldown/sec_040.png",
+        "identity-icons/cooldown/sec_041.png",
+        "identity-icons/cooldown/sec_042.png",
+        "identity-icons/cooldown/sec_043.png",
+        "identity-icons/cooldown/sec_044.png",
+        "identity-icons/cooldown/sec_045.png",
+        "identity-icons/cooldown/sec_046.png",
+        "identity-icons/cooldown/sec_047.png",
+        "identity-icons/cooldown/sec_048.png",
+        "identity-icons/cooldown/sec_049.png",
+        "identity-icons/cooldown/sec_050.png",
+        "identity-icons/cooldown/sec_051.png",
+        "identity-icons/cooldown/sec_052.png",
+        "identity-icons/cooldown/sec_053.png",
+        "identity-icons/cooldown/sec_054.png",
+        "identity-icons/cooldown/sec_055.png",
+        "identity-icons/cooldown/sec_056.png",
+        "identity-icons/cooldown/sec_057.png",
+        "identity-icons/cooldown/sec_058.png",
+        "identity-icons/cooldown/sec_059.png"
+      ],
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/cooldown/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/cooldown/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/cooldown/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/cooldown/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/cooldown/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/cooldown/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/cooldown/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/cooldown/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/cooldown/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/cooldown/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/cooldown/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/cooldown/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/cooldown/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/cooldown/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/cooldown/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/cooldown/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/cooldown/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/cooldown/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/cooldown/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/cooldown/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/cooldown/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/cooldown/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/cooldown/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/cooldown/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/cooldown/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/cooldown/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/cooldown/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/cooldown/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/cooldown/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/cooldown/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/cooldown/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/cooldown/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/cooldown/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/cooldown/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/cooldown/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/cooldown/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/cooldown/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/cooldown/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/cooldown/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/cooldown/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/cooldown/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/cooldown/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/cooldown/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/cooldown/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/cooldown/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/cooldown/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/cooldown/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/cooldown/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/cooldown/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/cooldown/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/cooldown/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/cooldown/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/cooldown/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/cooldown/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/cooldown/sec_059.png"
+        }
+      ]
+    },
+    {
+      "id": "rune_active",
+      "label": "Rune Active",
+      "identityFiles": [
+        "identity-icons/rune_active/sec_005.png",
+        "identity-icons/rune_active/sec_006.png",
+        "identity-icons/rune_active/sec_007.png",
+        "identity-icons/rune_active/sec_008.png",
+        "identity-icons/rune_active/sec_009.png",
+        "identity-icons/rune_active/sec_010.png",
+        "identity-icons/rune_active/sec_011.png",
+        "identity-icons/rune_active/sec_012.png",
+        "identity-icons/rune_active/sec_013.png",
+        "identity-icons/rune_active/sec_014.png",
+        "identity-icons/rune_active/sec_015.png",
+        "identity-icons/rune_active/sec_016.png",
+        "identity-icons/rune_active/sec_017.png",
+        "identity-icons/rune_active/sec_018.png",
+        "identity-icons/rune_active/sec_019.png",
+        "identity-icons/rune_active/sec_020.png",
+        "identity-icons/rune_active/sec_021.png",
+        "identity-icons/rune_active/sec_022.png",
+        "identity-icons/rune_active/sec_023.png",
+        "identity-icons/rune_active/sec_024.png",
+        "identity-icons/rune_active/sec_025.png",
+        "identity-icons/rune_active/sec_026.png",
+        "identity-icons/rune_active/sec_027.png",
+        "identity-icons/rune_active/sec_028.png",
+        "identity-icons/rune_active/sec_029.png",
+        "identity-icons/rune_active/sec_030.png",
+        "identity-icons/rune_active/sec_031.png",
+        "identity-icons/rune_active/sec_032.png",
+        "identity-icons/rune_active/sec_033.png",
+        "identity-icons/rune_active/sec_034.png",
+        "identity-icons/rune_active/sec_035.png",
+        "identity-icons/rune_active/sec_036.png",
+        "identity-icons/rune_active/sec_037.png",
+        "identity-icons/rune_active/sec_038.png",
+        "identity-icons/rune_active/sec_039.png",
+        "identity-icons/rune_active/sec_040.png",
+        "identity-icons/rune_active/sec_041.png",
+        "identity-icons/rune_active/sec_042.png",
+        "identity-icons/rune_active/sec_043.png",
+        "identity-icons/rune_active/sec_044.png",
+        "identity-icons/rune_active/sec_045.png",
+        "identity-icons/rune_active/sec_046.png",
+        "identity-icons/rune_active/sec_047.png",
+        "identity-icons/rune_active/sec_048.png",
+        "identity-icons/rune_active/sec_049.png",
+        "identity-icons/rune_active/sec_050.png",
+        "identity-icons/rune_active/sec_051.png",
+        "identity-icons/rune_active/sec_052.png",
+        "identity-icons/rune_active/sec_053.png",
+        "identity-icons/rune_active/sec_054.png",
+        "identity-icons/rune_active/sec_055.png",
+        "identity-icons/rune_active/sec_056.png",
+        "identity-icons/rune_active/sec_057.png",
+        "identity-icons/rune_active/sec_058.png",
+        "identity-icons/rune_active/sec_059.png"
+      ],
+      "samples": [
+        {
+          "seconds": 5,
+          "file": "raw-icons/rune_active/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/rune_active/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/rune_active/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/rune_active/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/rune_active/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/rune_active/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/rune_active/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/rune_active/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/rune_active/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/rune_active/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/rune_active/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/rune_active/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/rune_active/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/rune_active/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/rune_active/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/rune_active/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/rune_active/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/rune_active/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/rune_active/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/rune_active/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/rune_active/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/rune_active/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/rune_active/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/rune_active/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/rune_active/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/rune_active/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/rune_active/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/rune_active/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/rune_active/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/rune_active/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/rune_active/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/rune_active/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/rune_active/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/rune_active/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/rune_active/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/rune_active/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/rune_active/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/rune_active/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/rune_active/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/rune_active/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/rune_active/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/rune_active/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/rune_active/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/rune_active/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/rune_active/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/rune_active/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/rune_active/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/rune_active/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/rune_active/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/rune_active/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/rune_active/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/rune_active/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/rune_active/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/rune_active/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/rune_active/sec_059.png"
+        }
+      ]
+    },
+    {
+      "id": "buff_active",
+      "label": "Buff Active",
+      "identityFiles": [
+        "identity-icons/buff_active/sec_000.png",
+        "identity-icons/buff_active/sec_001.png",
+        "identity-icons/buff_active/sec_002.png",
+        "identity-icons/buff_active/sec_003.png",
+        "identity-icons/buff_active/sec_004.png",
+        "identity-icons/buff_active/sec_005.png",
+        "identity-icons/buff_active/sec_006.png",
+        "identity-icons/buff_active/sec_007.png",
+        "identity-icons/buff_active/sec_008.png",
+        "identity-icons/buff_active/sec_009.png",
+        "identity-icons/buff_active/sec_010.png",
+        "identity-icons/buff_active/sec_011.png",
+        "identity-icons/buff_active/sec_012.png",
+        "identity-icons/buff_active/sec_013.png",
+        "identity-icons/buff_active/sec_014.png",
+        "identity-icons/buff_active/sec_015.png",
+        "identity-icons/buff_active/sec_016.png",
+        "identity-icons/buff_active/sec_017.png",
+        "identity-icons/buff_active/sec_018.png",
+        "identity-icons/buff_active/sec_019.png",
+        "identity-icons/buff_active/sec_020.png",
+        "identity-icons/buff_active/sec_021.png",
+        "identity-icons/buff_active/sec_022.png",
+        "identity-icons/buff_active/sec_023.png",
+        "identity-icons/buff_active/sec_024.png",
+        "identity-icons/buff_active/sec_025.png",
+        "identity-icons/buff_active/sec_026.png",
+        "identity-icons/buff_active/sec_027.png",
+        "identity-icons/buff_active/sec_028.png",
+        "identity-icons/buff_active/sec_029.png",
+        "identity-icons/buff_active/sec_030.png",
+        "identity-icons/buff_active/sec_031.png",
+        "identity-icons/buff_active/sec_032.png",
+        "identity-icons/buff_active/sec_033.png",
+        "identity-icons/buff_active/sec_034.png",
+        "identity-icons/buff_active/sec_035.png",
+        "identity-icons/buff_active/sec_036.png",
+        "identity-icons/buff_active/sec_037.png",
+        "identity-icons/buff_active/sec_038.png",
+        "identity-icons/buff_active/sec_039.png",
+        "identity-icons/buff_active/sec_040.png",
+        "identity-icons/buff_active/sec_041.png",
+        "identity-icons/buff_active/sec_042.png",
+        "identity-icons/buff_active/sec_043.png",
+        "identity-icons/buff_active/sec_044.png",
+        "identity-icons/buff_active/sec_045.png",
+        "identity-icons/buff_active/sec_046.png",
+        "identity-icons/buff_active/sec_047.png",
+        "identity-icons/buff_active/sec_048.png",
+        "identity-icons/buff_active/sec_049.png",
+        "identity-icons/buff_active/sec_050.png",
+        "identity-icons/buff_active/sec_051.png",
+        "identity-icons/buff_active/sec_052.png",
+        "identity-icons/buff_active/sec_053.png",
+        "identity-icons/buff_active/sec_054.png",
+        "identity-icons/buff_active/sec_055.png",
+        "identity-icons/buff_active/sec_056.png",
+        "identity-icons/buff_active/sec_057.png",
+        "identity-icons/buff_active/sec_058.png",
+        "identity-icons/buff_active/sec_059.png"
+      ],
+      "samples": [
+        {
+          "seconds": 0,
+          "file": "raw-icons/buff_active/sec_000.png"
+        },
+        {
+          "seconds": 1,
+          "file": "raw-icons/buff_active/sec_001.png"
+        },
+        {
+          "seconds": 2,
+          "file": "raw-icons/buff_active/sec_002.png"
+        },
+        {
+          "seconds": 3,
+          "file": "raw-icons/buff_active/sec_003.png"
+        },
+        {
+          "seconds": 4,
+          "file": "raw-icons/buff_active/sec_004.png"
+        },
+        {
+          "seconds": 5,
+          "file": "raw-icons/buff_active/sec_005.png"
+        },
+        {
+          "seconds": 6,
+          "file": "raw-icons/buff_active/sec_006.png"
+        },
+        {
+          "seconds": 7,
+          "file": "raw-icons/buff_active/sec_007.png"
+        },
+        {
+          "seconds": 8,
+          "file": "raw-icons/buff_active/sec_008.png"
+        },
+        {
+          "seconds": 9,
+          "file": "raw-icons/buff_active/sec_009.png"
+        },
+        {
+          "seconds": 10,
+          "file": "raw-icons/buff_active/sec_010.png"
+        },
+        {
+          "seconds": 11,
+          "file": "raw-icons/buff_active/sec_011.png"
+        },
+        {
+          "seconds": 12,
+          "file": "raw-icons/buff_active/sec_012.png"
+        },
+        {
+          "seconds": 13,
+          "file": "raw-icons/buff_active/sec_013.png"
+        },
+        {
+          "seconds": 14,
+          "file": "raw-icons/buff_active/sec_014.png"
+        },
+        {
+          "seconds": 15,
+          "file": "raw-icons/buff_active/sec_015.png"
+        },
+        {
+          "seconds": 16,
+          "file": "raw-icons/buff_active/sec_016.png"
+        },
+        {
+          "seconds": 17,
+          "file": "raw-icons/buff_active/sec_017.png"
+        },
+        {
+          "seconds": 18,
+          "file": "raw-icons/buff_active/sec_018.png"
+        },
+        {
+          "seconds": 19,
+          "file": "raw-icons/buff_active/sec_019.png"
+        },
+        {
+          "seconds": 20,
+          "file": "raw-icons/buff_active/sec_020.png"
+        },
+        {
+          "seconds": 21,
+          "file": "raw-icons/buff_active/sec_021.png"
+        },
+        {
+          "seconds": 22,
+          "file": "raw-icons/buff_active/sec_022.png"
+        },
+        {
+          "seconds": 23,
+          "file": "raw-icons/buff_active/sec_023.png"
+        },
+        {
+          "seconds": 24,
+          "file": "raw-icons/buff_active/sec_024.png"
+        },
+        {
+          "seconds": 25,
+          "file": "raw-icons/buff_active/sec_025.png"
+        },
+        {
+          "seconds": 26,
+          "file": "raw-icons/buff_active/sec_026.png"
+        },
+        {
+          "seconds": 27,
+          "file": "raw-icons/buff_active/sec_027.png"
+        },
+        {
+          "seconds": 28,
+          "file": "raw-icons/buff_active/sec_028.png"
+        },
+        {
+          "seconds": 29,
+          "file": "raw-icons/buff_active/sec_029.png"
+        },
+        {
+          "seconds": 30,
+          "file": "raw-icons/buff_active/sec_030.png"
+        },
+        {
+          "seconds": 31,
+          "file": "raw-icons/buff_active/sec_031.png"
+        },
+        {
+          "seconds": 32,
+          "file": "raw-icons/buff_active/sec_032.png"
+        },
+        {
+          "seconds": 33,
+          "file": "raw-icons/buff_active/sec_033.png"
+        },
+        {
+          "seconds": 34,
+          "file": "raw-icons/buff_active/sec_034.png"
+        },
+        {
+          "seconds": 35,
+          "file": "raw-icons/buff_active/sec_035.png"
+        },
+        {
+          "seconds": 36,
+          "file": "raw-icons/buff_active/sec_036.png"
+        },
+        {
+          "seconds": 37,
+          "file": "raw-icons/buff_active/sec_037.png"
+        },
+        {
+          "seconds": 38,
+          "file": "raw-icons/buff_active/sec_038.png"
+        },
+        {
+          "seconds": 39,
+          "file": "raw-icons/buff_active/sec_039.png"
+        },
+        {
+          "seconds": 40,
+          "file": "raw-icons/buff_active/sec_040.png"
+        },
+        {
+          "seconds": 41,
+          "file": "raw-icons/buff_active/sec_041.png"
+        },
+        {
+          "seconds": 42,
+          "file": "raw-icons/buff_active/sec_042.png"
+        },
+        {
+          "seconds": 43,
+          "file": "raw-icons/buff_active/sec_043.png"
+        },
+        {
+          "seconds": 44,
+          "file": "raw-icons/buff_active/sec_044.png"
+        },
+        {
+          "seconds": 45,
+          "file": "raw-icons/buff_active/sec_045.png"
+        },
+        {
+          "seconds": 46,
+          "file": "raw-icons/buff_active/sec_046.png"
+        },
+        {
+          "seconds": 47,
+          "file": "raw-icons/buff_active/sec_047.png"
+        },
+        {
+          "seconds": 48,
+          "file": "raw-icons/buff_active/sec_048.png"
+        },
+        {
+          "seconds": 49,
+          "file": "raw-icons/buff_active/sec_049.png"
+        },
+        {
+          "seconds": 50,
+          "file": "raw-icons/buff_active/sec_050.png"
+        },
+        {
+          "seconds": 51,
+          "file": "raw-icons/buff_active/sec_051.png"
+        },
+        {
+          "seconds": 52,
+          "file": "raw-icons/buff_active/sec_052.png"
+        },
+        {
+          "seconds": 53,
+          "file": "raw-icons/buff_active/sec_053.png"
+        },
+        {
+          "seconds": 54,
+          "file": "raw-icons/buff_active/sec_054.png"
+        },
+        {
+          "seconds": 55,
+          "file": "raw-icons/buff_active/sec_055.png"
+        },
+        {
+          "seconds": 56,
+          "file": "raw-icons/buff_active/sec_056.png"
+        },
+        {
+          "seconds": 57,
+          "file": "raw-icons/buff_active/sec_057.png"
+        },
+        {
+          "seconds": 58,
+          "file": "raw-icons/buff_active/sec_058.png"
+        },
+        {
+          "seconds": 59,
+          "file": "raw-icons/buff_active/sec_059.png"
+        }
+      ]
+    }
+  ]
+}

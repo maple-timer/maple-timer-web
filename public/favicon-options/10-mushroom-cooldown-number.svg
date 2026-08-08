@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Orange mushroom cooldown number">
+  <rect width="64" height="64" rx="12" fill="#111612"/>
+  <path d="M11 28c1-12 10-19 21-19s20 7 21 19c1 7-6 11-21 11S10 35 11 28z" fill="#f08324"/>
+  <path d="M19 22c0-4 3-7 7-7 3 0 5 2 5 5 0 4-4 6-8 6-3 0-4-1-4-4zM38 16c5 0 9 3 9 8 0 4-3 6-8 6-4 0-7-2-7-6 0-5 2-8 6-8z" fill="#ffd79f"/>
+  <path d="M20 35c1 10 6 17 12 17s11-7 12-17c-4 2-8 3-12 3s-8-1-12-3z" fill="#fff0cd"/>
+  <rect x="24" y="32" width="28" height="24" rx="5" fill="#151b16" stroke="#3d4f43" stroke-width="2"/>
+  <path d="M31 36h15v5H36v4h9v5h-9v3h11v5H31z" fill="#ffdc42"/>
+  <path d="M18 49c2 4 5 7 9 8" fill="none" stroke="#2bb875" stroke-linecap="round" stroke-width="4"/>
+</svg>

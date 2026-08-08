@@ -1,0 +1,21 @@
+{
+  "kind": "buff-group-positive-gated-runtime-artifacts",
+  "generatedAt": "2026-07-10T16:01:15.563743+00:00",
+  "elapsedMs": 1260.952,
+  "contractVersion": 1,
+  "bundleId": "buff-group-unionluck-deep-v1",
+  "targetGroup": "unionLuck",
+  "outputRoot": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime",
+  "files": {
+    "onnx": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime/buff-group-unionluck-deep-v1.onnx",
+    "onnxData": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime/buff-group-unionluck-deep-v1.onnx.data",
+    "policy": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime/policy.json",
+    "positiveGate": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-runtime/unionluck-positive-gate.json"
+  },
+  "bytes": {
+    "onnx": 49183,
+    "onnxData": 3473408,
+    "policy": 2673,
+    "positiveGate": 210150
+  }
+}

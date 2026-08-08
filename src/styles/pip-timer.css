@@ -1,0 +1,723 @@
+.pip-timer-control {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  height: 36px;
+  min-width: max-content;
+}
+
+.pip-timer-button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.app-header .pip-timer-control .secondary-button {
+  border: 0;
+  background: transparent;
+}
+
+.app-header .pip-timer-control .pip-timer-button {
+  flex: 0 0 98px;
+  width: 98px;
+  min-width: 98px;
+  min-height: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.pip-timer-separator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 0 0 8px;
+  width: 8px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.app-header .secondary-button.pip-timer-button.active {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+.app-header .secondary-button.pip-timer-button.active:hover,
+.app-header .secondary-button.pip-timer-button.active:focus-visible {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+.app-header .secondary-button.pip-timer-settings-button {
+  flex: 0 0 32px;
+  width: 32px;
+  min-width: 32px;
+  min-height: 36px;
+  height: 36px;
+  margin-left: 0;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.pip-timer-control.is-settings-open .pip-timer-settings-button {
+  color: var(--accent-strong);
+}
+
+.pip-maker-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(18, 24, 19, 0.48);
+}
+
+.pip-maker-dialog {
+  width: min(820px, 100%);
+  max-height: min(820px, calc(100vh - 36px));
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--panel);
+  box-shadow: 0 24px 70px rgba(20, 28, 21, 0.24);
+}
+
+.pip-maker-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.pip-maker-header h2 {
+  color: var(--ink);
+  font-size: 1.24rem;
+  line-height: 1.25;
+}
+
+.pip-maker-dialog .icon-button.pip-maker-close-button {
+  border-color: rgba(21, 128, 95, 0.24);
+  color: #ffffff;
+  background: var(--accent);
+  box-shadow: 0 8px 18px rgba(21, 128, 95, 0.18);
+}
+
+.pip-maker-dialog .icon-button.pip-maker-close-button:hover,
+.pip-maker-dialog .icon-button.pip-maker-close-button:focus-visible {
+  color: #ffffff;
+  background: var(--accent-strong);
+  outline: none;
+}
+
+.pip-maker-header p:not(.eyebrow) {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.pip-maker-layout {
+  display: grid;
+  gap: 10px;
+}
+
+.pip-maker-preview-pane,
+.pip-maker-settings,
+.pip-maker-step-viewport {
+  display: grid;
+}
+
+.pip-maker-preview-pane {
+  gap: 6px;
+}
+
+.pip-maker-preview-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 28px;
+}
+
+.pip-maker-preview-note {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.pip-maker-settings {
+  gap: 12px;
+  align-content: start;
+}
+
+.pip-maker-settings.two-column {
+  grid-template-columns: minmax(190px, 0.8fr) minmax(340px, 1.2fr);
+}
+
+.pip-maker-settings.two-column > .pip-timer-setting-section.wide {
+  grid-column: 1 / -1;
+}
+
+.pip-maker-settings.two-column.compact {
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+}
+
+.pip-maker-settings.two-column.compact.special-core-appearance {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pip-maker-settings.mode-select .pip-timer-setting-options {
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+}
+
+.pip-maker-step-tabs {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+}
+
+.pip-maker-step-tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 820;
+  cursor: pointer;
+  transition:
+    background 0.14s ease,
+    color 0.14s ease;
+}
+
+.pip-maker-step-tabs button:hover,
+.pip-maker-step-tabs button:focus-visible {
+  color: var(--accent-strong);
+  background: rgba(21, 128, 95, 0.07);
+  outline: none;
+}
+
+.pip-maker-step-tabs button.active {
+  color: var(--accent-strong);
+  background: rgba(21, 128, 95, 0.1);
+}
+
+.pip-maker-step-tabs span {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  color: inherit;
+  background: rgba(21, 128, 95, 0.09);
+  font-size: 0.66rem;
+  font-weight: 900;
+}
+
+.pip-maker-step-viewport {
+  align-content: start;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.pip-maker-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.pip-maker-actions > span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 760;
+}
+
+.pip-maker-actions > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.pip-maker-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: color-mix(in srgb, var(--ink) 78%, var(--muted));
+  background: transparent;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 820;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.pip-maker-action-button:hover,
+.pip-maker-action-button:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 68%, transparent);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.pip-maker-action-button.primary {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 52%, transparent);
+}
+
+.pip-maker-action-button.primary:hover,
+.pip-maker-action-button.primary:focus-visible {
+  background: color-mix(in srgb, var(--accent-soft) 82%, transparent);
+}
+
+.pip-maker-action-button svg {
+  flex: 0 0 auto;
+}
+
+.pip-timer-inline-preview {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  min-height: 104px;
+  padding: 11px 12px;
+  overflow: hidden;
+  border: 1px solid rgb(var(--pip-alert-rgb) / 0.28);
+  border-radius: 10px;
+  color: #f4faf6;
+  background:
+    linear-gradient(
+      160deg,
+      var(--pip-alert-surface) 0%,
+      var(--pip-alert-surface-strong) 58%,
+      #0b0f0d 100%
+    );
+  box-shadow: inset 0 0 0 4px rgb(var(--pip-alert-rgb) / 0.18);
+  text-align: center;
+  animation: pip-inline-preview-pulse 1.05s ease-in-out infinite;
+}
+
+.pip-timer-inline-preview.emphasis-soft {
+  animation: none;
+  box-shadow: inset 0 0 0 3px rgb(var(--pip-alert-rgb) / 0.18);
+}
+
+.pip-timer-inline-preview.emphasis-strong {
+  animation-duration: 0.78s;
+  box-shadow: inset 0 0 0 5px rgb(var(--pip-alert-rgb) / 0.28);
+}
+
+.pip-timer-inline-preview.emphasis-flash {
+  animation: pip-inline-preview-flash 0.72s steps(2, jump-none) infinite;
+}
+
+.pip-timer-inline-preview-label,
+.pip-timer-inline-preview-status {
+  color: var(--pip-alert-color);
+  font-size: 0.72rem;
+  font-weight: 820;
+  line-height: 1.15;
+}
+
+.pip-timer-inline-preview-time {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  color: var(--pip-alert-color);
+  line-height: 1;
+}
+
+.pip-timer-inline-preview-time strong {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.pip-timer-inline-preview-time span {
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.pip-timer-inline-preview.size-large {
+  min-height: 112px;
+}
+
+.pip-timer-inline-preview.size-large .pip-timer-inline-preview-time strong {
+  font-size: 3.2rem;
+}
+
+.pip-timer-inline-preview.size-focus {
+  min-height: 124px;
+}
+
+.pip-timer-inline-preview.size-focus .pip-timer-inline-preview-time strong {
+  font-size: 3.8rem;
+}
+
+.pip-timer-inline-preview.emphasis-flash .pip-timer-inline-preview-label,
+.pip-timer-inline-preview.emphasis-flash .pip-timer-inline-preview-time,
+.pip-timer-inline-preview.emphasis-flash .pip-timer-inline-preview-status {
+  animation: pip-inline-preview-text-flash 0.72s steps(2, jump-none) infinite;
+}
+
+.pip-timer-setting-section {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.pip-timer-setting-title {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 820;
+}
+
+.pip-timer-setting-options {
+  display: grid;
+  gap: 6px;
+}
+
+.pip-timer-setting-option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--ink);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.14s ease,
+    background 0.14s ease,
+    color 0.14s ease;
+}
+
+.pip-timer-setting-option:hover,
+.pip-timer-setting-option:focus-visible {
+  color: var(--accent-strong);
+  background: var(--panel-soft);
+  outline: none;
+}
+
+.pip-timer-setting-option.selected {
+  border-color: rgba(21, 128, 95, 0.24);
+  color: var(--accent-strong);
+  background: rgba(21, 128, 95, 0.08);
+}
+
+.pip-timer-setting-option > span:not(.pip-timer-color-swatch) {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pip-timer-setting-option strong {
+  font-size: 0.8rem;
+  font-weight: 840;
+}
+
+.pip-timer-setting-option small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pip-timer-switch-option {
+  display: block;
+  cursor: default;
+}
+
+.pip-timer-setting-switch {
+  color: var(--ink);
+}
+
+.pip-timer-setting-switch .astryx-field-label {
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 840;
+  line-height: 1.2;
+}
+
+.pip-timer-setting-switch .astryx-field-label + span {
+  overflow: hidden;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pip-timer-switch-option .astryx-switch {
+  border: 1px solid color-mix(in srgb, var(--line) 86%, transparent);
+  background: color-mix(in srgb, var(--line) 18%, transparent);
+}
+
+.pip-timer-switch-option .astryx-switch-thumb {
+  background: var(--panel);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--line-strong) 70%, transparent),
+    0 2px 8px rgba(22, 48, 43, 0.1);
+}
+
+.pip-timer-switch-option.selected .astryx-switch {
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 64%, transparent);
+}
+
+.pip-timer-switch-option.selected .astryx-switch-thumb {
+  background: var(--accent);
+  box-shadow: 0 2px 9px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.pip-timer-color-swatch {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  border-radius: 999px;
+  background: var(--pip-timer-swatch-color);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.34);
+}
+
+.secondary-button.pip-timer-preview-button {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid rgba(21, 128, 95, 0.2);
+  border-radius: 8px;
+  color: var(--accent-strong);
+  background: rgba(21, 128, 95, 0.07);
+}
+
+.secondary-button.pip-timer-preview-button:hover,
+.secondary-button.pip-timer-preview-button:focus-visible {
+  background: rgba(21, 128, 95, 0.1);
+  outline: none;
+}
+
+.pip-timer-item-color-list {
+  display: grid;
+  gap: 7px;
+}
+
+.pip-timer-item-color-row {
+  display: grid;
+  grid-template-columns: minmax(116px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 8px 9px;
+  border: 1px solid color-mix(in srgb, var(--line) 78%, transparent);
+  border-radius: 9px;
+  background: transparent;
+}
+
+.pip-timer-item-color-row > div:first-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pip-timer-item-color-row strong {
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 840;
+}
+
+.pip-timer-item-color-row small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pip-timer-item-color-options {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pip-timer-color-choice {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color 0.14s ease,
+    background 0.14s ease,
+    transform 0.14s ease;
+}
+
+.pip-timer-color-choice:hover,
+.pip-timer-color-choice:focus-visible {
+  background: var(--panel-soft);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.pip-timer-color-choice.selected {
+  border-color: rgba(21, 128, 95, 0.36);
+  background: rgba(21, 128, 95, 0.1);
+}
+
+.pip-timer-color-choice .pip-timer-color-swatch {
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes pip-inline-preview-pulse {
+  0%,
+  100% {
+    box-shadow: inset 0 0 0 3px rgb(var(--pip-alert-rgb) / 0.18);
+  }
+  50% {
+    box-shadow: inset 0 0 0 7px rgb(var(--pip-alert-rgb) / 0.42);
+  }
+}
+
+@keyframes pip-inline-preview-flash {
+  0%,
+  100% {
+    color: #f4faf6;
+    background:
+      linear-gradient(
+        160deg,
+        var(--pip-alert-surface) 0%,
+        var(--pip-alert-surface-strong) 58%,
+        #0b0f0d 100%
+      );
+    box-shadow: inset 0 0 0 4px rgb(var(--pip-alert-rgb) / 0.18);
+  }
+  50% {
+    color: var(--pip-alert-text);
+    background: var(--pip-alert-color);
+    box-shadow: inset 0 0 0 10px rgb(var(--pip-alert-rgb) / 0.62);
+  }
+}
+
+@keyframes pip-inline-preview-text-flash {
+  0%,
+  100% {
+    color: var(--pip-alert-color);
+  }
+  50% {
+    color: var(--pip-alert-text);
+  }
+}
+
+@media (max-width: 760px) {
+  .pip-maker-backdrop {
+    padding: 12px;
+  }
+
+  .pip-maker-dialog {
+    max-height: calc(100vh - 24px);
+    padding: 16px;
+  }
+
+  .pip-maker-settings {
+    grid-template-columns: 1fr;
+  }
+
+  .pip-maker-settings.two-column.compact.special-core-appearance {
+    grid-template-columns: 1fr;
+  }
+
+  .pip-maker-step-viewport {
+    min-height: 0;
+  }
+
+  .pip-maker-preview-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .pip-maker-preview-note {
+    text-align: center;
+  }
+
+  .pip-maker-step-tabs {
+    width: 100%;
+  }
+
+  .pip-maker-step-tabs button {
+    flex: 1 1 0;
+    justify-content: center;
+  }
+
+  .pip-maker-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pip-maker-actions > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .pip-timer-item-color-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .pip-timer-item-color-options {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 901px) {
+  .pip-timer-control {
+    flex: 0 0 auto;
+  }
+}

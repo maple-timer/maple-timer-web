@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f7a55" />
+    <meta
+      name="description"
+      content="메이플스토리 재획/사냥 중 스킬 재설치, 룬 감지, 사냥 멈춤, 버프 종료 알림을 도와주는 브라우저 기반 보조 타이머입니다."
+    />
+    <meta
+      name="keywords"
+      content="메이플스토리 타이머, 메이플 타이머, 메이플 스킬 타이머, MapleStory timer, 야누스 타이머, 스킬 재설치 타이머, 룬 감지, 사냥 멈춤 알림, 버프 종료 알림"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="application-name" content="Maple Timer" />
+    <link rel="canonical" href="https://maple-timer.com/" />
+    <link
+      rel="preload"
+      href="/fonts/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maplestory%20OTF%20Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Maplestory%20OTF%20Light.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="Maple Timer" />
+    <meta property="og:title" content="메이플 타이머 - 재획 스킬, 룬, 버프 종료 알림" />
+    <meta
+      property="og:description"
+      content="메이플스토리 재획/사냥 중 스킬 재설치, 룬 감지, 사냥 멈춤, 버프 종료 알림을 도와주는 브라우저 기반 보조 타이머입니다."
+    />
+    <meta property="og:url" content="https://maple-timer.com/" />
+    <meta property="og:image" content="https://maple-timer.com/og-image.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="메이플 타이머 - 재획 스킬, 룬, 버프 종료 알림" />
+    <meta
+      name="twitter:description"
+      content="메이플스토리 재획/사냥 중 스킬 재설치, 룬 감지, 사냥 멈춤, 버프 종료 알림을 도와주는 브라우저 기반 보조 타이머입니다."
+    />
+    <meta name="twitter:image" content="https://maple-timer.com/og-image.png" />
+    <script>
+      (function () {
+        var measurementId = "__MAPLE_TIMER_GA_MEASUREMENT_ID__";
+        if (!/^G-[A-Z0-9]+$/.test(measurementId)) {
+          return;
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag =
+          window.gtag ||
+          function () {
+            window.dataLayer.push(arguments);
+          };
+
+        var scriptId = "maple-timer-google-analytics";
+        if (!document.getElementById(scriptId)) {
+          var script = document.createElement("script");
+          script.id = scriptId;
+          script.async = true;
+          script.src =
+            "https://www.googletagmanager.com/gtag/js?id=" +
+            encodeURIComponent(measurementId);
+          document.head.appendChild(script);
+        }
+
+        window.gtag("js", new Date());
+        window.gtag("config", measurementId, {
+          send_page_view: true,
+        });
+        window.__MAPLE_TIMER_GA_BOOTSTRAPPED__ = true;
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Maple Timer",
+        "url": "https://maple-timer.com/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web",
+        "description": "메이플스토리 재획/사냥 중 스킬 재설치, 룬 감지, 사냥 멈춤, 버프 종료 알림을 도와주는 브라우저 기반 보조 타이머입니다.",
+        "inLanguage": "ko-KR",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW"
+        }
+      }
+    </script>
+    <title>메이플 타이머 - 재획 스킬, 룬, 버프 종료 알림</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Maple Timer는 메이플스토리 재획/사냥 중 스킬 재설치, 룬 감지, 사냥 멈춤, 버프 종료 알림을 도와주는 브라우저 기반 보조 타이머입니다.
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

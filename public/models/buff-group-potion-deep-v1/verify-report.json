@@ -1,0 +1,92 @@
+{
+  "kind": "buff-group-runtime-bundle-verification",
+  "generatedAt": "2026-07-11T06:48:40.405333+00:00",
+  "elapsedMs": 9502.016,
+  "ok": true,
+  "checks": {
+    "targetAll": true,
+    "targetTest": true,
+    "unknownAll": true,
+    "reviewNegativeHeldout": true,
+    "broadClosure": true,
+    "logitsParity": true,
+    "embeddingParity": true,
+    "embeddingNormalized": true,
+    "portableCopy": true
+  },
+  "artifactRoot": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime",
+  "bundleId": "buff-group-potion-deep-v1",
+  "targetGroup": "potion",
+  "dataset": {
+    "targetAll": 9940,
+    "targetTest": 3688,
+    "unknownAll": 12144,
+    "reviewNegativeHeldout": 126
+  },
+  "results": {
+    "targetAll": {
+      "rows": 9940,
+      "basePass": 9940,
+      "finalPass": 9940,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null
+    },
+    "targetTest": {
+      "rows": 3688,
+      "basePass": 3688,
+      "finalPass": 3688,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null
+    },
+    "unknownAll": {
+      "rows": 12144,
+      "basePass": 1,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0
+    },
+    "reviewNegativeHeldout": {
+      "rows": 126,
+      "basePass": 1,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0
+    }
+  },
+  "broadClosure": {
+    "tested": 83307,
+    "candidates": 820,
+    "reviewedPositiveCandidates": 820,
+    "negativeCandidates": 0,
+    "ambiguousCandidates": 0,
+    "novelCandidates": 0
+  },
+  "parity": {
+    "logitsMaxAbsDiff": 3.3379e-06,
+    "embeddingMaxAbsDiff": 2.608e-07,
+    "embeddingNormMin": 0.99999982,
+    "embeddingNormMax": 1.00000012
+  },
+  "portability": {
+    "loaded": true,
+    "files": [
+      "buff-group-potion-deep-v1.onnx",
+      "buff-group-potion-deep-v1.onnx.data",
+      "policy.json",
+      "potion-positive-gate.json",
+      "runtime-artifacts.json",
+      "verify-report.json"
+    ]
+  },
+  "benchmark": {
+    "batchSize": 40,
+    "iterations": 120,
+    "averageMs": 11.6906,
+    "p95Ms": 14.8417,
+    "maxMs": 16.116
+  }
+}

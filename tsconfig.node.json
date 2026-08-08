@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": [
+    "vite.config.ts",
+    "scripts/release-notes-feed.ts",
+    "scripts/remote-recognition-v1/client-test-build-arm.ts",
+    "scripts/remote-recognition-v1/semantic-lab-build-gate.ts",
+    "scripts/remote-recognition-v1/semantic-lab-vite-guard.ts",
+    "src/contracts/deployment/appBuildInfo.ts",
+    "src/contracts/deployment/remoteRecognitionV1TestArm.ts",
+    "src/lib/patchNotes.ts"
+  ]
+}

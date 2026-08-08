@@ -1,0 +1,127 @@
+{
+  "modelId": "skill-deep-v2",
+  "modelVersion": "confirmed-bg-v1-seed20260632-r2-positive-gates-v2",
+  "variantId": "logitMargin-bg-max",
+  "source": {
+    "checkpoint": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/skill-deep-v2-confirmed-bg-v1-seed20260632-r2/skill-deep-v2.pt",
+    "report": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/skill-deep-v2-confirmed-bg-v1-seed20260632-r2/report.json",
+    "basePolicy": "policy.json"
+  },
+  "files": {
+    "onnx": "skill-deep-v2.onnx",
+    "onnxData": "skill-deep-v2.onnx.data",
+    "policy": "policy.json",
+    "janusGate": "janus-positive-gate.json",
+    "fountainGate": "fountain-positive-gate.json",
+    "barrierGate": "barrier-positive-gate.json"
+  },
+  "labels": [
+    "janus",
+    "barrier",
+    "fountain",
+    "background"
+  ],
+  "skills": [
+    "janus",
+    "barrier",
+    "fountain"
+  ],
+  "backgroundLabel": "background",
+  "scoreKind": "logitMargin",
+  "thresholdPolicy": "bg-max",
+  "thresholds": {
+    "janus": -0.325086,
+    "barrier": -0.4287504,
+    "fountain": -0.44925523
+  },
+  "decision": "Compute logitMargin for each target skill as target logit minus max(all other target logits and background logit). Accept the skill with the largest score-threshold margin when that margin is >= 0; otherwise return unknown. If the base target has a matching postGate, keep it only when the normalized embedding's maximum cosine similarity to that target's positive prototypes is at least the gate threshold. A failed gate returns unknown. Targets without a postGate are unchanged.",
+  "input": {
+    "shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "layout": "CHW",
+    "color": "RGB",
+    "normalization": "rgb = rgba.rgb / 255; input = (rgb - 0.5) / 0.5"
+  },
+  "output": {
+    "logits": {
+      "name": "logits",
+      "shape": [
+        1,
+        4
+      ],
+      "order": [
+        "janus",
+        "barrier",
+        "fountain",
+        "background"
+      ]
+    },
+    "embedding": {
+      "name": "embedding",
+      "shape": [
+        1,
+        96
+      ],
+      "normalization": "L2 normalized by the ONNX model"
+    }
+  },
+  "runtimeContract": {
+    "input": "parser-normalized 32x32 icon",
+    "outputKind": "target | unknown",
+    "targetSkillIds": [
+      "janus",
+      "barrier",
+      "fountain"
+    ],
+    "doesNotReadCountdownSeconds": true,
+    "doesNotTrackFrames": true
+  },
+  "modelConfig": {
+    "embeddingDim": 96,
+    "logitScale": 16.0
+  },
+  "contractVersion": 1,
+  "bundleId": "skill-deep-v2",
+  "postGates": {
+    "janus": {
+      "kind": "positivePrototypeCosine",
+      "artifact": "janus-positive-gate.json",
+      "applyWhen": "base decision is target janus",
+      "score": "max cosine similarity between embedding and positive prototypes",
+      "threshold": 0.93062396,
+      "prototypeCount": 32,
+      "embeddingDim": 96,
+      "failureDecision": "unknown",
+      "trainingUsesNegative": false,
+      "thresholdUsesNegative": false
+    },
+    "fountain": {
+      "kind": "positivePrototypeCosine",
+      "artifact": "fountain-positive-gate.json",
+      "applyWhen": "base decision is target fountain",
+      "score": "max cosine similarity between embedding and positive prototypes",
+      "threshold": 0.99,
+      "prototypeCount": 45,
+      "embeddingDim": 96,
+      "failureDecision": "unknown",
+      "trainingUsesNegative": false,
+      "thresholdUsesNegative": false
+    },
+    "barrier": {
+      "kind": "positivePrototypeCosine",
+      "artifact": "barrier-positive-gate.json",
+      "applyWhen": "base decision is target barrier",
+      "score": "max cosine similarity between embedding and positive prototypes",
+      "threshold": 0.99,
+      "prototypeCount": 38,
+      "embeddingDim": 96,
+      "failureDecision": "unknown",
+      "trainingUsesNegative": false,
+      "thresholdUsesNegative": false
+    }
+  }
+}

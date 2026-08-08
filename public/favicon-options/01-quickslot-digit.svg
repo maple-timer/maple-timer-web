@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Quickslot digit timer">
+  <rect width="64" height="64" rx="12" fill="#101713"/>
+  <rect x="9" y="9" width="46" height="46" rx="8" fill="#1b261f" stroke="#435348" stroke-width="2"/>
+  <path d="M21 16h22v7H28v8h13v7H28v10h16v7H21z" fill="#ffd94a"/>
+  <path d="M45 17h5v5h-5zM45 28h5v5h-5zM45 39h5v5h-5z" fill="#f8fff2"/>
+  <circle cx="17" cy="49" r="5" fill="#1f9d66"/>
+  <path d="M17 46v4l3 2" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1.8"/>
+</svg>

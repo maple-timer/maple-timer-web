@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Orange mob cooldown badge">
+  <rect width="64" height="64" rx="12" fill="#111611"/>
+  <path d="M11 29c2-13 11-20 21-20s19 7 21 20c1 7-6 11-21 11S10 36 11 29z" fill="#ef7d21"/>
+  <path d="M20 22c0-4 3-7 7-7 3 0 5 2 5 5 0 4-4 6-8 6-3 0-4-1-4-4zM38 17c5 0 9 3 9 8 0 4-3 6-8 6-4 0-7-2-7-6 0-5 2-8 6-8z" fill="#ffd39b"/>
+  <path d="M20 36c2 8 6 13 12 13s10-5 12-13c-7 3-17 3-24 0z" fill="#fff0cf"/>
+  <rect x="28" y="34" width="28" height="23" rx="5" fill="#0c110e" stroke="#435348" stroke-width="2"/>
+  <path d="M35 38h15v5H40v4h9v5h-9v3h11v5H35z" fill="#ffdc42"/>
+</svg>

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "bundleVersion": "rune-cascade-v9-runtime",
+  "modelVersion": "rune-cascade-v9",
+  "proposalModelVersion": "rune-strict-local-centernet-s4-v6",
+  "parity": {
+    "frames": 91,
+    "candidates": 455,
+    "maximumLogitAbsoluteError": 0.00029397010803222656,
+    "maximumScoreAbsoluteError": 1.2695789337158203e-05,
+    "minimumBranchThresholdDistance": 0.006742115020751949,
+    "scoreErrorToMinimumThresholdDistanceRatio": 0.001883057363762127,
+    "branchClassificationMismatches": 0,
+    "finalClassificationMismatches": 0,
+    "selectedCandidateMismatches": 0,
+    "worstLogitCandidate": "synthetic_rune_positive_pale_rounded_1#1",
+    "worstScoreCandidate": "synthetic_rune_positive_pale_rounded_1#1"
+  },
+  "tolerance": {
+    "maximumLogitAbsoluteError": 0.0005,
+    "maximumScoreAbsoluteError": 2e-05,
+    "maximumScoreErrorToThresholdDistanceRatio": 0.01,
+    "branchClassificationMismatches": 0,
+    "finalClassificationMismatches": 0,
+    "selectedCandidateMismatches": 0
+  },
+  "benchmark": {
+    "environment": "macOS arm64 CPU, single-threaded ONNX sessions",
+    "runs": 200,
+    "proposalInferenceMs": {
+      "median": 1.3689,
+      "p95": 1.4563,
+      "maximum": 1.5408
+    },
+    "gateBatchFiveInferenceMs": {
+      "median": 0.3522,
+      "p95": 0.391,
+      "maximum": 0.4774
+    },
+    "cascadeInferenceOnlyMs": {
+      "median": 1.6934,
+      "p95": 1.7902,
+      "maximum": 1.8808
+    },
+    "fullCascadeIncludingPillowPreprocessMs": {
+      "median": 6.0743,
+      "p95": 6.2323,
+      "maximum": 6.4451
+    },
+    "v7SingleModelInferenceMs": {
+      "median": 1.6675,
+      "p95": 1.7543,
+      "maximum": 1.9323
+    }
+  },
+  "modelSizes": {
+    "proposalBytes": 45397,
+    "gateBytes": 94546,
+    "totalBytes": 139943,
+    "v7SingleModelBytes": 54663,
+    "increaseOverV7Bytes": 85280,
+    "ratioToV7": 2.5601
+  },
+  "environment": {
+    "torch": "2.13.0",
+    "onnx": "1.22.0",
+    "onnxRuntime": "1.27.0",
+    "numpy": "2.5.1"
+  }
+}

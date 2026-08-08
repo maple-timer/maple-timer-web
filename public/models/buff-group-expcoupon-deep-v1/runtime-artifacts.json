@@ -1,0 +1,21 @@
+{
+  "kind": "buff-group-positive-gated-runtime-artifacts",
+  "generatedAt": "2026-07-11T05:25:57.531266+00:00",
+  "elapsedMs": 1668.176,
+  "contractVersion": 1,
+  "bundleId": "buff-group-expcoupon-deep-v1",
+  "targetGroup": "expCoupon",
+  "outputRoot": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-expcoupon-deep-v1-runtime",
+  "files": {
+    "onnx": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-expcoupon-deep-v1-runtime/buff-group-expcoupon-deep-v1.onnx",
+    "onnxData": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-expcoupon-deep-v1-runtime/buff-group-expcoupon-deep-v1.onnx.data",
+    "policy": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-expcoupon-deep-v1-runtime/policy.json",
+    "positiveGate": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-expcoupon-deep-v1-runtime/expcoupon-positive-gate.json"
+  },
+  "bytes": {
+    "onnx": 49183,
+    "onnxData": 3473408,
+    "policy": 2686,
+    "positiveGate": 839679
+  }
+}

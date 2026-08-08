@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple leaf timer classic">
+  <rect width="64" height="64" rx="14" fill="#18382b"/>
+  <path d="M32 6 37 22 52 15 44 30 58 36 42 39 48 55 34 46 32 61 30 46 16 55 22 39 6 36 20 30 12 15 27 22z" fill="#e97822"/>
+  <path d="M32 13 35 25 46 20 40 31 51 36 39 38 43 49 33 43 32 54 31 43 21 49 25 38 13 36 24 31 18 20 29 25z" fill="#ffb14d"/>
+  <circle cx="32" cy="35" r="14" fill="#fff5dc" stroke="#18382b" stroke-width="3"/>
+  <path d="M32 27v9l6 4" fill="none" stroke="#18382b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+</svg>

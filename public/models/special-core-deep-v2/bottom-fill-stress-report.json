@@ -1,0 +1,44 @@
+{
+  "kind": "special-core-deep-v2-bottom-fill-stress",
+  "generatedAt": "2026-07-11T07:15:50Z",
+  "elapsedMs": 95323.40195903,
+  "ok": true,
+  "artifact": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/special-core-deep-v2-runtime",
+  "sourceRows": 22925,
+  "variantsPerSource": 24,
+  "fills": [
+    0.2,
+    0.35,
+    0.5,
+    0.65,
+    0.8,
+    0.92
+  ],
+  "strengths": [
+    0.3,
+    0.45,
+    0.6,
+    0.75
+  ],
+  "thresholds": {
+    "base": 0.0,
+    "positiveGate": 0.94,
+    "rescue": 0.999
+  },
+  "results": {
+    "cases": 550200,
+    "basePass": 0,
+    "primaryPass": 0,
+    "rescueOnlyPass": 0,
+    "finalPass": 0
+  },
+  "maximumGateCase": {
+    "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/unified-target-gallery/crops/potion/framereview__2026-06-07T04-16-56-622Z-maple-frame-review__Volumes_Tape4_workspace_maple-lab_datasets_maplestory-huntin__frame-00054_slot-23.png",
+    "source": "manifest:potion",
+    "fill": 0.92,
+    "strength": 0.6,
+    "score": -3.93319082,
+    "gateScore": 0.99726653,
+    "decisionReason": "below_base_threshold"
+  }
+}

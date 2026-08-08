@@ -1,0 +1,43 @@
+{
+  "name": "buff-detector-yolov8n-q1",
+  "task": "detect MapleStory buff icons in the top-right quadrant",
+  "modelFamily": "YOLOv8n",
+  "classNames": ["buff_icon"],
+  "input": {
+    "name": "images",
+    "shape": [1, 3, 960, 960],
+    "dtype": "float32",
+    "layout": "NCHW",
+    "color": "RGB",
+    "normalization": "0..1"
+  },
+  "output": {
+    "name": "output0",
+    "shape": [1, 5, 18900],
+    "dtype": "float32"
+  },
+  "preprocess": {
+    "sourceCrop": "top-right quadrant",
+    "letterboxSize": 960
+  },
+  "postprocess": {
+    "confidenceThreshold": 0.5,
+    "nmsIouThreshold": 0.5,
+    "matchIouThresholdUsedForReview": 0.86
+  },
+  "acceptedGolden": {
+    "samples": 1939,
+    "boxes": 49986,
+    "baselinePath": "analysis/golden-baseline.json"
+  },
+  "reviewResult": {
+    "matched": 49986,
+    "misses": 0,
+    "falsePositives": 2,
+    "checkedExceptionIds": [
+      "rand_hunt_1366_768_1366_000065",
+      "rand_hunt_1920_1080_arxi1x3j_000219"
+    ]
+  },
+  "docs": "docs/DL_RUNTIME_HANDOFF.md"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Orange mushroom stopwatch">
+  <rect width="64" height="64" rx="14" fill="#f4f0dd"/>
+  <path d="M31 6h6v8h-6z" fill="#214334"/>
+  <path d="M17 15c4-7 10-10 18-10 9 0 16 5 18 14 2 8-5 13-21 13S12 24 17 15z" fill="#eb7a21"/>
+  <circle cx="27" cy="17" r="6" fill="#ffd095"/>
+  <circle cx="43" cy="19" r="5" fill="#ffd095"/>
+  <circle cx="32" cy="38" r="20" fill="#fff7df" stroke="#214334" stroke-width="5"/>
+  <path d="M32 27v12l9 5" fill="none" stroke="#214334" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <circle cx="32" cy="38" r="3" fill="#214334"/>
+  <path d="M19 54c4 4 22 4 26 0" fill="none" stroke="#eb7a21" stroke-linecap="round" stroke-width="4"/>
+</svg>

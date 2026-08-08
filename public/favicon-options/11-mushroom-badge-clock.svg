@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mushroom timer badge">
+  <rect width="64" height="64" rx="16" fill="#176c4d"/>
+  <circle cx="32" cy="34" r="24" fill="#fff2cf"/>
+  <path d="M14 27c1-11 9-17 18-17s17 6 18 17c1 6-5 10-18 10s-19-4-18-10z" fill="#ed7b22"/>
+  <circle cx="25" cy="23" r="5" fill="#ffd49b"/>
+  <circle cx="39" cy="22" r="5.5" fill="#ffd49b"/>
+  <path d="M22 34c1 9 5 15 10 15s9-6 10-15c-3 2-7 3-10 3s-7-1-10-3z" fill="#fff8df"/>
+  <circle cx="46" cy="45" r="12" fill="#173f31" stroke="#fff8df" stroke-width="3"/>
+  <path d="M46 38v8l5 3" fill="none" stroke="#ffdc42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

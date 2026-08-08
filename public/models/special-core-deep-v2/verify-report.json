@@ -1,0 +1,104 @@
+{
+  "kind": "special-core-deep-v2-runtime-verification",
+  "generatedAt": "2026-07-11T07:11:36Z",
+  "elapsedMs": 27502.23645801,
+  "ok": true,
+  "checks": {
+    "realPositive": true,
+    "syntheticPositive": true,
+    "existingUnknown": true,
+    "explicitNegative": true,
+    "kmsBroadClosure": true,
+    "reviewedUnknown": true,
+    "logitsParity": true,
+    "embeddingParity": true,
+    "embeddingNormalized": true,
+    "portableCopy": true,
+    "artifactHashes": true
+  },
+  "dataset": {
+    "realPositive": 41,
+    "syntheticPositive": 15876,
+    "existingUnknown": 22925,
+    "explicitNegative": 2,
+    "kmsGroups": 9286,
+    "kmsCases": 65002,
+    "reviewedUnknownGroups": 241
+  },
+  "results": {
+    "realPositive": {
+      "rows": 41,
+      "basePass": 39,
+      "finalPass": 41,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null,
+      "examples": []
+    },
+    "syntheticPositive": {
+      "rows": 15876,
+      "basePass": 15876,
+      "finalPass": 15876,
+      "errors": 0,
+      "recall": 1.0,
+      "fpRate": null,
+      "examples": []
+    },
+    "existingUnknown": {
+      "rows": 22925,
+      "basePass": 0,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0,
+      "examples": []
+    },
+    "explicitNegative": {
+      "rows": 2,
+      "basePass": 1,
+      "finalPass": 0,
+      "errors": 0,
+      "recall": null,
+      "fpRate": 0.0,
+      "examples": []
+    },
+    "kms": {
+      "groups": 9286,
+      "rows": 65002,
+      "basePass": 7,
+      "finalPass": 0,
+      "errors": 0,
+      "fpRate": 0.0,
+      "reviewedRows": 1687,
+      "reviewedErrors": 0,
+      "examples": []
+    }
+  },
+  "parity": {
+    "logitsMaxAbsDiff": 3.0994e-06,
+    "embeddingMaxAbsDiff": 3.092e-07,
+    "embeddingNormMin": 0.99999994,
+    "embeddingNormMax": 1.0
+  },
+  "portability": {
+    "loaded": true,
+    "files": [
+      "policy.json",
+      "runtime-artifacts.json",
+      "special-core-deep-v2.onnx",
+      "special-core-deep-v2.onnx.data",
+      "special-core-positive-gate.json"
+    ]
+  },
+  "artifactHashes": {
+    "ok": true,
+    "mismatches": []
+  },
+  "benchmark": {
+    "batchSize": 40,
+    "iterations": 200,
+    "averageMs": 7.6525,
+    "p95Ms": 8.4063,
+    "maxMs": 10.0886
+  }
+}

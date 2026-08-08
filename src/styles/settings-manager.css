@@ -1,0 +1,843 @@
+.settings-manager-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: color-mix(in srgb, var(--background) 42%, transparent);
+  backdrop-filter: blur(5px);
+}
+
+.settings-manager-dialog {
+  display: grid;
+  gap: 12px;
+  width: min(840px, 100%);
+  max-height: min(88vh, 860px);
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--ink);
+  font-family:
+    "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    "Noto Sans KR", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: var(--panel);
+  box-shadow: 0 24px 70px color-mix(in srgb, #000000 20%, transparent);
+  overflow: auto;
+}
+
+.settings-manager-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.settings-manager-header-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 14px;
+  min-width: 0;
+}
+
+.settings-manager-dialog-header h2 {
+  margin-bottom: 6px;
+  font-size: 1.18rem;
+}
+
+.settings-manager-dialog-header p:not(.eyebrow),
+.settings-dialog-section-heading p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.42;
+}
+
+.settings-manager-current-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+}
+
+.settings-manager-current-state span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 760;
+}
+
+.settings-manager-current-state strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--accent-strong);
+  font-size: 0.86rem;
+  font-weight: 780;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-dialog-section {
+  display: grid;
+  gap: 13px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--panel-soft) 54%, transparent);
+}
+
+.settings-dialog-section.danger-zone {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--danger) 22%, var(--line));
+  background: color-mix(in srgb, var(--danger) 5%, transparent);
+}
+
+.settings-dialog-section-heading {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.settings-dialog-section-heading h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.settings-file-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+.settings-file-input {
+  display: none;
+}
+
+.settings-backup-section {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  gap: 10px;
+}
+
+.settings-backup-copy {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.settings-preset-section {
+  display: grid;
+  align-items: stretch;
+  gap: 13px;
+  min-width: 0;
+}
+
+.settings-preset-copy {
+  display: grid;
+  gap: 9px;
+  min-width: 0;
+}
+
+.settings-preset-workflow {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+}
+
+.settings-preset-control-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: end;
+  gap: 10px;
+  min-width: 0;
+}
+
+.settings-preset-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+.settings-preset-apply-button {
+  color: var(--accent-strong);
+  border-color: color-mix(in srgb, var(--accent) 24%, transparent);
+  background: color-mix(in srgb, var(--accent-soft) 38%, transparent);
+}
+
+.settings-preset-apply-button:hover,
+.settings-preset-apply-button:focus-visible {
+  color: var(--accent-strong);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  background: color-mix(in srgb, var(--accent-soft) 52%, transparent);
+}
+
+.settings-preset-apply-button:disabled {
+  color: var(--muted);
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--panel-soft) 34%, transparent);
+  opacity: 0.86;
+}
+
+.settings-manager-ghost-action {
+  color: var(--ink);
+  border-color: transparent;
+  background: transparent;
+  transform: translateY(0);
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.settings-manager-ghost-action:hover,
+.settings-manager-ghost-action:focus-visible {
+  color: var(--accent-strong);
+  border-color: transparent;
+  background: color-mix(in srgb, var(--accent-soft) 46%, transparent);
+}
+
+.settings-manager-ghost-action:active {
+  transform: translateY(1px);
+}
+
+.settings-manager-danger-ghost {
+  color: var(--danger);
+  border-color: transparent;
+  background: transparent;
+  transform: translateY(0);
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.settings-manager-danger-ghost:hover,
+.settings-manager-danger-ghost:focus-visible {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--danger) 8%, transparent);
+}
+
+.settings-manager-danger-ghost:active {
+  transform: translateY(1px);
+}
+
+.settings-preset-apply-button.attention {
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent),
+    0 10px 24px color-mix(in srgb, var(--accent) 16%, transparent);
+}
+
+.settings-preset-apply-hint {
+  margin: -2px 0 0;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.settings-preset-select {
+  width: 100%;
+  min-width: 0;
+}
+
+.settings-preset-picker {
+  min-width: 0;
+  position: relative;
+  width: 100%;
+}
+
+.settings-preset-picker-trigger {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 39px;
+  padding: 0 10px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 84%, transparent);
+  text-align: left;
+  transform: translateY(0);
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.settings-preset-picker-trigger:hover,
+.settings-preset-picker-trigger:focus-visible,
+.settings-preset-picker:has(.settings-preset-picker-trigger[aria-expanded="true"])
+  .settings-preset-picker-trigger {
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 36%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent);
+  outline: none;
+}
+
+.settings-preset-picker-trigger:active {
+  transform: translateY(1px);
+}
+
+.settings-preset-picker-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.settings-preset-picker-selected {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 740;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-preset-picker-menu {
+  position: fixed;
+  z-index: 100;
+  display: grid;
+  gap: 3px;
+  overflow: auto;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  box-shadow: 0 18px 44px color-mix(in srgb, #000000 18%, transparent);
+}
+
+.settings-preset-picker-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 30px 30px;
+  align-items: center;
+  gap: 4px;
+  min-height: 36px;
+  padding: 3px;
+  border: 0;
+  border-radius: 7px;
+  color: var(--ink);
+  background: transparent;
+  text-align: left;
+}
+
+.settings-preset-picker-option-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 32px;
+  padding: 5px 7px;
+  border: 0;
+  border-radius: 6px;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+}
+
+.settings-preset-picker-option-main span {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-preset-picker-edit,
+.settings-preset-picker-delete {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+}
+
+.settings-preset-picker-delete {
+  color: var(--danger);
+}
+
+.settings-preset-picker-option:hover,
+.settings-preset-picker-option:focus-within,
+.settings-preset-picker-option-main:focus-visible,
+.settings-preset-picker-edit:hover,
+.settings-preset-picker-edit:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 60%, transparent);
+  outline: none;
+}
+
+.settings-preset-picker-delete:hover,
+.settings-preset-picker-delete:focus-visible {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+  outline: none;
+}
+
+.settings-preset-picker-option.selected {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 60%, transparent);
+  font-weight: 760;
+}
+
+.settings-backup-notes {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.settings-manager-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 690;
+  line-height: 1.4;
+}
+
+.settings-manager-note.strong {
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  border: 1px solid color-mix(in srgb, #f2a23a 22%, var(--line));
+  border-radius: 999px;
+  color: color-mix(in srgb, #f2a23a 72%, var(--ink));
+  background: color-mix(in srgb, #f2a23a 8%, transparent);
+  font-weight: 760;
+}
+
+.settings-action-backdrop {
+  z-index: 110;
+  background: color-mix(in srgb, var(--background) 48%, transparent);
+  backdrop-filter: blur(5px);
+}
+
+.settings-action-dialog {
+  display: grid;
+  gap: 14px;
+  width: min(460px, 100%);
+  padding: 18px;
+  border-radius: 16px;
+  font-family:
+    "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    "Noto Sans KR", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.settings-action-dialog-header {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.settings-action-dialog h2 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.settings-action-dialog p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 680;
+  line-height: 1.48;
+}
+
+.settings-action-dialog-content {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.settings-action-field {
+  margin-top: 2px;
+}
+
+.settings-action-field input {
+  min-height: 42px;
+  border-color: var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel-soft) 40%, transparent);
+}
+
+.settings-action-field input:focus {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent);
+  outline: none;
+}
+
+.settings-action-error {
+  margin-top: 8px;
+  color: var(--danger);
+  font-size: 0.82rem;
+  font-weight: 720;
+}
+
+.settings-action-dialog-actions {
+  margin-top: 2px;
+}
+
+.settings-action-secondary,
+.settings-action-primary,
+.settings-action-danger {
+  border-color: transparent;
+  transform: translateY(0);
+  transition:
+    background 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.settings-action-secondary {
+  background: transparent;
+}
+
+.settings-action-secondary:hover,
+.settings-action-secondary:focus-visible {
+  color: var(--accent-strong);
+  border-color: transparent;
+  background: color-mix(in srgb, var(--accent-soft) 46%, transparent);
+}
+
+.settings-action-primary {
+  color: var(--background);
+  background: var(--accent);
+}
+
+.settings-action-primary:hover,
+.settings-action-primary:focus-visible {
+  background: var(--accent-strong);
+}
+
+.settings-action-danger {
+  background: color-mix(in srgb, var(--danger) 8%, transparent);
+}
+
+.settings-action-danger:hover,
+.settings-action-danger:focus-visible {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--danger) 13%, transparent);
+}
+
+.settings-action-secondary:active,
+.settings-action-primary:active,
+.settings-action-danger:active {
+  transform: translateY(1px);
+}
+
+.settings-apply-dialog {
+  width: min(500px, 100%);
+}
+
+.settings-apply-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.settings-apply-summary div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--panel-soft) 52%, transparent);
+}
+
+.settings-apply-summary dt {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.settings-apply-summary dd {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.95rem;
+  font-weight: 850;
+}
+
+.settings-apply-warning {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid color-mix(in srgb, #f2a23a 24%, var(--line));
+  border-radius: 10px;
+  color: color-mix(in srgb, #f2a23a 76%, var(--ink));
+  background: color-mix(in srgb, #f2a23a 8%, transparent);
+  font-size: 0.82rem;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.settings-apply-missing-sound {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--danger) 28%, var(--line));
+  border-radius: 10px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--danger) 7%, transparent);
+}
+
+.settings-apply-missing-sound-title {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  color: var(--danger);
+}
+
+.settings-apply-missing-sound-title strong {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 850;
+}
+
+.settings-apply-missing-sound-title span {
+  display: block;
+  margin-top: 1px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.settings-apply-missing-sound p {
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.settings-apply-missing-sound p strong {
+  color: var(--danger);
+  font-weight: 880;
+}
+
+.settings-apply-missing-sound ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.settings-apply-missing-sound li {
+  max-width: 100%;
+  padding: 4px 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: transparent;
+  font-size: 0.76rem;
+  font-weight: 760;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-apply-warnings {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 690;
+}
+
+.settings-import-selection {
+  display: grid;
+  gap: 8px;
+}
+
+.settings-import-selection-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.settings-import-selection-header strong {
+  font-size: 0.84rem;
+}
+
+.settings-import-selection-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.settings-inline-button {
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: var(--muted);
+  background: transparent;
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.settings-inline-button:hover,
+.settings-inline-button:focus-visible {
+  color: var(--accent-strong);
+  border-color: transparent;
+  background: color-mix(in srgb, var(--accent-soft) 44%, transparent);
+  outline: none;
+}
+
+.settings-import-option-list {
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.settings-import-option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--panel-soft) 48%, transparent);
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    color 0.16s ease;
+}
+
+.settings-import-option:hover,
+.settings-import-option:focus-within,
+.settings-import-option:has(input:checked) {
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 42%, transparent);
+}
+
+.settings-import-option input {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+}
+
+.settings-import-option input::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+  opacity: 0;
+  transform: scale(0.55);
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease;
+}
+
+.settings-import-option input:checked {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-soft) 64%, transparent);
+}
+
+.settings-import-option input:checked::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.settings-import-option span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 760;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .settings-manager-dialog {
+    padding: 14px;
+  }
+
+  .settings-manager-dialog-header,
+  .settings-file-actions,
+  .settings-import-selection-header,
+  .settings-preset-actions,
+  .settings-preset-section {
+    align-items: stretch;
+  }
+
+  .settings-manager-dialog-header,
+  .settings-dialog-section.danger-zone,
+  .settings-manager-current-state,
+  .settings-preset-control-row,
+  .settings-preset-section,
+  .settings-backup-section {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-manager-dialog-header {
+    display: grid;
+  }
+
+  .settings-file-actions,
+  .settings-import-selection-actions,
+  .settings-preset-actions,
+  .settings-preset-workflow {
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .settings-file-actions .secondary-button,
+  .settings-import-selection-actions .settings-inline-button,
+  .settings-preset-actions .primary-button,
+  .settings-preset-actions .secondary-button,
+  .settings-preset-actions .danger-button {
+    flex: 1;
+  }
+
+  .settings-import-selection-header {
+    display: grid;
+  }
+
+  .settings-file-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-apply-summary {
+    grid-template-columns: 1fr;
+  }
+}

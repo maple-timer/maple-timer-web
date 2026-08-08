@@ -1,0 +1,28 @@
+{
+  "name": "maple-timer",
+  "compatibility_date": "2026-04-26",
+  "pages_build_output_dir": "./dist",
+  "kv_namespaces": [
+    {
+      "binding": "DEBUG_SAMPLES",
+      "id": "97845ebc57f54732a17607b184e1bebc"
+    },
+    {
+      "binding": "SUPPORTERS",
+      "id": "eb8350a939814a0e9b62d2958dd70ecd"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "REPORTS_DB",
+      "database_name": "maple-timer-reports",
+      "database_id": "fb2b43dd-dcdf-4b94-a4a0-83253c4d6249"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "REPORT_ASSETS",
+      "bucket_name": "maple-timer-report-assets"
+    }
+  ]
+}

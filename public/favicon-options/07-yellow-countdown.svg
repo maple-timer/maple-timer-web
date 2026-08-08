@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Yellow countdown">
+  <rect width="64" height="64" rx="12" fill="#0b0e0c"/>
+  <path d="M14 13h36v10H26v9h21v9H26v10h25v10H14z" fill="#f6d941"/>
+  <path d="M14 13h36v10H26v9h21v9H26v10h25v10H14z" fill="none" stroke="#fff8c8" stroke-width="2" opacity=".65"/>
+  <path d="M47 9h7v7h-7zM47 27h7v7h-7zM47 45h7v7h-7z" fill="#ffffff"/>
+  <path d="M10 54c7-2 12-1 17 3" fill="none" stroke="#1f9d66" stroke-linecap="round" stroke-width="4"/>
+</svg>

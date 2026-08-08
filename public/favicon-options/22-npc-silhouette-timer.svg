@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple style NPC silhouette timer">
+  <rect width="64" height="64" rx="14" fill="#1b2a21"/>
+  <path d="M19 18c4-8 12-11 20-8 6 2 9 7 10 13-8-5-22-6-30-5z" fill="#ec7d24"/>
+  <path d="M19 18c-3 2-5 5-6 9 8-4 28-3 40 2-1-4-2-6-4-8-9-4-21-6-30-3z" fill="#111611"/>
+  <circle cx="32" cy="31" r="13" fill="#fff0cf"/>
+  <path d="M20 50c2-9 7-14 12-14s10 5 12 14z" fill="#111611"/>
+  <circle cx="46" cy="46" r="12" fill="#fff8e6" stroke="#1b2a21" stroke-width="4"/>
+  <path d="M46 39v8l5 3" fill="none" stroke="#1b2a21" stroke-linecap="round" stroke-width="3"/>
+</svg>

@@ -1,0 +1,1411 @@
+:root[data-theme="dark"] .secondary-button,
+:root[data-theme="dark"] .icon-button,
+:root[data-theme="dark"] .skill-specific-info-button,
+:root[data-theme="dark"] .capture-collapse-button {
+  color: var(--ink);
+  background: var(--panel-soft);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .header-ghost-button,
+:root[data-theme="dark"] .app-header .secondary-button {
+  color: var(--ink);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .app-header .pip-timer-control .secondary-button {
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .secondary-button:hover,
+:root[data-theme="dark"] .icon-button:hover,
+:root[data-theme="dark"] .skill-specific-info-button:hover,
+:root[data-theme="dark"] .skill-specific-info-button:focus-visible,
+:root[data-theme="dark"] .capture-collapse-button:hover,
+:root[data-theme="dark"] .capture-collapse-button:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 8%, var(--panel-soft));
+  border-color: var(--line-strong);
+}
+
+:root[data-theme="dark"] .header-ghost-button:hover,
+:root[data-theme="dark"] .header-ghost-button:focus-visible,
+:root[data-theme="dark"] .app-header .secondary-button:hover,
+:root[data-theme="dark"] .app-header .secondary-button:focus-visible {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-button.active {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-button.active:hover,
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-button.active:focus-visible {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .pip-timer-setting-option:hover,
+:root[data-theme="dark"] .pip-timer-setting-option:focus-visible {
+  background: color-mix(in srgb, var(--accent) 7%, var(--panel-soft));
+}
+
+:root[data-theme="dark"] .pip-timer-setting-option.selected {
+  border-color: color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+:root[data-theme="dark"] .pip-timer-switch-option .astryx-switch {
+  background: color-mix(in srgb, var(--line) 34%, transparent);
+  border-color: color-mix(in srgb, var(--line) 86%, transparent);
+}
+
+:root[data-theme="dark"] .pip-timer-switch-option .astryx-switch-thumb {
+  background: color-mix(in srgb, var(--panel) 76%, #ffffff);
+  box-shadow:
+    inset 0 0 0 1px var(--line-strong),
+    0 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+:root[data-theme="dark"] .pip-timer-switch-option.selected .astryx-switch {
+  background: color-mix(in srgb, var(--accent-strong) 17%, transparent);
+  border-color: color-mix(in srgb, var(--accent-strong) 32%, var(--line));
+}
+
+:root[data-theme="dark"] .pip-timer-switch-option.selected .astryx-switch-thumb {
+  background: #8ee8bd;
+}
+
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-preview-button {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-preview-button:hover,
+:root[data-theme="dark"] .app-header .secondary-button.pip-timer-preview-button:focus-visible {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+}
+
+:root[data-theme="dark"] .hunt-stall-warning-button {
+  --tooltip-button-color: #ffd27a;
+}
+
+:root[data-theme="dark"] .hunt-stall-warning-button:hover,
+:root[data-theme="dark"] .hunt-stall-warning-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 86%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 10%, transparent);
+}
+
+:root[data-theme="dark"] .rune-logic-info-button {
+  --tooltip-button-color: #b9a7ff;
+}
+
+:root[data-theme="dark"] .rune-logic-info-button:hover,
+:root[data-theme="dark"] .rune-logic-info-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 88%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 10%, transparent);
+}
+
+:root[data-theme="dark"] .buff-expiry-warning-button {
+  --tooltip-button-color: #f0b86b;
+}
+
+:root[data-theme="dark"] .buff-expiry-warning-button:hover,
+:root[data-theme="dark"] .buff-expiry-warning-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 88%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 10%, transparent);
+}
+
+:root[data-theme="dark"] .capture-windows-info-button {
+  --tooltip-button-color: #f0b86b;
+}
+
+:root[data-theme="dark"] .capture-windows-info-button:hover,
+:root[data-theme="dark"] .capture-windows-info-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 88%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 10%, transparent);
+}
+
+:root[data-theme="dark"] .primary-button {
+  color: #061317;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+:root[data-theme="dark"] .primary-button:hover {
+  background: color-mix(in srgb, var(--accent) 86%, #ffffff 14%);
+  border-color: color-mix(in srgb, var(--accent) 86%, #ffffff 14%);
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-secondary,
+:root[data-theme="dark"] .feedback-actions .feedback-action-primary {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-secondary {
+  color: var(--muted);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-primary {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 42%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-secondary:hover,
+:root[data-theme="dark"] .feedback-actions .feedback-action-secondary:focus-visible {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel-soft) 72%, transparent);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-primary:hover,
+:root[data-theme="dark"] .feedback-actions .feedback-action-primary:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 68%, transparent);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .feedback-actions .feedback-action-button:disabled {
+  color: color-mix(in srgb, var(--muted) 62%, transparent);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .theme-mode-control {
+  background: color-mix(in srgb, var(--panel) 78%, transparent);
+  border-color: color-mix(in srgb, var(--line) 86%, transparent);
+}
+
+:root[data-theme="dark"] .theme-mode-control .motion-segmented-control-pill {
+  background: color-mix(in srgb, var(--panel) 92%, var(--accent-soft));
+  border-color: color-mix(in srgb, var(--line-strong) 74%, var(--accent));
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .hunt-mode-toggle {
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .hunt-mode-toggle::before,
+:root[data-theme="dark"] .hunt-mode-toggle::after,
+:root[data-theme="dark"] .hunt-mode-option:not(:last-of-type)::after,
+:root[data-theme="dark"] .skill-detection-source-toggle::before,
+:root[data-theme="dark"] .skill-detection-source-toggle::after,
+:root[data-theme="dark"] .skill-detection-source-option:first-of-type::after {
+  background: color-mix(in srgb, var(--line) 74%, transparent);
+}
+
+:root[data-theme="dark"] .hunt-mode-toggle .motion-segmented-control-pill,
+:root[data-theme="dark"] .skill-detection-source-toggle .motion-segmented-control-pill {
+  background: var(--accent);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .theme-mode-option.selected {
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .site-alert-count {
+  color: var(--ink);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .site-alert-count:hover {
+  color: var(--accent-strong);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .hunt-mode-option.selected {
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .hunt-mode-new-badge {
+  color: #fbbf24;
+}
+
+:root[data-theme="dark"] .skill-detection-source-option.selected {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .janus-buff-duration-guide-chip {
+  background: color-mix(in srgb, #8ea0ff 11%, transparent);
+  border-color: color-mix(in srgb, #8ea0ff 31%, transparent);
+  color: color-mix(in srgb, #bac5ff 86%, #ffffff);
+}
+
+:root[data-theme="dark"] .janus-buff-duration-guide-chip:hover,
+:root[data-theme="dark"] .janus-buff-duration-guide-chip:focus-visible {
+  background: color-mix(in srgb, #8ea0ff 17%, transparent);
+  border-color: color-mix(in srgb, #8ea0ff 44%, transparent);
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .janus-buff-duration-guide-content video {
+  border-color: color-mix(in srgb, var(--line-strong) 72%, #8ea0ff);
+}
+
+:root[data-theme="dark"] .motion-segmented-control-pill {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .dashboard-panel,
+:root[data-theme="dark"] .capture-panel,
+:root[data-theme="dark"] .rune-alert-panel,
+:root[data-theme="dark"] .hunt-stall-panel,
+:root[data-theme="dark"] .general-timer-panel,
+:root[data-theme="dark"] .dashboard-tooltip,
+:root[data-theme="dark"] .column-tooltip,
+:root[data-theme="dark"] .capture-tooltip,
+:root[data-theme="dark"] .floating-tooltip,
+:root[data-theme="dark"] .maple-hover-card,
+:root[data-theme="dark"] .confirm-dialog,
+:root[data-theme="dark"] .feedback-dialog,
+:root[data-theme="dark"] .issue-report-dialog,
+:root[data-theme="dark"] .onboarding-dialog,
+:root[data-theme="dark"] .usage-guide-dialog,
+:root[data-theme="dark"] .usage-guide-hero,
+:root[data-theme="dark"] .usage-guide-section,
+:root[data-theme="dark"] .privacy-dialog,
+:root[data-theme="dark"] .privacy-summary,
+:root[data-theme="dark"] .privacy-section,
+:root[data-theme="dark"] .crop-modal-header,
+:root[data-theme="dark"] .crop-warning-dialog,
+:root[data-theme="dark"] .inline-skill-editor,
+:root[data-theme="dark"] .general-timer-inline-editor {
+  color: var(--ink);
+  background: var(--panel);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .volume-boost-close-button {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .volume-boost-close-button:hover,
+:root[data-theme="dark"] .volume-boost-close-button:focus-visible,
+:root[data-theme="dark"] .volume-boost-preview-card:hover,
+:root[data-theme="dark"] .volume-boost-preview-card:focus-visible {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+:root[data-theme="dark"] .volume-boost-preview-card {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+:root[data-theme="dark"] .volume-boost-play-orb {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--accent-strong) 28%, transparent);
+}
+
+:root[data-theme="dark"] .volume-boost-preview-copy strong {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .volume-boost-preview-copy span {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .volume-boost-wave i {
+  background: #ffd27f;
+}
+
+:root[data-theme="dark"] .crop-warning-dialog p,
+:root[data-theme="dark"] .crop-warning-list li {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .crop-warning-list li::before {
+  background: var(--accent);
+}
+
+:root[data-theme="dark"] .crop-warning-icon {
+  color: #ffd28a;
+  background: rgba(220, 137, 30, 0.16);
+}
+
+:root[data-theme="dark"] .skill-table,
+:root[data-theme="dark"] .rune-table,
+:root[data-theme="dark"] .hunt-stall-table,
+:root[data-theme="dark"] .general-timer-table,
+:root[data-theme="dark"] .skill-header-cell,
+:root[data-theme="dark"] .rune-table th,
+:root[data-theme="dark"] .hunt-stall-table th,
+:root[data-theme="dark"] .general-timer-table th,
+:root[data-theme="dark"] .skill-cell,
+:root[data-theme="dark"] .rune-table td,
+:root[data-theme="dark"] .hunt-stall-table td,
+:root[data-theme="dark"] .general-timer-table td {
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .skill-cell,
+:root[data-theme="dark"] .rune-table td,
+:root[data-theme="dark"] .hunt-stall-table td,
+:root[data-theme="dark"] .general-timer-table td {
+  color: #eef3ed;
+}
+
+:root[data-theme="dark"] .skill-header-cell,
+:root[data-theme="dark"] .rune-table th,
+:root[data-theme="dark"] .hunt-stall-table th,
+:root[data-theme="dark"] .general-timer-table th {
+  color: #b6c2bb;
+}
+
+:root[data-theme="dark"] .tooltip-help-content li {
+  color: #d6ded8;
+}
+
+:root[data-theme="dark"] .skill-sample-guide-tooltip-content li {
+  color: #d6ded8;
+}
+
+:root[data-theme="dark"] .skill-row-group,
+:root[data-theme="dark"] .rune-table tbody tr.expanded-row td,
+:root[data-theme="dark"] .hunt-stall-table tbody tr.expanded-row td,
+:root[data-theme="dark"] .general-timer-table tbody tr.expanded-row td,
+:root[data-theme="dark"] .general-timer-editor-row td,
+:root[data-theme="dark"] .inline-editor-row td {
+  background: var(--panel);
+}
+
+:root[data-theme="dark"] .skill-row-group.is-disabled-row {
+  background: color-mix(in srgb, var(--panel) 82%, var(--panel-soft));
+}
+
+:root[data-theme="dark"] .rune-table tbody tr.is-disabled-row td,
+:root[data-theme="dark"] .hunt-stall-table tbody tr.is-disabled-row td,
+:root[data-theme="dark"] .general-timer-table tbody tr.is-disabled-row td {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .dashboard-row:hover,
+:root[data-theme="dark"] .dashboard-row:focus-visible {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .skill-row-group.expanded-row,
+:root[data-theme="dark"] .rune-table tbody tr.expanded-row td,
+:root[data-theme="dark"] .hunt-stall-table tbody tr.expanded-row td,
+:root[data-theme="dark"] .general-timer-table tbody tr.expanded-row td {
+  background: var(--row-expanded-bg);
+  border-color: var(--row-expanded-border);
+}
+
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-alert-row.expanded-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.expanded-row > td {
+  background: var(--panel);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-alert-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.is-disabled-row.expanded-row > td {
+  background: var(--panel);
+}
+
+:root[data-theme="dark"] .general-timer-editor-row td,
+:root[data-theme="dark"] .inline-editor-row td,
+:root[data-theme="dark"] .inline-skill-editor,
+:root[data-theme="dark"] .general-timer-inline-editor {
+  background: var(--row-editor-bg);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .inline-editor-row td:has(.inline-editor-command-layout),
+:root[data-theme="dark"] .general-timer-editor-row td:has(.inline-editor-command-layout),
+:root[data-theme="dark"] .inline-editor-command-layout {
+  background: var(--panel);
+}
+
+:root[data-theme="dark"] .skill-row-group.expanded-row,
+:root[data-theme="dark"] .skill-row-group.expanded-row .skill-row-details,
+:root[data-theme="dark"] .skill-row-group.expanded-row .inline-editor-command-layout,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row > td,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.expanded-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.is-disabled-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row + .rune-editor-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row + .hunt-stall-editor-row > td,
+:root[data-theme="dark"]
+  .hunt-stall-table
+  tbody
+  > tr.hunt-stall-row.expanded-row
+  + .hunt-stall-manual-preview-row
+  + .hunt-stall-editor-row
+  > td,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row + .buff-expiry-editor-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.expanded-row + .general-timer-editor-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row + .rune-editor-row .inline-editor-command-layout,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row + .hunt-stall-editor-row .inline-editor-command-layout,
+:root[data-theme="dark"]
+  .hunt-stall-table
+  tbody
+  > tr.hunt-stall-row.expanded-row
+  + .hunt-stall-manual-preview-row
+  + .hunt-stall-editor-row
+  .inline-editor-command-layout,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row + .buff-expiry-editor-row .inline-editor-command-layout,
+:root[data-theme="dark"]
+  .general-timer-table
+  tbody
+  > tr.general-timer-row.expanded-row
+  + .general-timer-editor-row
+  .inline-editor-command-layout,
+:root[data-theme="dark"] .skill-row-group.expanded-row .inline-editor-command-rail,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row + .rune-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row + .hunt-stall-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"]
+  .hunt-stall-table
+  tbody
+  > tr.hunt-stall-row.expanded-row
+  + .hunt-stall-manual-preview-row
+  + .hunt-stall-editor-row
+  .inline-editor-command-rail,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row + .buff-expiry-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"]
+  .general-timer-table
+  tbody
+  > tr.general-timer-row.expanded-row
+  + .general-timer-editor-row
+  .inline-editor-command-rail {
+  background: var(--row-expanded-group-bg);
+}
+
+:root[data-theme="dark"] .skill-row-group.expanded-row .inline-editor-command-rail,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row + .rune-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row + .hunt-stall-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row + .buff-expiry-editor-row .inline-editor-command-rail,
+:root[data-theme="dark"]
+  .general-timer-table
+  tbody
+  > tr.general-timer-row.expanded-row
+  + .general-timer-editor-row
+  .inline-editor-command-rail {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .skill-row-group.expanded-row .skill-row-details,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-alert-row.expanded-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row > td,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.expanded-row > td,
+:root[data-theme="dark"] .rune-table tbody > tr.rune-dashboard-row.expanded-row + .rune-editor-row > td,
+:root[data-theme="dark"] .hunt-stall-table tbody > tr.hunt-stall-row.expanded-row + .hunt-stall-editor-row > td,
+:root[data-theme="dark"]
+  .hunt-stall-table
+  tbody
+  > tr.hunt-stall-row.expanded-row
+  + .hunt-stall-manual-preview-row
+  + .hunt-stall-editor-row
+  > td,
+:root[data-theme="dark"] .buff-expiry-table tbody > tr.rune-alert-row.expanded-row + .buff-expiry-editor-row > td,
+:root[data-theme="dark"] .general-timer-table tbody > tr.general-timer-row.expanded-row + .general-timer-editor-row > td {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+:root[data-theme="dark"] .alerts-disable-all-toggle {
+  color: var(--danger);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .master-volume-trigger,
+:root[data-theme="dark"] .master-volume-trigger:hover,
+:root[data-theme="dark"] .master-volume-trigger:focus-visible,
+:root[data-theme="dark"] .master-volume-trigger[aria-expanded="true"] {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .master-volume-popover {
+  background: color-mix(in srgb, var(--panel) 86%, #000000);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .master-volume-popover {
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+}
+
+:root[data-theme="dark"] .rune-beta-badge {
+  --chip-color: #fb923c;
+}
+
+:root[data-theme="dark"] .alert-checklist-badge {
+  --chip-color: #7bc7df;
+}
+
+:root[data-theme="dark"] .alert-checklist-badge:hover,
+:root[data-theme="dark"] .alert-checklist-badge:focus-visible {
+  color: var(--chip-color);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--chip-color) 48%, transparent);
+}
+
+:root[data-theme="dark"] .skill-sample-guide-badge {
+  --chip-color: #d8b4fe;
+}
+
+:root[data-theme="dark"] .skill-sample-guide-badge:hover,
+:root[data-theme="dark"] .skill-sample-guide-badge:focus-visible {
+  color: var(--chip-color);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--chip-color) 48%, transparent);
+}
+
+:root[data-theme="dark"] .buff-expiry-supported-chip {
+  --chip-color: #7fb8b1;
+}
+
+:root[data-theme="dark"] .buff-expiry-supported-chip:hover,
+:root[data-theme="dark"] .buff-expiry-supported-chip:focus-visible {
+  color: var(--chip-color);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--chip-color) 48%, transparent);
+}
+
+:root[data-theme="dark"] .buff-expiry-feedback-indicator {
+  --chip-color: #fb7185;
+}
+
+:root[data-theme="dark"] .buff-expiry-feedback-indicator.testing {
+  --chip-color: #fb7185;
+}
+
+:root[data-theme="dark"] .buff-expiry-feedback-indicator.cpu {
+  --chip-color: #fbbf24;
+}
+
+:root[data-theme="dark"] .buff-expiry-feedback-indicator:hover,
+:root[data-theme="dark"] .buff-expiry-feedback-indicator:focus-visible {
+  color: var(--chip-color);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--chip-color) 48%, transparent);
+}
+
+:root[data-theme="dark"] .buff-expiry-supported-tooltip-item {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 24%, var(--line));
+}
+
+:root[data-theme="dark"] .alerts-disable-all-toggle:not(:has(input:disabled)):hover {
+  background: #351d19;
+  border-color: #8b4a3d;
+}
+
+:root[data-theme="dark"] .alerts-disable-all-toggle:has(input:checked) {
+  color: #fff4f3;
+  background: #994f3d;
+  border-color: #c66b3d;
+}
+
+:root[data-theme="dark"] .threshold-control,
+:root[data-theme="dark"] .skill-type-select-control,
+:root[data-theme="dark"] .class-install-time-popover,
+:root[data-theme="dark"] .duration-input,
+:root[data-theme="dark"] .general-timer-time,
+:root[data-theme="dark"] .inline-metric,
+:root[data-theme="dark"] .rune-toggle,
+:root[data-theme="dark"] .rune-preview-button,
+:root[data-theme="dark"] .rune-debug-block,
+:root[data-theme="dark"] .feedback-diagnostic-list,
+:root[data-theme="dark"] .issue-report-question-panel,
+:root[data-theme="dark"] .issue-report-current-panel,
+:root[data-theme="dark"] .issue-report-check-panel,
+:root[data-theme="dark"] .issue-report-step-indicator,
+:root[data-theme="dark"] .onboarding-steps li,
+:root[data-theme="dark"] .usage-guide-highlight,
+:root[data-theme="dark"] .usage-guide-flow li,
+:root[data-theme="dark"] .usage-guide-checklist-flow li,
+:root[data-theme="dark"] .usage-guide-detail-grid > div,
+:root[data-theme="dark"] .usage-guide-step-tabs button,
+:root[data-theme="dark"] .mode-status,
+:root[data-theme="dark"] .crop-helper-panel,
+:root[data-theme="dark"] .field-label input,
+:root[data-theme="dark"] .field-label select,
+:root[data-theme="dark"] .field-label textarea,
+:root[data-theme="dark"] .issue-report-note input {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel-soft) 46%, transparent);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .feedback-kind-picker {
+  color: var(--ink);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--line) 88%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 5%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-kind-picker [role="radio"] {
+  color: color-mix(in srgb, var(--ink) 72%, var(--muted));
+  background: transparent;
+}
+
+:root[data-theme="dark"] .feedback-kind-picker [role="radio"][aria-checked="true"] {
+  color: var(--ink);
+  border-color: color-mix(in srgb, #ffffff 22%, var(--line));
+  background: color-mix(in srgb, #ffffff 9%, transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, #ffffff 7%, transparent),
+    0 8px 20px color-mix(in srgb, #000000 18%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-kind-picker [role="radio"]:hover,
+:root[data-theme="dark"] .feedback-kind-picker [role="radio"]:focus-visible {
+  color: var(--ink);
+  background: color-mix(in srgb, #ffffff 5%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-ghost-control.astryx-textarea,
+:root[data-theme="dark"] .feedback-ghost-control.astryx-text-input {
+  color: var(--ink);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--line) 88%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 5%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-ghost-control.astryx-textarea:hover,
+:root[data-theme="dark"] .feedback-ghost-control.astryx-text-input:hover {
+  background: color-mix(in srgb, #ffffff 3%, transparent);
+  border-color: color-mix(in srgb, var(--line-strong) 92%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-ghost-control.astryx-textarea:focus-within,
+:root[data-theme="dark"] .feedback-ghost-control.astryx-text-input:focus-within {
+  background: color-mix(in srgb, #ffffff 4%, transparent);
+  border-color: color-mix(in srgb, #ffffff 28%, var(--line));
+  box-shadow: 0 0 0 4px color-mix(in srgb, #ffffff 7%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-list,
+:root[data-theme="dark"] .feedback-privacy-note {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--line) 88%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff 5%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-row {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-row:not(.disabled):hover {
+  background: color-mix(in srgb, #ffffff 3%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-row:has(.motion-switch.is-on) {
+  background: color-mix(in srgb, #ffffff 4%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-icon {
+  color: var(--muted);
+  background: color-mix(in srgb, #ffffff 4%, transparent);
+  border-color: color-mix(in srgb, var(--line) 88%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-diagnostic-row:has(.motion-switch.is-on) .feedback-diagnostic-icon {
+  color: var(--ink);
+  background: color-mix(in srgb, #ffffff 8%, transparent);
+  border-color: color-mix(in srgb, var(--ink) 22%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-discord-callout {
+  background: color-mix(in srgb, #5865f2 9%, transparent);
+  border-color: color-mix(in srgb, #5865f2 28%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-discord-icon {
+  background: color-mix(in srgb, #5865f2 15%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-discord-copy strong,
+:root[data-theme="dark"] .feedback-discord-link {
+  color: color-mix(in srgb, #5865f2 62%, var(--ink));
+}
+
+:root[data-theme="dark"] .feedback-discord-link {
+  background: transparent;
+  border-color: color-mix(in srgb, #5865f2 22%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-discord-link:hover,
+:root[data-theme="dark"] .feedback-discord-link:focus-visible {
+  background: color-mix(in srgb, #5865f2 9%, transparent);
+  border-color: color-mix(in srgb, #5865f2 34%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-kakao-callout {
+  background: color-mix(in srgb, #f2c94c 9%, transparent);
+  border-color: color-mix(in srgb, #f2c94c 28%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-kakao-icon {
+  color: color-mix(in srgb, #f2c94c 72%, var(--ink));
+  background: color-mix(in srgb, #f2c94c 15%, transparent);
+}
+
+:root[data-theme="dark"] .feedback-kakao-copy strong,
+:root[data-theme="dark"] .feedback-kakao-link {
+  color: color-mix(in srgb, #f2c94c 62%, var(--ink));
+}
+
+:root[data-theme="dark"] .feedback-kakao-copy span {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .feedback-kakao-link {
+  background: transparent;
+  border-color: color-mix(in srgb, #f2c94c 22%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-kakao-link:hover,
+:root[data-theme="dark"] .feedback-kakao-link:focus-visible {
+  background: color-mix(in srgb, #f2c94c 9%, transparent);
+  border-color: color-mix(in srgb, #f2c94c 34%, var(--line));
+}
+
+:root[data-theme="dark"] .feedback-privacy-note {
+  color: color-mix(in srgb, var(--muted) 72%, var(--ink));
+}
+
+:root[data-theme="dark"] .issue-report-error {
+  color: #ffcbc7;
+  background: #351d19;
+  border-color: #8b4a3d;
+}
+
+:root[data-theme="dark"] .modal-progress-bar {
+  background: rgba(123, 208, 167, 0.1);
+}
+
+:root[data-theme="dark"] .threshold-input,
+:root[data-theme="dark"] .skill-type-select,
+:root[data-theme="dark"] .duration-input,
+:root[data-theme="dark"] .sound-picker-trigger,
+:root[data-theme="dark"] .skill-preset-picker-trigger,
+:root[data-theme="dark"] .repeat-interval-picker-trigger,
+:root[data-theme="dark"] .general-timer-preset-trigger {
+  color: #f5f8f4;
+}
+
+:root[data-theme="dark"] .sound-picker-trigger,
+:root[data-theme="dark"] .repeat-interval-picker-trigger,
+:root[data-theme="dark"] .general-timer-preset-trigger,
+:root[data-theme="dark"] .mode-pill,
+:root[data-theme="dark"] .crop-helper-steps span {
+  color: var(--ink);
+  background-color: #101614;
+}
+
+:root[data-theme="dark"] .skill-preset-picker-trigger {
+  color: var(--ink);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .compact-repeat-picker .repeat-interval-picker-trigger {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .compact-repeat-picker .repeat-interval-picker-trigger:hover,
+:root[data-theme="dark"] .compact-repeat-picker .repeat-interval-picker-trigger:focus-visible,
+:root[data-theme="dark"] .compact-repeat-picker:has(.repeat-interval-picker-trigger[aria-expanded="true"])
+  .repeat-interval-picker-trigger {
+  background: transparent;
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .class-install-time-button {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .class-install-time-button:hover,
+:root[data-theme="dark"] .class-install-time-button[aria-expanded="true"] {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .class-install-time-button:hover .class-install-time-button-values,
+:root[data-theme="dark"] .class-install-time-button[aria-expanded="true"] .class-install-time-button-values,
+:root[data-theme="dark"] .class-install-time-button:focus-visible .class-install-time-button-values {
+  background: color-mix(in srgb, var(--accent-strong) 14%, transparent);
+  color: var(--accent-strong);
+}
+
+:root[data-theme="dark"] .motion-switch .astryx-switch {
+  background: transparent;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .motion-switch.is-on {
+  color: #9bf0c4;
+}
+
+:root[data-theme="dark"] .motion-switch.is-on .astryx-switch {
+  background: color-mix(in srgb, #64d6a4 15%, transparent);
+  border-color: color-mix(in srgb, #9bf0c4 30%, var(--line));
+}
+
+:root[data-theme="dark"] .motion-switch .astryx-switch-thumb {
+  background: color-mix(in srgb, var(--panel) 76%, #ffffff);
+  box-shadow:
+    inset 0 0 0 1px var(--line-strong),
+    0 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+:root[data-theme="dark"] .motion-switch.is-on .astryx-switch-thumb {
+  color: #071510;
+  background: #8ee8bd;
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle {
+  --row-switch-accent: #ffffff;
+  --row-switch-accent-hover: color-mix(in srgb, #ffffff 88%, var(--ink));
+  --row-switch-focus: color-mix(in srgb, var(--row-switch-accent) 22%, transparent);
+  --row-switch-thumb-on: var(--panel);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle.is-on,
+:root[data-theme="dark"] .motion-switch.row-toggle:not(.is-disabled):hover {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle .astryx-switch {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle.is-off:not(.is-disabled):hover .astryx-switch,
+:root[data-theme="dark"] .motion-switch.row-toggle.is-off:not(.is-disabled):focus-within .astryx-switch {
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  border-color: color-mix(in srgb, var(--ink) 22%, var(--line));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ink) 7%, transparent);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle.is-on .astryx-switch {
+  background: var(--row-switch-accent);
+  border-color: var(--row-switch-accent);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle.is-on:not(.is-disabled):hover .astryx-switch,
+:root[data-theme="dark"] .motion-switch.row-toggle.is-on:not(.is-disabled):focus-within .astryx-switch {
+  background: var(--row-switch-accent-hover);
+  border-color: var(--row-switch-accent-hover);
+  box-shadow: 0 0 0 4px var(--row-switch-focus);
+}
+
+:root[data-theme="dark"] .motion-switch.row-toggle.is-on .astryx-switch-thumb {
+  color: var(--row-switch-thumb-on);
+  background: var(--row-switch-thumb-on);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, #ffffff 16%, transparent),
+    0 2px 8px rgba(0, 0, 0, 0.34);
+}
+
+:root[data-theme="dark"] .panel-status-indicator.is-on {
+  --panel-status-color: #68d6a4;
+}
+
+:root[data-theme="dark"] .panel-status-indicator.is-off {
+  --panel-status-color: #68746e;
+}
+
+:root[data-theme="dark"] .class-install-time-popover::before {
+  background: #101614;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .skill-type-select option,
+:root[data-theme="dark"] .sound-picker-menu,
+:root[data-theme="dark"] .skill-preset-picker-menu,
+:root[data-theme="dark"] .repeat-interval-picker-menu,
+:root[data-theme="dark"] .general-timer-preset-menu,
+:root[data-theme="dark"] .feedback-kind-picker-menu {
+  color: #f5f8f4;
+  background: #151b18;
+}
+
+:root[data-theme="dark"] .custom-sound-dialog,
+:root[data-theme="dark"] .custom-sound-waveform,
+:root[data-theme="dark"] .custom-sound-upload-dropzone,
+:root[data-theme="dark"] .custom-sound-editor-empty,
+:root[data-theme="dark"] .custom-sound-empty {
+  color: var(--ink);
+  background: #151b18;
+}
+
+:root[data-theme="dark"] .custom-sound-item {
+  color: var(--ink);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .custom-sound-policy-card {
+  background: #132019;
+}
+
+:root[data-theme="dark"] .custom-sound-policy-card.warning {
+  color: #ffd4bd;
+  background: #351d12;
+  border-color: #74452c;
+}
+
+:root[data-theme="dark"] .settings-manager-note.strong {
+  color: color-mix(in srgb, #f2a23a 78%, var(--ink));
+  background: color-mix(in srgb, #f2a23a 10%, transparent);
+  border-color: color-mix(in srgb, #f2a23a 28%, var(--line));
+}
+
+:root[data-theme="dark"] .settings-manager-current-state {
+  background: transparent;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .settings-dialog-section {
+  background: color-mix(in srgb, var(--panel-soft) 54%, transparent);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .settings-dialog-section.danger-zone {
+  background: rgba(180, 35, 24, 0.09);
+  border-color: rgba(255, 145, 130, 0.28);
+}
+
+:root[data-theme="dark"] .settings-manager-ghost-action,
+:root[data-theme="dark"] .settings-manager-danger-ghost,
+:root[data-theme="dark"] .settings-preset-picker-trigger {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .settings-manager-ghost-action:hover,
+:root[data-theme="dark"] .settings-manager-ghost-action:focus-visible,
+:root[data-theme="dark"] .settings-preset-picker-trigger:hover,
+:root[data-theme="dark"] .settings-preset-picker-trigger:focus-visible,
+:root[data-theme="dark"]
+  .settings-preset-picker:has(.settings-preset-picker-trigger[aria-expanded="true"])
+  .settings-preset-picker-trigger {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 48%, transparent);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .settings-manager-danger-ghost:hover,
+:root[data-theme="dark"] .settings-manager-danger-ghost:focus-visible {
+  background: rgba(180, 35, 24, 0.12);
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .settings-preset-apply-button {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 38%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
+:root[data-theme="dark"] .settings-preset-apply-button:hover,
+:root[data-theme="dark"] .settings-preset-apply-button:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 52%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+:root[data-theme="dark"] .settings-preset-apply-button:disabled {
+  color: var(--muted);
+  background: color-mix(in srgb, var(--panel-soft) 40%, transparent);
+  border-color: var(--line);
+  opacity: 0.86;
+}
+
+:root[data-theme="dark"] .skill-type-select option:checked,
+:root[data-theme="dark"] .sound-picker-option.selected,
+:root[data-theme="dark"] .skill-preset-picker-option.selected,
+:root[data-theme="dark"] .repeat-interval-picker-option.selected,
+:root[data-theme="dark"] .general-timer-preset-option.selected,
+:root[data-theme="dark"] .feedback-kind-picker-option.selected {
+  color: #061317;
+  background: var(--accent);
+}
+
+:root[data-theme="dark"] .sound-picker-option:hover,
+:root[data-theme="dark"] .sound-picker-option:focus-visible,
+:root[data-theme="dark"] .skill-preset-picker-option:hover,
+:root[data-theme="dark"] .skill-preset-picker-option:focus-visible,
+:root[data-theme="dark"] .repeat-interval-picker-option:hover,
+:root[data-theme="dark"] .repeat-interval-picker-option:focus-visible,
+:root[data-theme="dark"] .general-timer-preset-option:hover,
+:root[data-theme="dark"] .general-timer-preset-option:focus-visible,
+:root[data-theme="dark"] .feedback-kind-picker-option:hover,
+:root[data-theme="dark"] .feedback-kind-picker-option:focus-visible {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) 8%, var(--panel-soft));
+}
+
+:root[data-theme="dark"] .general-timer-preset-icon {
+  color: #8cdab7;
+  background: #1b3028;
+  border-color: #385f4f;
+}
+
+:root[data-theme="dark"] .general-timer-time.running {
+  color: #cae5ce;
+  background: #203527;
+  border-color: #4f7159;
+}
+
+:root[data-theme="dark"] .general-timer-time.paused,
+:root[data-theme="dark"] .general-timer-time.disabled {
+  color: #cbd4ce;
+}
+
+:root[data-theme="dark"] .general-timer-time.done {
+  color: #f0b88c;
+  background: #392116;
+  border-color: #74452c;
+}
+
+:root[data-theme="dark"] .usage-guide-step-tabs button.selected {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+:root[data-theme="dark"] .usage-guide-media {
+  background: #090d0b;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .usage-guide-hero,
+:root[data-theme="dark"] .usage-guide-section {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .usage-guide-hero > div > p,
+:root[data-theme="dark"] .usage-guide-section-copy > p {
+  color: #d6ded8;
+}
+
+:root[data-theme="dark"] .usage-guide-highlight p,
+:root[data-theme="dark"] .usage-guide-detail-grid li,
+:root[data-theme="dark"] .usage-guide-checklist-flow p {
+  color: #dde5df;
+}
+
+:root[data-theme="dark"] .usage-guide-flow p {
+  color: #eef3ed;
+}
+
+:root[data-theme="dark"] .usage-guide-text-panel {
+  color: var(--ink);
+  background: linear-gradient(180deg, #111715, #1a2620);
+  border-color: #395044;
+}
+
+:root[data-theme="dark"] .privacy-summary p,
+:root[data-theme="dark"] .privacy-section li {
+  color: #dde5df;
+}
+
+:root[data-theme="dark"] .onboarding-browser-note {
+  color: #d6ded8;
+  background: #1a2620;
+  border-color: #395044;
+}
+
+:root[data-theme="dark"] .row-toggle,
+:root[data-theme="dark"] .threshold-unit,
+:root[data-theme="dark"] .duration-unit {
+  color: #d2dbd5;
+}
+
+:root[data-theme="dark"] .crop-placeholder {
+  color: #eef5f2;
+}
+
+:root[data-theme="dark"] .skill-buff-duration-description {
+  color: color-mix(in srgb, #ffffff 74%, var(--muted));
+}
+
+:root[data-theme="dark"] .skill-buff-duration-summary-text {
+  color: color-mix(in srgb, #ffffff 86%, var(--ink));
+}
+
+:root[data-theme="dark"] .skill-buff-duration-summary.is-extended .skill-buff-duration-summary-text,
+:root[data-theme="dark"] .skill-buff-duration-description.is-extended .skill-buff-duration-summary-text {
+  color: color-mix(in srgb, #ffffff 58%, var(--accent));
+}
+
+:root[data-theme="dark"] .skill-buff-duration-summary.is-error .skill-buff-duration-summary-text,
+:root[data-theme="dark"] .skill-buff-duration-description.is-error .skill-buff-duration-summary-text {
+  color: color-mix(in srgb, #ffffff 34%, var(--danger));
+}
+
+:root[data-theme="dark"] .skill-buff-duration-thumbnail {
+  background: color-mix(in srgb, var(--accent-soft) 22%, var(--panel));
+  border-color: color-mix(in srgb, var(--accent) 32%, var(--line));
+  color: color-mix(in srgb, #ffffff 86%, var(--accent));
+}
+
+:root[data-theme="dark"] .skill-buff-duration-thumbnail-badge {
+  background: color-mix(in srgb, var(--panel) 82%, var(--accent));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 32%, var(--line));
+  color: color-mix(in srgb, #ffffff 84%, var(--accent));
+}
+
+:root[data-theme="dark"] .duration-input:disabled,
+:root[data-theme="dark"] .skill-type-select:disabled {
+  color: #c5cec8;
+  -webkit-text-fill-color: #c5cec8;
+  opacity: 1;
+}
+
+:root[data-theme="dark"] .dashboard-row:hover .expand-toggle-button,
+:root[data-theme="dark"] .dashboard-row:focus-visible .expand-toggle-button {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .capture-panel:not(.collapsed) .capture-collapse-button,
+:root[data-theme="dark"] .mode-pill.selected {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+:root[data-theme="dark"] .capture-panel:not(.collapsed) .capture-collapse-button,
+:root[data-theme="dark"] .capture-collapse-button,
+:root[data-theme="dark"] .compact-capture-button,
+:root[data-theme="dark"] .large-capture-button,
+:root[data-theme="dark"] .alert-section-collapse-button,
+:root[data-theme="dark"] .alert-section-collapse-button.expanded,
+:root[data-theme="dark"] .patch-notes-collapse-button {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .capture-panel .compact-capture-button,
+:root[data-theme="dark"] .large-capture-button {
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .large-capture-button {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .capture-panel .compact-capture-button,
+:root[data-theme="dark"] .capture-panel .compact-capture-button:disabled {
+  color: var(--ink);
+  -webkit-text-fill-color: var(--ink);
+  opacity: 1;
+}
+
+:root[data-theme="dark"] .capture-panel .compact-capture-button:hover,
+:root[data-theme="dark"] .capture-panel .compact-capture-button:focus-visible,
+:root[data-theme="dark"] .large-capture-button:hover,
+:root[data-theme="dark"] .large-capture-button:focus-visible {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .large-capture-button:hover,
+:root[data-theme="dark"] .large-capture-button:focus-visible {
+  color: #e8fff5;
+}
+
+:root[data-theme="dark"] .capture-panel:not(.collapsed) .capture-collapse-button,
+:root[data-theme="dark"] .alert-section-collapse-button.expanded,
+:root[data-theme="dark"] .patch-notes-panel:not(.collapsed) .patch-notes-collapse-button {
+  color: var(--accent-strong);
+}
+
+:root[data-theme="dark"] .expanded-row .expand-toggle-button {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .expanded-row .expand-toggle-button:hover,
+:root[data-theme="dark"] .expanded-row .expand-toggle-button:focus-visible {
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .mode-pill:hover,
+:root[data-theme="dark"] .mode-pill.select-mode:not(.selected) {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 9%, var(--panel-soft));
+}
+
+:root[data-theme="dark"] .state-chip.no-stream,
+:root[data-theme="dark"] .state-chip.paused,
+:root[data-theme="dark"] .rune-status-chip.paused,
+:root[data-theme="dark"] .rune-status-chip.no-stream,
+:root[data-theme="dark"] .rune-status-chip.no-region,
+:root[data-theme="dark"] .hunt-status-chip.no-stream,
+:root[data-theme="dark"] .hunt-status-chip.no-region,
+:root[data-theme="dark"] .hunt-status-chip.paused {
+  color: var(--muted);
+  background: transparent;
+}
+
+:root[data-theme="dark"] .rune-status-chip.waiting,
+:root[data-theme="dark"] .hunt-status-chip.watching,
+:root[data-theme="dark"] .hunt-status-chip.detecting {
+  --chip-color: #64c6d8;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .state-chip.running {
+  --chip-color: #65d7a2;
+  background: transparent;
+}
+
+:root[data-theme="dark"] .state-chip.alerted {
+  --chip-color: #f0b86b;
+  background: transparent;
+}
+
+:root[data-theme="dark"] .rune-status-chip.candidate {
+  --chip-color: #f0b86b;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .rune-status-chip.alerted {
+  --chip-color: #65d7a2;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .hunt-status-chip.active {
+  --chip-color: #65d7a2;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .hunt-status-chip.stalled,
+:root[data-theme="dark"] .hunt-status-chip.warning,
+:root[data-theme="dark"] .hunt-status-chip.unavailable,
+:root[data-theme="dark"] .rune-status-chip.warning {
+  --chip-color: #e06b62;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .hunt-status-chip.alerted {
+  --chip-color: #f0b86b;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .rune-debug-submit-button,
+:root[data-theme="dark"] .hunt-debug-submit-button {
+  color: #f0b88c;
+  background: #392116;
+  border-color: #74452c;
+}
+
+:root[data-theme="dark"] .state-chip.lost {
+  --chip-color: #e06b62;
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .danger-button,
+:root[data-theme="dark"] .feedback-error {
+  color: var(--danger);
+  background: #351d19;
+  border-color: #8b4a3d;
+}
+
+:root[data-theme="dark"] .expand-toggle-button,
+:root[data-theme="dark"] .row-delete-button {
+  background: transparent;
+  border-color: transparent;
+}
+
+:root[data-theme="dark"] .row-delete-button {
+  color: var(--danger);
+}
+
+:root[data-theme="dark"] .patch-notes-full-button {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .patch-notes-full-button:hover,
+:root[data-theme="dark"] .patch-notes-full-button:focus-visible {
+  background: color-mix(in srgb, var(--accent-soft) 62%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 28%, var(--line-strong));
+  color: var(--accent-strong);
+}
+
+:root[data-theme="dark"] .row-delete-button:hover,
+:root[data-theme="dark"] .row-delete-button:focus-visible {
+  background: color-mix(in srgb, var(--danger) 14%, transparent);
+  border-color: color-mix(in srgb, var(--danger) 28%, transparent);
+  color: var(--danger);
+}
+
+:root[data-theme="dark"] .onboarding-video-frame {
+  background: #090d0b;
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .capture-windows-notice {
+  color: #f5d4a9;
+  background: #2b2117;
+  border-color: #744f2c;
+}
+
+:root[data-theme="dark"] .capture-windows-notice-content p {
+  color: #dcb889;
+}
+
+:root[data-theme="dark"] .capture-windows-notice-actions .ghost-button {
+  color: #f0cf9e;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #5d4328;
+}
+
+:root[data-theme="dark"] .capture-windows-notice-actions .ghost-button:hover,
+:root[data-theme="dark"] .capture-windows-notice-actions .ghost-button:focus-visible {
+  color: #ffe3b5;
+  background: rgba(255, 255, 255, 0.09);
+  border-color: #8c6338;
+}

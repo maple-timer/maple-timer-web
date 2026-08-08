@@ -1,0 +1,69 @@
+{
+  "name": "buff-detector-yolov8n-q1-544x960-fp16",
+  "task": "detect MapleStory buff icons in the top-right quadrant",
+  "modelFamily": "YOLOv8n",
+  "classNames": ["buff_icon"],
+  "precision": "FP16 internal weights and compute with float32 I/O",
+  "parameters": 3011043,
+  "approxGflops": 10.44754176,
+  "artifact": {
+    "path": "best.onnx",
+    "bytes": 6192877,
+    "sha256": "3049a67710201cf43d81fe273730adbfef17967158e48af041f0fce41f5afe13",
+    "opset": 17
+  },
+  "input": {
+    "name": "images",
+    "shape": [1, 3, 544, 960],
+    "dtype": "float32",
+    "layout": "NCHW",
+    "color": "RGB",
+    "normalization": "0..1"
+  },
+  "output": {
+    "name": "output0",
+    "shape": [1, 5, 10710],
+    "dtype": "float32"
+  },
+  "preprocess": {
+    "sourceCrop": "top-right quadrant",
+    "letterboxWidth": 960,
+    "letterboxHeight": 544,
+    "paddingValue": 114
+  },
+  "postprocess": {
+    "confidenceThreshold": 0.5,
+    "nmsIouThreshold": 0.5,
+    "squareBoxes": true,
+    "matchIouThresholdUsedForStrictReview": 0.86
+  },
+  "acceptedGolden": {
+    "samples": 1939,
+    "boxes": 49986,
+    "baselinePath": "analysis/golden-baseline.json"
+  },
+  "reviewResult": {
+    "strict": {
+      "matched": 49975,
+      "misses": 11,
+      "falsePositives": 11,
+      "iouThreshold": 0.86
+    },
+    "relaxed": {
+      "matched": 49984,
+      "misses": 2,
+      "falsePositives": 2,
+      "iouThreshold": 0.5
+    }
+  },
+  "browserBenchmark": {
+    "onnxruntimeWeb": "1.27.0",
+    "aggregation": "median of 3 per-run averages",
+    "webgpuAverageMs": 17.0955,
+    "webgpuPerRunAverageMs": [18.1925, 16.897, 17.0955],
+    "wasm4ThreadsAverageMs": 75.476,
+    "wasm4ThreadsPerRunAverageMs": [112.807, 71.139, 75.476],
+    "crossOriginIsolated": true
+  },
+  "docs": "docs/DL_RUNTIME_HANDOFF.md"
+}

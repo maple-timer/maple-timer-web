@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple leaf scan frame">
+  <rect width="64" height="64" rx="14" fill="#16231b"/>
+  <path d="M32 7 36 20 49 15 42 28 55 34 41 37 46 51 34 43 32 57 30 43 18 51 23 37 9 34 22 28 15 15 28 20z" fill="#f07d23"/>
+  <path d="M15 19v-6h10M49 19v-6H39M15 45v6h10M49 45v6H39" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="32" cy="34" r="11" fill="#fff4d9"/>
+  <path d="M32 28v7l5 3" fill="none" stroke="#173f31" stroke-linecap="round" stroke-width="3.5"/>
+</svg>

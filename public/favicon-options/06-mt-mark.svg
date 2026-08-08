@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple Timer mark">
+  <rect width="64" height="64" rx="14" fill="#f7f2df"/>
+  <path d="M13 48V16h8l11 16 11-16h8v32h-8V29L33 44h-3L21 29v19z" fill="#183c30"/>
+  <path d="M47 12l2 7 7-3-4 7 7 3-8 2 3 7-7-4-1 8-2-8-7 4 3-7-8-2 7-3-4-7 7 3z" fill="#dc7928"/>
+  <path d="M41 46h14" stroke="#1f9d66" stroke-linecap="round" stroke-width="5"/>
+</svg>

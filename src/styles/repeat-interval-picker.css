@@ -1,0 +1,123 @@
+.repeat-interval-picker {
+  min-width: 0;
+  position: relative;
+  width: 104px;
+}
+
+.repeat-interval-picker-trigger {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  display: grid;
+  gap: 6px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  min-height: 32px;
+  padding: 4px 8px 4px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.repeat-interval-picker-trigger:hover,
+.repeat-interval-picker-trigger:focus-visible,
+.repeat-interval-picker:has(.repeat-interval-picker-trigger[aria-expanded="true"])
+  .repeat-interval-picker-trigger {
+  border-color: #8ebda1;
+  box-shadow: 0 0 0 3px rgba(2, 103, 79, 0.1);
+  outline: none;
+}
+
+.repeat-interval-picker-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.repeat-interval-picker-selected {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 740;
+  line-height: 1.2;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repeat-interval-picker-menu {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 18px 44px rgba(27, 39, 30, 0.18);
+  display: grid;
+  gap: 3px;
+  overflow: auto;
+  padding: 5px;
+  position: fixed;
+  z-index: 260;
+}
+
+.repeat-interval-picker-section-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 780;
+  line-height: 1.1;
+  padding: 7px 9px 2px;
+}
+
+.repeat-interval-picker-section-label-spaced {
+  border-top: 1px solid rgba(22, 75, 58, 0.1);
+  margin-top: 3px;
+  padding-top: 9px;
+}
+
+.repeat-interval-picker-columns {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.repeat-interval-picker-column {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.repeat-interval-picker-menu-wide {
+  gap: 5px;
+}
+
+.repeat-interval-picker-option {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 7px;
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  min-height: 34px;
+  padding: 7px 9px;
+  text-align: left;
+}
+
+.repeat-interval-picker-option span {
+  font-size: 0.82rem;
+  font-weight: 680;
+  line-height: 1.25;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.repeat-interval-picker-option:hover,
+.repeat-interval-picker-option:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  outline: none;
+}
+
+.repeat-interval-picker-option.selected {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 760;
+}

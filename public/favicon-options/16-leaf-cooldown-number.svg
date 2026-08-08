@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple leaf cooldown number">
+  <rect width="64" height="64" rx="12" fill="#0f1511"/>
+  <path d="M32 5 37 21 53 14 44 29 59 35 43 38 49 55 34 46 32 61 30 46 15 55 21 38 5 35 20 29 11 14 27 21z" fill="#f07a21"/>
+  <rect x="18" y="23" width="32" height="31" rx="7" fill="#111813" stroke="#314238" stroke-width="2"/>
+  <path d="M26 29h17v6H32v5h10v6H32v4h12v6H26z" fill="#ffdd45"/>
+  <circle cx="49" cy="19" r="5" fill="#27a86e"/>
+</svg>

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "bundleVersion": "rune-cascade-v13-runtime",
+  "modelVersion": "rune-cascade-v13",
+  "candidateCheckpointCommit": "808afe398a28000e76b2b7a28519788c356a4a24",
+  "temporalQualificationCommit": "808afe398a28000e76b2b7a28519788c356a4a24",
+  "sourceCheckpointSha256": "97ece2714875264b8ce266126fed4aba376d615168d39bb5816e9350db54bbde",
+  "groundTruthVersion": "rune-ground-truth-v9",
+  "groundTruthSha256": "be8211e7d71012efd1ef18ac7e37f25e01fa010df7c0cc88f9c2b0eb80f694f2",
+  "parameters": {
+    "proposal": 9340,
+    "gates": 16190,
+    "total": 25530
+  },
+  "files": {
+    "proposal": {
+      "path": "proposal.onnx",
+      "sha256": "f6e3b59c06514fdd3ed8f63d29df70e1ff61d2f2627904761fd9a36bdd399cfe",
+      "bytes": 45397
+    },
+    "gate": {
+      "path": "gate.onnx",
+      "sha256": "d3941564c8d76a49389d7e70d83c0a5816d19bf0b734a7bfa8864e305b55bab5",
+      "bytes": 94547
+    }
+  },
+  "proposal": {
+    "modelVersion": "rune-strict-local-centernet-s4-v6",
+    "topK": 5,
+    "selection": "3x3 local maxima, 0.5 IoU NMS",
+    "acceptanceThreshold": null,
+    "input": {
+      "name": "image",
+      "type": "float32",
+      "layout": "NCHW",
+      "shape": [
+        1,
+        3,
+        192,
+        320
+      ],
+      "color": "RGB",
+      "letterboxFillRgb": [
+        16,
+        22,
+        18
+      ],
+      "resize": {
+        "scale": "min(320 / sourceWidth, 192 / sourceHeight)",
+        "resizedWidth": "round(sourceWidth * scale)",
+        "resizedHeight": "round(sourceHeight * scale)",
+        "padX": "floor((320 - resizedWidth) / 2)",
+        "padY": "floor((192 - resizedHeight) / 2)",
+        "interpolation": "bilinear"
+      },
+      "normalization": "(channel / 255 - 0.5) / 0.5"
+    },
+    "outputs": {
+      "heatmapLogits": {
+        "name": "heatmap_logits",
+        "shape": [
+          1,
+          1,
+          48,
+          80
+        ]
+      },
+      "sideLogits": {
+        "name": "side_logits",
+        "shape": [
+          1,
+          1,
+          48,
+          80
+        ]
+      },
+      "offsetLogits": {
+        "name": "offset_logits",
+        "shape": [
+          1,
+          2,
+          48,
+          80
+        ]
+      }
+    },
+    "decode": {
+      "heatmapActivation": "sigmoid",
+      "selection": "top-5 local maxima",
+      "outputStride": 4,
+      "offsetActivation": "sigmoid",
+      "sideActivation": "sigmoid",
+      "sideMinimum": 8.0,
+      "sideMaximum": 32.0,
+      "threshold": null
+    }
+  },
+  "gate": {
+    "modelVersion": "rune-cascade-v13",
+    "input": {
+      "name": "patches",
+      "type": "float32",
+      "layout": "NCHW",
+      "shape": [
+        "candidate_batch",
+        3,
+        48,
+        48
+      ],
+      "normalization": "(channel / 255 - 0.5) / 0.5",
+      "crop": {
+        "source": "letterboxed proposal input",
+        "contextScale": 1.25,
+        "outputSize": [
+          48,
+          48
+        ],
+        "interpolation": "bilinear",
+        "fillRgb": [
+          16,
+          22,
+          18
+        ]
+      }
+    },
+    "outputs": {
+      "shapeLogits": "shape_logits",
+      "appearanceLogits": "appearance_logits",
+      "activation": "sigmoid"
+    },
+    "shapeGate": {
+      "threshold": 0.89,
+      "inputRepresentation": "local contrast plus signed x, y, and two diagonal gradients",
+      "readsRgbColor": false
+    },
+    "appearanceGate": {
+      "threshold": 0.88,
+      "inputRepresentation": "central color statistics only",
+      "readsSpatialGeometry": false
+    },
+    "decision": "shapePass AND appearancePass",
+    "candidateSelection": "maximize the smaller branch margin, then the branch-score sum"
+  },
+  "temporalPolicy": {
+    "location": "outside-model",
+    "version": "rune-confirmation-v3",
+    "requiredStableFrames": 4,
+    "requiredStableMilliseconds": 2500
+  }
+}

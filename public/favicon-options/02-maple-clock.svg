@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maple clock">
+  <rect width="64" height="64" rx="14" fill="#1f7a55"/>
+  <circle cx="32" cy="33" r="23" fill="#fff6da"/>
+  <path fill="#dc7a26" d="M32 7l4 13 13-5-7 13 13 6-14 3 5 14-12-8-2 14-2-14-12 8 5-14-14-3 13-6-7-13 13 5z"/>
+  <circle cx="32" cy="33" r="15" fill="#fff6da"/>
+  <path d="M32 23v11l8 5" fill="none" stroke="#173e32" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <circle cx="32" cy="33" r="3" fill="#173e32"/>
+</svg>

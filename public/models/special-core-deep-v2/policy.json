@@ -1,0 +1,82 @@
+{
+  "contractVersion": 1,
+  "bundleId": "special-core-deep-v2",
+  "modelId": "special-core-deep-v2",
+  "modelVersion": "special-core-20260711-v2",
+  "variantId": "balanced-bottom-fill+positive-gate-rescue-v2",
+  "source": {
+    "checkpoint": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/special-core-deep-v2-kms/special-core-deep-v2.pt",
+    "report": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/special-core-deep-v2-kms/report.json"
+  },
+  "files": {
+    "onnx": "special-core-deep-v2.onnx",
+    "onnxData": "special-core-deep-v2.onnx.data",
+    "policy": "policy.json",
+    "positiveGate": "special-core-positive-gate.json"
+  },
+  "labels": [
+    "specialCore",
+    "background"
+  ],
+  "targetId": "specialCore",
+  "backgroundLabel": "background",
+  "scoreKind": "logitMargin",
+  "thresholds": {
+    "specialCore": 0.0
+  },
+  "input": {
+    "name": "input",
+    "shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "layout": "CHW",
+    "color": "RGB",
+    "normalization": "rgb = rgba.rgb / 255; input = (rgb - 0.5) / 0.5"
+  },
+  "output": {
+    "logits": {
+      "name": "logits",
+      "shape": [
+        1,
+        2
+      ],
+      "order": [
+        "specialCore",
+        "background"
+      ]
+    },
+    "embedding": {
+      "name": "embedding",
+      "shape": [
+        1,
+        96
+      ],
+      "normalization": "L2 normalized by the ONNX model"
+    }
+  },
+  "decision": "Accept specialCore when target logit minus background logit reaches zero and the positive prototype cosine gate reaches its threshold, or when the positive-only prototype score reaches the near-exact rescue threshold; otherwise return unknown.",
+  "postGates": {
+    "specialCore": {
+      "kind": "positivePrototypeCosine",
+      "artifact": "special-core-positive-gate.json",
+      "score": "max cosine similarity between embedding and positive prototypes",
+      "threshold": 0.94,
+      "rescueThreshold": 0.999,
+      "prototypeCount": 512,
+      "embeddingDim": 96,
+      "rescueIgnoresBaseThreshold": true,
+      "failureDecision": "unknown"
+    }
+  },
+  "runtimeContract": {
+    "input": "parser-normalized 32x32 icon",
+    "outputKind": "target | unknown",
+    "targetId": "specialCore",
+    "doesNotReadCountdownSeconds": true,
+    "doesNotTrackFrames": true,
+    "doesNotScheduleAlerts": true
+  }
+}

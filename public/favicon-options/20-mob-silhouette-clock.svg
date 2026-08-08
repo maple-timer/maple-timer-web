@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Orange mob silhouette clock">
+  <rect width="64" height="64" rx="14" fill="#fff1d2"/>
+  <path d="M10 30c2-14 12-22 22-22s20 8 22 22c1 8-6 12-22 12S9 38 10 30z" fill="#151a16"/>
+  <path d="M14 27c3-11 11-17 18-17s15 6 18 17c-8-4-28-4-36 0z" fill="#f17c21"/>
+  <circle cx="24" cy="22" r="5" fill="#ffd29a"/>
+  <circle cx="41" cy="22" r="6" fill="#ffd29a"/>
+  <circle cx="32" cy="42" r="14" fill="#fff8e5" stroke="#151a16" stroke-width="4"/>
+  <path d="M32 34v9l6 3" fill="none" stroke="#151a16" stroke-linecap="round" stroke-width="4"/>
+</svg>

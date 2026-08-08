@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "modelVersion": "rune-strict-local-centernet-s4-v5",
+  "groundTruthVersion": "rune-ground-truth-v5",
+  "groundTruthSha256": "a686db5c3c8cc4a5a16c48c97535e5d4e925af8e8215e708473bc12faa98ff71",
+  "onnxSha256": "ad8a334a1858159bcdeeadf6b0531e0705792c46376c326dde70c8b63ce9ac10",
+  "onnxBytes": 45397,
+  "parity": {
+    "samples": 59,
+    "maximumRawAbsoluteError": 7.62939453125e-06,
+    "maximumScoreAbsoluteError": 4.172325134277344e-07,
+    "maximumBboxAbsoluteError": 1.52587890625e-05,
+    "classificationMismatches": 0,
+    "worstRawSample": "203c4d22-9083-4d4d-8e9a-6bb51920f952-report-frame",
+    "worstBboxSample": "2af9ccce-de3e-4ef9-a3bc-2e2e6ba380c9-alert-frame"
+  },
+  "tolerance": {
+    "maximumRawAbsoluteError": 2e-05,
+    "maximumScoreAbsoluteError": 1e-06,
+    "maximumBboxAbsoluteError": 2e-05,
+    "classificationMismatches": 0
+  },
+  "benchmark": {
+    "environment": "macOS arm64 CPU, single-threaded session",
+    "runs": 200,
+    "pytorchMs": {
+      "median": 1.4161,
+      "p95": 1.8724,
+      "maximum": 2.0098
+    },
+    "onnxRuntimeMs": {
+      "median": 1.3316,
+      "p95": 1.3514,
+      "maximum": 1.3863
+    }
+  },
+  "environment": {
+    "torch": "2.13.0",
+    "onnx": "1.22.0",
+    "onnxRuntime": "1.27.0",
+    "numpy": "2.5.1"
+  }
+}

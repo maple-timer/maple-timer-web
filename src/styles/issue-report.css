@@ -1,0 +1,690 @@
+.issue-report-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 92;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(18, 24, 19, 0.46);
+  animation: feedback-fade-in 0.14s ease-out;
+}
+
+.issue-report-dialog {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: min(860px, calc(100vh - 36px));
+  overflow: auto;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  box-shadow: 0 24px 70px rgba(20, 28, 21, 0.24);
+  animation: feedback-slide-in 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.issue-report-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.issue-report-header > div:first-child {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.issue-report-header h2 {
+  font-size: 1.15rem;
+}
+
+.issue-report-header p:not(.eyebrow) {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.issue-report-step-indicator {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+}
+
+.issue-report-step-indicator button {
+  min-width: 62px;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  background: transparent;
+  font-size: 0.74rem;
+  font-weight: 850;
+  text-align: center;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.issue-report-step-indicator button:hover,
+.issue-report-step-indicator button:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 52%, transparent);
+  outline: none;
+}
+
+.issue-report-step-indicator button.active {
+  color: #fff;
+  background: var(--accent);
+}
+
+.issue-report-step-indicator button:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.issue-report-form {
+  display: grid;
+  gap: 14px;
+}
+
+.issue-report-step-viewport {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.issue-report-step-motion,
+.issue-report-step-measure {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.issue-report-compare-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(420px, 1.28fr);
+  align-items: stretch;
+  gap: 14px;
+}
+
+.issue-report-compare-grid.no-guide {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.issue-report-compare-grid.skill-buff-duration-review {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.issue-report-compare-grid.skill-buff-duration-review .issue-report-current-panel {
+  order: 1;
+}
+
+.issue-report-compare-grid.skill-buff-duration-review .issue-report-video-stage {
+  order: 2;
+}
+
+.issue-report-question-panel,
+.issue-report-current-panel,
+.issue-report-check-panel,
+.issue-report-video-stage,
+.issue-report-review-copy {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+}
+
+.issue-report-question-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 8px;
+  padding: 2px 0 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.issue-report-question-panel legend {
+  padding: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 850;
+}
+
+.issue-report-question-panel p {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 720;
+  line-height: 1.5;
+}
+
+.issue-report-option {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 9px;
+  grid-template-columns: 22px minmax(0, 1fr);
+  min-height: 42px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.issue-report-option:hover,
+.issue-report-option.selected {
+  border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 58%, transparent);
+}
+
+.issue-report-option:has(input:focus-visible) {
+  box-shadow: 0 0 0 3px rgba(2, 103, 79, 0.12);
+}
+
+.issue-report-radio-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.issue-report-option-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  border-radius: 999px;
+  color: transparent;
+  background: transparent;
+}
+
+.issue-report-option.selected .issue-report-option-mark {
+  border-color: var(--accent);
+  color: #fff;
+  background: var(--accent);
+}
+
+.issue-report-option-label {
+  min-width: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 760;
+  line-height: 1.3;
+}
+
+.issue-report-context-panel {
+  min-width: 0;
+  margin: 4px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.issue-report-context-panel legend {
+  margin-bottom: 8px;
+  padding: 0;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 820;
+}
+
+.issue-report-context-help {
+  margin: -2px 0 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 680;
+  line-height: 1.45;
+}
+
+.issue-report-context-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.issue-report-context-options.compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.issue-report-context-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.issue-report-context-option:hover,
+.issue-report-context-option.selected {
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent-soft) 42%, transparent);
+}
+
+.issue-report-context-option input {
+  flex: 0 0 auto;
+  accent-color: var(--accent);
+}
+
+.issue-report-context-option span {
+  min-width: 0;
+  font-size: 0.8rem;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.issue-report-target-select select {
+  width: 100%;
+  height: 40px;
+}
+
+.issue-report-note input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--panel);
+  font-weight: 760;
+  outline: none;
+}
+
+.issue-report-note input:focus {
+  border-color: #8ebda1;
+  box-shadow: 0 0 0 3px rgba(2, 103, 79, 0.12);
+}
+
+.issue-report-current-panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  min-height: 260px;
+  border-color: color-mix(in srgb, var(--accent) 26%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 28%, var(--panel));
+}
+
+.issue-report-compare-grid.no-guide .issue-report-current-panel {
+  min-height: 360px;
+}
+
+.issue-report-compare-grid.skill-buff-duration-review .issue-report-current-panel {
+  min-height: 292px;
+}
+
+.issue-report-compare-grid.skill-buff-duration-review .issue-report-preview-frame {
+  min-height: 204px;
+}
+
+.issue-report-compare-grid.skill-buff-duration-review .issue-report-preview-frame img {
+  max-height: min(300px, 38vh);
+}
+
+.issue-report-compare-grid.no-guide.special-core-review .issue-report-current-panel {
+  min-height: 228px;
+}
+
+.issue-report-compare-grid.no-guide.special-core-review .issue-report-preview-frame {
+  min-height: 136px;
+}
+
+.issue-report-compare-grid.no-guide.special-core-review .issue-report-preview-frame img {
+  max-height: min(180px, 28vh);
+}
+
+.issue-report-section-heading {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.issue-report-section-heading span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.issue-report-section-heading span::before {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+}
+
+.issue-report-current-panel .issue-report-section-heading {
+  color: var(--accent-strong);
+}
+
+.issue-report-preview-frame {
+  display: grid;
+  place-items: center;
+  min-height: 168px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: #070c0b;
+  font-size: 0.85rem;
+  font-weight: 820;
+}
+
+.issue-report-preview-frame img {
+  display: block;
+  max-width: 100%;
+  max-height: 210px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.issue-report-compare-grid.no-guide .issue-report-preview-frame img {
+  max-height: min(420px, 52vh);
+}
+
+.issue-report-review-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-color: color-mix(in srgb, var(--accent) 20%, var(--line));
+  background: color-mix(in srgb, var(--accent-soft) 28%, var(--panel));
+}
+
+.issue-report-review-copy h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.issue-report-preflight-copy h3 {
+  font-size: 1.04rem;
+  line-height: 1.45;
+}
+
+.issue-report-review-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.5;
+}
+
+.issue-report-selected-reason {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 30px;
+  max-width: 320px;
+  padding: 0 10px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  border-radius: 999px;
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 48%, transparent);
+  font-size: 0.78rem;
+  font-weight: 820;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.issue-report-selected-context {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+}
+
+.issue-report-video-stage {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+}
+
+.issue-report-video-stage .issue-report-section-heading span::before {
+  background: color-mix(in srgb, var(--muted) 64%, var(--line));
+}
+
+.issue-report-preflight-examples-panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+}
+
+.issue-report-preflight-image-stack {
+  display: grid;
+  gap: 10px;
+  align-content: center;
+  min-height: 0;
+}
+
+.issue-report-preflight-image-card {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+  margin: 0;
+}
+
+.issue-report-preflight-image-card img {
+  display: block;
+  width: 100%;
+  height: 122px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #070c0b;
+  object-fit: contain;
+}
+
+.issue-report-preflight-image-card figcaption {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 820;
+  line-height: 1.25;
+}
+
+.issue-report-video-stage video {
+  display: block;
+  width: 100%;
+  height: 260px;
+  max-height: 42vh;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  object-fit: contain;
+}
+
+.issue-report-status-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.issue-report-check-panel ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.issue-report-check-panel {
+  border-color: color-mix(in srgb, var(--amber) 28%, var(--line));
+  background: color-mix(in srgb, var(--amber) 8%, var(--panel));
+}
+
+.issue-report-check-panel .issue-report-section-heading {
+  color: color-mix(in srgb, var(--amber) 82%, var(--ink));
+}
+
+.issue-report-check-panel .issue-report-section-heading span::before,
+.issue-report-check-panel li::before {
+  background: var(--amber);
+}
+
+.issue-report-check-panel li {
+  position: relative;
+  padding-left: 13px;
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 740;
+  line-height: 1.45;
+}
+
+.issue-report-check-panel li::before {
+  position: absolute;
+  top: 0.66em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+  content: "";
+}
+
+.issue-report-error {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 10px;
+  border: 1px solid #efcac7;
+  border-radius: 8px;
+  color: #7b1f1b;
+  background: #fff7f6;
+  font-size: 0.84rem;
+  font-weight: 760;
+}
+
+.issue-report-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.issue-report-actions .primary-button,
+.issue-report-actions .secondary-button {
+  min-height: 34px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.85rem;
+  font-weight: 850;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.issue-report-actions .primary-button {
+  color: var(--accent-strong);
+}
+
+.issue-report-actions .secondary-button {
+  color: var(--muted);
+}
+
+.issue-report-actions .primary-button:hover,
+.issue-report-actions .primary-button:focus-visible,
+.issue-report-actions .secondary-button:hover,
+.issue-report-actions .secondary-button:focus-visible {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  outline: 0;
+}
+
+.issue-report-actions .primary-button:disabled,
+.issue-report-actions .secondary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+@media (max-width: 560px) {
+  .issue-report-dialog {
+    padding: 16px;
+  }
+
+  .issue-report-header {
+    flex-wrap: wrap;
+  }
+
+  .issue-report-review-copy {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .issue-report-selected-reason {
+    max-width: 100%;
+  }
+
+  .issue-report-step-indicator {
+    order: 3;
+    width: 100%;
+  }
+
+  .issue-report-step-indicator button {
+    flex: 1;
+  }
+
+  .issue-report-question-panel,
+  .issue-report-compare-grid,
+  .issue-report-check-panel ul,
+  .issue-report-context-options,
+  .issue-report-context-options.compact {
+    grid-template-columns: 1fr;
+  }
+
+  .issue-report-selected-context {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .issue-report-video-stage video {
+    height: auto;
+    max-height: 190px;
+  }
+
+  .issue-report-actions {
+    flex-direction: column-reverse;
+  }
+
+  .issue-report-actions .primary-button,
+  .issue-report-actions .secondary-button {
+    width: 100%;
+  }
+}

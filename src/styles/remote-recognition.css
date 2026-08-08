@@ -1,0 +1,111 @@
+.remote-recognition-control {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--spacing-3);
+  min-width: 0;
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--panel) 88%, var(--accent-soft));
+}
+
+.remote-recognition-control-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-element-md);
+  height: var(--size-element-md);
+  color: var(--accent-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--panel-soft);
+}
+
+.remote-recognition-control-copy {
+  display: grid;
+  gap: var(--spacing-0-5);
+  min-width: 0;
+}
+
+.remote-recognition-control-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1-5);
+  white-space: nowrap;
+}
+
+.remote-recognition-control-runtime {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  white-space: nowrap;
+}
+
+.remote-recognition-control-identity {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.remote-recognition-control-e2e {
+  font-variant-numeric: tabular-nums;
+}
+
+.remote-recognition-control-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.remote-recognition-setup-fields {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+
+.remote-recognition-connection-identity-value {
+  min-width: 0;
+  padding: var(--spacing-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--panel);
+}
+
+.remote-recognition-connection-identity-value code {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: var(--font-size-sm);
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.remote-recognition-probe-diagnostics .remote-recognition-diagnostic-metric {
+  margin: 0;
+  min-width: 0;
+  width: auto;
+  padding: var(--spacing-1);
+}
+
+.remote-recognition-probe-diagnostics .compact-metric-value {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 45rem) {
+  .remote-recognition-control {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .remote-recognition-control-runtime {
+    grid-column: 2;
+  }
+
+  .remote-recognition-control-actions {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+}

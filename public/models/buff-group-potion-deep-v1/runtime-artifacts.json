@@ -1,0 +1,21 @@
+{
+  "kind": "buff-group-positive-gated-runtime-artifacts",
+  "generatedAt": "2026-07-11T04:38:50.264260+00:00",
+  "elapsedMs": 1607.212,
+  "contractVersion": 1,
+  "bundleId": "buff-group-potion-deep-v1",
+  "targetGroup": "potion",
+  "outputRoot": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime",
+  "files": {
+    "onnx": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime/buff-group-potion-deep-v1.onnx",
+    "onnxData": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime/buff-group-potion-deep-v1.onnx.data",
+    "policy": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime/policy.json",
+    "positiveGate": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-potion-deep-v1-runtime/potion-positive-gate.json"
+  },
+  "bytes": {
+    "onnx": 49156,
+    "onnxData": 3473408,
+    "policy": 2626,
+    "positiveGate": 696404
+  }
+}

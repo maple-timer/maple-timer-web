@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "modelVersion": "rune-strict-local-centernet-s4-v6",
+  "frozenCommit": "a2737fcf503d0b8510410fe70ee06a71c8da42d4",
+  "sourceCheckpointSha256": "8085e6e84faba74b92ec926b3d509fb54fea6609185421e66083df69d73cb7e6",
+  "groundTruthVersion": "rune-ground-truth-v6",
+  "groundTruthSha256": "dad6ad5ff266848ba2db448ad75e6e97a726c40ad66c107422bd5983ebde8d41",
+  "onnxSha256": "f6e3b59c06514fdd3ed8f63d29df70e1ff61d2f2627904761fd9a36bdd399cfe",
+  "onnxBytes": 45397,
+  "opset": 18,
+  "parameters": 9340,
+  "input": {
+    "name": "image",
+    "type": "float32",
+    "layout": "NCHW",
+    "shape": [
+      1,
+      3,
+      192,
+      320
+    ],
+    "color": "RGB",
+    "letterboxFillRgb": [
+      16,
+      22,
+      18
+    ],
+    "resize": {
+      "scale": "min(320 / sourceWidth, 192 / sourceHeight)",
+      "resizedWidth": "round(sourceWidth * scale)",
+      "resizedHeight": "round(sourceHeight * scale)",
+      "padX": "floor((320 - resizedWidth) / 2)",
+      "padY": "floor((192 - resizedHeight) / 2)",
+      "interpolation": "bilinear"
+    },
+    "normalization": "(channel / 255 - 0.5) / 0.5"
+  },
+  "outputs": {
+    "heatmapLogits": {
+      "name": "heatmap_logits",
+      "shape": [
+        1,
+        1,
+        48,
+        80
+      ]
+    },
+    "sideLogits": {
+      "name": "side_logits",
+      "shape": [
+        1,
+        1,
+        48,
+        80
+      ]
+    },
+    "offsetLogits": {
+      "name": "offset_logits",
+      "shape": [
+        1,
+        2,
+        48,
+        80
+      ]
+    }
+  },
+  "decode": {
+    "heatmapActivation": "sigmoid",
+    "selection": "global maximum",
+    "outputStride": 4,
+    "offsetActivation": "sigmoid",
+    "sideActivation": "sigmoid",
+    "sideMinimum": 8.0,
+    "sideMaximum": 32.0,
+    "threshold": 0.56176856
+  },
+  "temporalPolicy": "outside-model"
+}

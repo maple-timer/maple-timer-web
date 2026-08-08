@@ -1,0 +1,3 @@
+# Rune cascade V14 runtime bundle
+
+Copy this directory as one unit. `proposal.onnx` generates the top-5 candidate boxes. Every candidate then passes independently through `gate.onnx`; a detection requires both the shape and appearance thresholds in `metadata.json`. V14 is the conservative V13 derivative that rejects the reported side-by-side circular marker-pair false positives (be401bf7, 9d541aab) while preserving every other real-user decision, including the sealed V13 overlapping-marker positive. Temporal confirmation remains outside the models and uses the production `rune-confirmation-v3` policy.

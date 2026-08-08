@@ -1,0 +1,99 @@
+{
+  "kind": "special-core-deep-v2-runtime-artifacts",
+  "generatedAt": "2026-07-11T07:11:07Z",
+  "elapsedMs": 4283.12550002,
+  "bundleId": "special-core-deep-v2",
+  "source": {
+    "checkpoint": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/special-core-deep-v2-kms/special-core-deep-v2.pt",
+    "report": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/special-core-deep-v2-kms/report.json",
+    "trainingDataset": {
+      "referenceRows": 6,
+      "references": [
+        {
+          "id": "special-core:reference:400007002.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007002.icon.png",
+          "sha1": "19205b7be2a82e7af0b3a64e90ee345f7f1935f6"
+        },
+        {
+          "id": "special-core:reference:400007008.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007008.icon.png",
+          "sha1": "2b0e74c7d5642bec24ff90f0817b14936bf64cc7"
+        },
+        {
+          "id": "special-core:reference:400007007.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007007.icon.png",
+          "sha1": "84079da4f3ce7fdbbec5aa4e32c532a750344b07"
+        },
+        {
+          "id": "special-core:reference:400007013.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007013.icon.png",
+          "sha1": "89478fdb3c65e9964472e488598be7a073d51f42"
+        },
+        {
+          "id": "special-core:reference:400007003.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007003.icon.png",
+          "sha1": "d7f3991a8acdda1e657710e9160b060b8c88cc5c"
+        },
+        {
+          "id": "special-core:reference:400007014.icon.png",
+          "label": "specialCore",
+          "source": "special-core:reference",
+          "imagePath": "<local>/Documents/메이플스토리 버프아이콘 matcher/assets/special-core/reference-icons/400007014.icon.png",
+          "sha1": "f19204e9f89fd65f5f5f3826aa9f6a35589c79b2"
+        }
+      ],
+      "validationPositiveRows": 15876,
+      "backgroundRowsAvailable": 31968,
+      "backgroundSplits": {
+        "train": 11200,
+        "calibration": 7500,
+        "test": 7543
+      },
+      "backgroundBySource": {
+        "combined-review-unknown": 1890,
+        "corpus:unknown": 360,
+        "fountain:labeled-unknown": 4,
+        "kms-389:background": 9043,
+        "manifest:expCoupon": 4273,
+        "manifest:negative": 93,
+        "manifest:potion": 9078,
+        "manifest:unionLuck": 3563,
+        "manifest:unionWealth": 3664
+      },
+      "evidenceRows": 63,
+      "evidenceExpectedRows": 2,
+      "kmsGallery": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/maplestory-io-kms-389-icon-gallery/gallery.json",
+      "kmsBackgroundRows": 9045,
+      "reviewedUnknownFixture": "<local>/Documents/메이플스토리 버프아이콘 matcher/fixtures/special-core-regression/kms-389-reviewed-unknown-v1.json",
+      "reviewedUnknownGroupsExcludedFromTraining": 241
+    }
+  },
+  "files": {
+    "special-core-deep-v2.onnx": {
+      "bytes": 50294,
+      "sha256": "453c5a03a4c1630db8024ba5d9e448edcc059f66295221108b375170645da307"
+    },
+    "special-core-deep-v2.onnx.data": {
+      "bytes": 2510576,
+      "sha256": "4b006470363f185506eacd60e40310a534ba67174c62e98866e5c70bfb6fbb45"
+    },
+    "policy.json": {
+      "bytes": 2377,
+      "sha256": "75971eb77597c3b72cd1568c8d62cc4621ca4f545379b8c2cad6db01ae226357"
+    },
+    "special-core-positive-gate.json": {
+      "bytes": 1372032,
+      "sha256": "8edd2b2bec4dbcbe6ca7203e26e69121e11c3260ecdd46f8c43e996c6621487b"
+    }
+  }
+}

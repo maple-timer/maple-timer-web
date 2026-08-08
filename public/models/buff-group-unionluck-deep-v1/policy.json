@@ -1,0 +1,86 @@
+{
+  "contractVersion": 1,
+  "bundleId": "buff-group-unionluck-deep-v1",
+  "modelId": "buff-group-unionluck-deep-v1",
+  "modelVersion": "unionluck-20260711-v1",
+  "variantId": "logitMargin-background-max+positive-gate-v1",
+  "source": {
+    "checkpoint": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-final/buff-group-unionluck-deep-v1.pt",
+    "report": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-deep-v1-final/report.json",
+    "positiveGate": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-positive-gate-v1-final/unionluck-positive-gate.json",
+    "positiveGateReport": "<local>/Documents/메이플스토리 버프아이콘 matcher/reports/buff-group-unionluck-positive-gate-v1-final/report.json"
+  },
+  "files": {
+    "onnx": "buff-group-unionluck-deep-v1.onnx",
+    "onnxData": "buff-group-unionluck-deep-v1.onnx.data",
+    "policy": "policy.json",
+    "positiveGate": "unionluck-positive-gate.json"
+  },
+  "labels": [
+    "unionLuck",
+    "background"
+  ],
+  "groups": [
+    "unionLuck"
+  ],
+  "backgroundLabel": "background",
+  "scoreKind": "logitMargin",
+  "thresholdPolicy": "background-max",
+  "thresholds": {
+    "unionLuck": -1.1560836
+  },
+  "input": {
+    "shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "layout": "CHW",
+    "color": "RGB",
+    "normalization": "rgb = rgba.rgb / 255; input = (rgb - 0.5) / 0.5"
+  },
+  "output": {
+    "logits": {
+      "name": "logits",
+      "shape": [
+        1,
+        2
+      ],
+      "order": [
+        "unionLuck",
+        "background"
+      ]
+    },
+    "embedding": {
+      "name": "embedding",
+      "shape": [
+        1,
+        96
+      ],
+      "normalization": "L2 normalized by the ONNX model"
+    }
+  },
+  "runtimeContract": {
+    "input": "parser-normalized 32x32 icon",
+    "outputKind": "target | unknown",
+    "targetGroups": [
+      "unionLuck"
+    ],
+    "doesNotReadCountdownSeconds": true,
+    "doesNotTrackFrames": true,
+    "doesNotScheduleAlerts": true
+  },
+  "decision": "Accept the target group when target logit minus background logit reaches its threshold and the embedding reaches the positive prototype cosine threshold; otherwise return unknown.",
+  "postGates": {
+    "unionLuck": {
+      "kind": "positivePrototypeCosine",
+      "artifact": "unionluck-positive-gate.json",
+      "score": "max cosine similarity between embedding and positive prototypes",
+      "threshold": 0.99,
+      "prototypeCount": 192,
+      "embeddingDim": 96,
+      "failureDecision": "unknown"
+    }
+  }
+}

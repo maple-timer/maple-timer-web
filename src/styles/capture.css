@@ -1,0 +1,448 @@
+.capture-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.capture-title-row h2 {
+  flex: 0 0 auto;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.capture-panel-heading {
+  cursor: pointer;
+}
+
+.capture-panel-heading > div:first-child {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.capture-resolution-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid color-mix(in srgb, #79847d 14%, transparent);
+  border-radius: 999px;
+  color: var(--muted);
+  background: color-mix(in srgb, #79847d 8%, transparent);
+  font-size: 0.76rem;
+  font-weight: 760;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.capture-info-button {
+  --tooltip-button-color: var(--accent);
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--tooltip-button-color) 72%, var(--muted));
+  background: transparent;
+  cursor: help;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.capture-info-button::before {
+  border: 1px solid color-mix(in srgb, var(--tooltip-button-color) 18%, transparent);
+  border-radius: inherit;
+  content: "";
+  inset: 3px;
+  position: absolute;
+  transition:
+    border-color 0.18s ease,
+    inset 0.18s ease;
+}
+
+.capture-info-button:hover,
+.capture-info-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 84%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 8%, transparent);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.capture-info-button:hover::before,
+.capture-info-button:focus-visible::before {
+  border-color: color-mix(in srgb, var(--tooltip-button-color) 32%, transparent);
+  inset: 1px;
+}
+
+.capture-windows-info-button {
+  --tooltip-button-color: #be7a00;
+}
+
+.capture-windows-info-button:hover,
+.capture-windows-info-button:focus-visible {
+  color: color-mix(in srgb, var(--tooltip-button-color) 86%, var(--ink));
+  background: color-mix(in srgb, var(--tooltip-button-color) 9%, transparent);
+}
+
+.capture-tooltip {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 9px);
+  left: 50%;
+  width: fit-content;
+  max-width: min(310px, calc(100vw - 24px));
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--panel);
+  box-shadow: 0 12px 28px rgba(22, 48, 43, 0.13);
+  font-size: 0.78rem;
+  font-weight: 720;
+  line-height: 1.45;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -3px);
+  transition:
+    opacity 0.14s ease,
+    transform 0.14s ease;
+}
+
+.capture-info-button:hover .capture-tooltip,
+.capture-info-button:focus-visible .capture-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.capture-panel-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.capture-windows-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(100%, 1060px);
+  margin: 0 auto 14px;
+  padding: 12px 14px;
+  border: 1px solid #f0c36a;
+  border-radius: 8px;
+  color: #3b2f13;
+  background: #fff8e7;
+}
+
+.capture-windows-notice-content {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.capture-windows-notice-content strong {
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.capture-windows-notice-content p {
+  margin: 0;
+  color: #6a5521;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.capture-windows-notice-actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.capture-windows-notice-actions .ghost-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid rgba(106, 85, 33, 0.24);
+  border-radius: 8px;
+  color: #5c491c;
+  background: rgba(255, 255, 255, 0.48);
+  font-weight: 720;
+  letter-spacing: 0;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    color 0.16s ease;
+}
+
+.capture-windows-notice-actions .ghost-button:hover,
+.capture-windows-notice-actions .ghost-button:focus-visible {
+  border-color: rgba(106, 85, 33, 0.42);
+  color: #332812;
+  background: rgba(255, 255, 255, 0.76);
+  outline: none;
+}
+
+.game-viewport-action-button {
+  display: inline-flex;
+  min-height: var(--size-element-lg);
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1-5);
+  padding-inline: var(--spacing-3);
+  border: var(--border-width) solid var(--line-strong);
+  border-radius: var(--radius-element);
+  color: var(--ink);
+  background: var(--panel);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 5%, transparent);
+  font: inherit;
+  font-size: var(--text-supporting-size);
+  font-weight: 820;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.game-viewport-action-button svg {
+  flex: 0 0 auto;
+}
+
+.game-viewport-action-button:hover,
+.game-viewport-action-button:focus-visible {
+  border-color: var(--line-strong);
+  color: var(--accent-strong);
+  background: var(--panel);
+  box-shadow: 0 5px 14px color-mix(in srgb, var(--ink) 8%, transparent);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.game-viewport-action-button.is-primary {
+  border-color: color-mix(in srgb, var(--accent) 28%, var(--line));
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 68%, var(--panel));
+}
+
+.game-viewport-action-button.is-primary:hover,
+.game-viewport-action-button.is-primary:focus-visible {
+  border-color: color-mix(in srgb, var(--accent) 46%, var(--line));
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 92%, var(--panel));
+}
+
+.game-viewport-action-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
+  transform: none;
+}
+
+.capture-panel .compact-capture-button {
+  color: #111111;
+  -webkit-text-fill-color: #111111;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  min-height: 30px;
+  padding: 0 10px;
+  font-size: 0.82rem;
+}
+
+.capture-panel .compact-capture-button:disabled {
+  color: #111111;
+  -webkit-text-fill-color: #111111;
+  opacity: 1;
+}
+
+.capture-panel .compact-capture-button:hover,
+.capture-panel .compact-capture-button:focus-visible {
+  color: var(--accent-strong);
+  -webkit-text-fill-color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: translateY(-1px);
+}
+
+.capture-collapse-button {
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease,
+    transform 0.18s ease;
+}
+
+.capture-panel:not(.collapsed) .capture-collapse-button {
+  color: var(--accent-strong);
+  background: transparent;
+  border-color: transparent;
+  transform: rotate(180deg);
+}
+
+.video-shell {
+  position: relative;
+  width: min(100%, 1060px);
+  max-height: min(760px, 78vh);
+  min-height: 260px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid #1c221c;
+  border-radius: 8px;
+  background: #0b0d0c;
+  transition:
+    max-height 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    min-height 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 140ms ease,
+    border-width 140ms ease,
+    margin 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.video-shell.has-video {
+  min-height: 0;
+}
+
+.video-shell.is-collapsed {
+  max-height: 0;
+  min-height: 0;
+  margin: 0 auto;
+  border-width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-shell video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.capture-video-host {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.capture-video-host video {
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.large-capture-button {
+  color: #ffffff;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  min-height: 44px;
+  padding: 0 18px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
+.large-capture-button:hover,
+.large-capture-button:focus-visible {
+  color: #e8fff5;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  .capture-title-row {
+    max-width: 100%;
+  }
+
+  .capture-panel-heading {
+    align-items: flex-start;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .capture-panel-heading > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .capture-panel-actions {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .capture-windows-notice {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .capture-windows-notice-actions {
+    justify-content: flex-end;
+  }
+
+  .capture-tooltip {
+    left: auto;
+    right: -8px;
+    width: min(310px, calc(100vw - 40px));
+    transform: translate(0, -3px);
+  }
+
+  .capture-info-button:hover .capture-tooltip,
+  .capture-info-button:focus-visible .capture-tooltip {
+    transform: translate(0, 0);
+  }
+
+  .video-shell {
+    min-height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-shell {
+    transition: none !important;
+  }
+}

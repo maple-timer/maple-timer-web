@@ -1,0 +1,241 @@
+[data-sonner-toaster] {
+  font-family:
+    "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    "Noto Sans KR", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  z-index: 140;
+}
+
+[data-sonner-toast].app-toast-host {
+  width: min(410px, calc(100vw - 32px));
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.app-toast-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 11px;
+  width: min(410px, calc(100vw - 32px));
+  min-height: 58px;
+  padding: 13px 13px 14px 14px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--app-toast-accent) 26%, var(--app-toast-border));
+  border-radius: 9px;
+  color: var(--app-toast-text);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-toast-bg) 88%, white),
+    var(--app-toast-bg)
+  );
+  box-shadow:
+    0 16px 34px rgba(18, 43, 36, 0.12),
+    0 1px 0 rgba(255, 255, 255, 0.55) inset;
+  font-family:
+    "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    "Noto Sans KR", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transform-origin: 92% 100%;
+}
+
+.app-toast-card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--app-toast-accent),
+    color-mix(in srgb, var(--app-toast-accent) 42%, transparent)
+  );
+  transform-origin: left center;
+  animation: app-toast-life var(--app-toast-duration, 4500ms) linear forwards;
+}
+
+.app-toast-card:hover::after {
+  animation-play-state: paused;
+}
+
+.app-toast-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border-radius: 999px;
+  color: var(--app-toast-accent);
+  background: color-mix(in srgb, var(--app-toast-accent) 12%, transparent);
+}
+
+.app-toast-content {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.app-toast-title {
+  color: var(--app-toast-text);
+  font-size: 0.9rem;
+  font-weight: 720;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.app-toast-description {
+  margin: 0;
+  color: var(--app-toast-sub);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+.app-toast-close {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  color: var(--app-toast-sub);
+  background: transparent;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-toast-close:hover {
+  color: var(--app-toast-text);
+  background: color-mix(in srgb, var(--app-toast-accent) 10%, transparent);
+}
+
+.app-toast--success {
+  --app-toast-bg: #f4fbf5;
+  --app-toast-border: #b9dbc1;
+  --app-toast-text: #143e27;
+  --app-toast-sub: #4f7058;
+  --app-toast-accent: #14814c;
+}
+
+.app-toast--info {
+  --app-toast-bg: #f4fbfa;
+  --app-toast-border: #b6d9d5;
+  --app-toast-text: #143d39;
+  --app-toast-sub: #52716d;
+  --app-toast-accent: #14766d;
+}
+
+.app-toast--warning {
+  --app-toast-bg: #fff8e8;
+  --app-toast-border: #e4c37f;
+  --app-toast-text: #573008;
+  --app-toast-sub: #806135;
+  --app-toast-accent: #b8740a;
+}
+
+.app-toast--error {
+  --app-toast-bg: #fff3ef;
+  --app-toast-border: #e5b5aa;
+  --app-toast-text: #5a1e16;
+  --app-toast-sub: #87534b;
+  --app-toast-accent: #c23d2d;
+}
+
+.app-toast--loading {
+  --app-toast-bg: #fbfaf5;
+  --app-toast-border: #dfe5d7;
+  --app-toast-text: #223d37;
+  --app-toast-sub: #66736f;
+  --app-toast-accent: var(--accent);
+}
+
+.app-toast-spinner {
+  animation: app-toast-spin 1s linear infinite;
+}
+
+@keyframes app-toast-life {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes app-toast-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root[data-theme="dark"] .app-toast-card {
+  border-color: color-mix(in srgb, var(--app-toast-accent) 34%, var(--app-toast-border));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-toast-bg) 84%, #eef3ed 4%),
+    var(--app-toast-bg)
+  );
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, 0.32),
+    0 1px 0 rgba(255, 255, 255, 0.08) inset;
+}
+
+:root[data-theme="dark"] .app-toast--success {
+  --app-toast-bg: #14251c;
+  --app-toast-border: #2a5f42;
+  --app-toast-text: #d8f1df;
+  --app-toast-sub: #a0c6ac;
+  --app-toast-accent: #78d59a;
+}
+
+:root[data-theme="dark"] .app-toast--info {
+  --app-toast-bg: #122523;
+  --app-toast-border: #2b635d;
+  --app-toast-text: #d8f3ef;
+  --app-toast-sub: #9bc7c1;
+  --app-toast-accent: #6ed0c5;
+}
+
+:root[data-theme="dark"] .app-toast--warning {
+  --app-toast-bg: #2a2112;
+  --app-toast-border: #725626;
+  --app-toast-text: #ffe8b8;
+  --app-toast-sub: #d0b37d;
+  --app-toast-accent: #e8ae42;
+}
+
+:root[data-theme="dark"] .app-toast--error {
+  --app-toast-bg: #2b1715;
+  --app-toast-border: #74352e;
+  --app-toast-text: #ffd9d2;
+  --app-toast-sub: #d29b93;
+  --app-toast-accent: #ff8b78;
+}
+
+:root[data-theme="dark"] .app-toast--loading {
+  --app-toast-bg: #18231f;
+  --app-toast-border: #37463f;
+  --app-toast-text: #edf5f1;
+  --app-toast-sub: #a9b9b1;
+  --app-toast-accent: #8ccfbd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-toast-card::after,
+  .app-toast-spinner {
+    animation: none;
+  }
+}

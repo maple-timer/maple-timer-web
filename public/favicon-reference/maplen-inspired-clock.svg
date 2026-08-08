@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Orange mushroom holding clock">
+  <path
+    d="M16 72C21 31 53 8 90 8c38 0 70 24 75 64 4 30-20 47-75 47S12 102 16 72z"
+    fill="#f28a13"
+    stroke="#d7670b"
+    stroke-width="4"
+  />
+  <path
+    d="M24 76C31 39 59 18 91 18c33 0 60 21 66 58-6-29-34-47-66-47-31 0-60 18-67 47z"
+    fill="#ffbd2e"
+    opacity=".75"
+  />
+  <ellipse cx="66" cy="65" rx="19" ry="15" fill="#ffd838" opacity=".9" />
+  <ellipse cx="119" cy="43" rx="21" ry="15" fill="#ffd838" opacity=".92" transform="rotate(24 119 43)" />
+  <ellipse cx="155" cy="79" rx="9" ry="16" fill="#ffd838" opacity=".86" />
+  <ellipse cx="31" cy="75" rx="9" ry="16" fill="#ffd838" opacity=".82" transform="rotate(25 31 75)" />
+
+  <path
+    d="M45 104c4 39 21 60 45 60s41-21 45-60c-12 8-29 12-45 12s-33-4-45-12z"
+    fill="#fff1cf"
+    stroke="#8c5a34"
+    stroke-width="4"
+  />
+  <path d="M42 113c-9 1-19 5-26 11" fill="none" stroke="#d97867" stroke-width="6" stroke-linecap="round" />
+  <path d="M138 113c9 1 19 5 26 11" fill="none" stroke="#d97867" stroke-width="6" stroke-linecap="round" />
+  <circle cx="65" cy="101" r="6" fill="#73462f" />
+  <circle cx="115" cy="101" r="6" fill="#73462f" />
+  <path d="M80 110c3 6 17 6 20 0" fill="none" stroke="#73462f" stroke-width="4" stroke-linecap="round" />
+  <path d="M90 102v6" fill="none" stroke="#73462f" stroke-width="4" stroke-linecap="round" />
+
+  <path
+    d="M44 129c13-16 30-23 46-23s33 7 46 23c-5 24-22 38-46 38s-41-14-46-38z"
+    fill="#74375b"
+    stroke="#4f2440"
+    stroke-width="4"
+  />
+  <path d="M47 129c16 11 30 16 43 16s27-5 43-16" fill="none" stroke="#ffca47" stroke-width="4" stroke-linecap="round" />
+
+  <circle cx="96" cy="134" r="31" fill="#fff7dc" stroke="#4f2440" stroke-width="5" />
+  <circle cx="96" cy="134" r="24" fill="#fffdf0" stroke="#f0b33b" stroke-width="4" />
+  <path d="M96 119v17l11 7" fill="none" stroke="#4f2440" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="96" cy="134" r="4" fill="#4f2440" />
+  <path d="M96 104v8M96 156v8M66 134h8M118 134h8" stroke="#4f2440" stroke-width="3" stroke-linecap="round" />
+
+  <path d="M129 121l8-15 8 15 15 8-15 8-8 15-8-15-15-8z" fill="#66e6ff" stroke="#8d5cff" stroke-width="4" stroke-linejoin="round" />
+</svg>

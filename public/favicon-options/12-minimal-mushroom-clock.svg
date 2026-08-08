@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Minimal orange mushroom timer">
+  <rect width="64" height="64" rx="14" fill="#fbf1d6"/>
+  <path d="M10 29c1-13 10-21 22-21s21 8 22 21c1 8-6 12-22 12S9 37 10 29z" fill="#e97720"/>
+  <path d="M21 24c0-5 4-8 8-8 3 0 5 2 5 5 0 5-4 8-9 8-3 0-4-2-4-5zM39 18c5 0 9 4 9 9 0 4-3 7-8 7s-8-3-8-7c0-6 3-9 7-9z" fill="#ffd29a"/>
+  <path d="M20 38c1 11 6 18 12 18s11-7 12-18c-4 2-8 3-12 3s-8-1-12-3z" fill="#fff8e6" stroke="#2a3f33" stroke-width="3"/>
+  <path d="M32 43v7l6 3" fill="none" stroke="#2a3f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+</svg>

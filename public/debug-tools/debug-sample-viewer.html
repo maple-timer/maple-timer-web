@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maple Timer 샘플 보기</title>
+    <style>
+      @font-face {
+        font-family: "Pretendard Variable";
+        font-style: normal;
+        font-weight: 45 920;
+        font-display: swap;
+        src: url("/fonts/PretendardVariable.woff2") format("woff2");
+      }
+
+      :root {
+        color-scheme: light;
+        --bg: #f7f8f4;
+        --panel: #fffefa;
+        --panel-soft: #f8faf4;
+        --ink: #16302b;
+        --muted: #68756e;
+        --line: #dce3d8;
+        --line-strong: #c8d3c5;
+        --accent: #006b51;
+        --accent-soft: #e8f3ed;
+        --amber: #9b5b00;
+        --amber-soft: #fff4d9;
+        --blue: #1d5f8a;
+        --blue-soft: #e8f3fb;
+        --purple: #6750a4;
+        --purple-soft: #f0ecff;
+        --danger: #b33a31;
+        --danger-soft: #fff0ee;
+        --shadow: 0 18px 48px rgba(22, 48, 43, 0.09);
+      }
+
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #111613;
+        --panel: #151b18;
+        --panel-soft: #1c241f;
+        --ink: #eef3ed;
+        --muted: #bcc8c0;
+        --line: #2d3933;
+        --line-strong: #435349;
+        --accent: #7bd0a7;
+        --accent-soft: #163326;
+        --amber: #ffc46c;
+        --amber-soft: #332616;
+        --blue: #8ec8f2;
+        --blue-soft: #122838;
+        --purple: #c7b8ff;
+        --purple-soft: #271f3b;
+        --danger: #ff9d94;
+        --danger-soft: #351d1b;
+        --shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at 12% 0%,
+            color-mix(in srgb, var(--accent) 8%, transparent),
+            transparent 28rem
+          ),
+          var(--bg);
+        font-family:
+          "Pretendard Variable",
+          Pretendard,
+          "Apple SD Gothic Neo",
+          "Malgun Gothic",
+          "맑은 고딕",
+          "Noto Sans KR",
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+        letter-spacing: 0;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .page {
+        width: min(1440px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 16px;
+        align-items: start;
+        margin-bottom: 18px;
+      }
+
+      .eyebrow {
+        margin: 0 0 4px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 820;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        margin: 9px 0 0;
+        max-width: 820px;
+        color: var(--muted);
+        font-size: 0.98rem;
+        word-break: keep-all;
+      }
+
+      .theme-toggle,
+      .button {
+        border: 0;
+        border-radius: 999px;
+        color: var(--ink);
+        background: transparent;
+        font-weight: 780;
+        transition:
+          transform 160ms ease,
+          color 160ms ease,
+          background-color 160ms ease;
+      }
+
+      .theme-toggle {
+        padding: 9px 12px;
+      }
+
+      .theme-toggle:hover,
+      .button:hover {
+        color: var(--accent);
+        background: color-mix(in srgb, var(--accent-soft) 70%, transparent);
+      }
+
+      .theme-toggle:active,
+      .button:active {
+        transform: scale(0.97);
+      }
+
+      .top-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        color: #fff;
+        background: var(--accent);
+      }
+
+      .button.primary:hover {
+        color: #fff;
+        background: color-mix(in srgb, var(--accent) 84%, #000);
+      }
+
+      .toolbar {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) auto;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      input {
+        min-height: 46px;
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 0 14px;
+        color: var(--ink);
+        background: var(--panel);
+        outline: none;
+      }
+
+      input:focus {
+        border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent);
+      }
+
+      .card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: color-mix(in srgb, var(--panel) 92%, transparent);
+        box-shadow: var(--shadow);
+      }
+
+      .card + .card {
+        margin-top: 16px;
+      }
+
+      .card-header {
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid var(--line);
+        padding: 14px 18px;
+      }
+
+      .card-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        font-size: 1.08rem;
+        font-weight: 860;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        padding: 5px 10px;
+        color: var(--muted);
+        background: var(--panel-soft);
+        font-size: 0.78rem;
+        font-weight: 760;
+        white-space: nowrap;
+      }
+
+      .card-body {
+        padding: 18px;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .summary-item {
+        min-height: 86px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px;
+        background: color-mix(in srgb, var(--panel-soft) 70%, transparent);
+      }
+
+      .summary-label {
+        margin: 0 0 6px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 820;
+      }
+
+      .summary-value {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 780;
+        overflow-wrap: anywhere;
+      }
+
+      .status {
+        margin: 0 0 16px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px;
+        color: var(--muted);
+        background: color-mix(in srgb, var(--panel-soft) 78%, transparent);
+        font-weight: 680;
+      }
+
+      .status.error {
+        border-color: color-mix(in srgb, var(--danger) 35%, var(--line));
+        color: var(--danger);
+        background: var(--danger-soft);
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 12px;
+      }
+
+      .image-grid.featured {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      .image-card {
+        min-width: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        background: var(--panel);
+      }
+
+      .image-card.full {
+        grid-column: span 2;
+      }
+
+      .image-frame {
+        display: grid;
+        min-height: 148px;
+        place-items: center;
+        border-bottom: 1px solid var(--line);
+        background:
+          linear-gradient(45deg, color-mix(in srgb, var(--line) 34%, transparent) 25%, transparent 25%),
+          linear-gradient(-45deg, color-mix(in srgb, var(--line) 34%, transparent) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, color-mix(in srgb, var(--line) 34%, transparent) 75%),
+          linear-gradient(-45deg, transparent 75%, color-mix(in srgb, var(--line) 34%, transparent) 75%);
+        background-position:
+          0 0,
+          0 8px,
+          8px -8px,
+          -8px 0;
+        background-size: 16px 16px;
+      }
+
+      .featured .image-frame {
+        min-height: 280px;
+      }
+
+      .image-card img {
+        display: block;
+        max-width: 100%;
+        max-height: 520px;
+        object-fit: contain;
+        image-rendering: auto;
+      }
+
+      .small-pixel img {
+        width: auto;
+        min-width: 42px;
+        image-rendering: pixelated;
+      }
+
+      .image-meta {
+        padding: 10px 12px 12px;
+      }
+
+      .image-title {
+        margin: 0;
+        font-size: 0.88rem;
+        font-weight: 840;
+      }
+
+      .image-path {
+        margin: 4px 0 0;
+        color: var(--muted);
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          "Liberation Mono",
+          monospace;
+        font-size: 0.72rem;
+        overflow-wrap: anywhere;
+      }
+
+      .empty {
+        display: grid;
+        min-height: 160px;
+        place-items: center;
+        border: 1px dashed var(--line-strong);
+        border-radius: 12px;
+        color: var(--muted);
+        background: color-mix(in srgb, var(--panel-soft) 68%, transparent);
+        text-align: center;
+      }
+
+      .json-box {
+        max-height: 360px;
+        overflow: auto;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px;
+        color: var(--muted);
+        background: color-mix(in srgb, var(--panel-soft) 72%, transparent);
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          "Liberation Mono",
+          monospace;
+        font-size: 0.76rem;
+        white-space: pre-wrap;
+      }
+
+      @media (max-width: 900px) {
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .image-card.full {
+          grid-column: auto;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          width: min(100% - 18px, 1440px);
+          padding-top: 18px;
+        }
+
+        .hero,
+        .toolbar {
+          grid-template-columns: 1fr;
+        }
+
+        .top-actions {
+          justify-content: flex-start;
+        }
+
+        .summary-grid,
+        .image-grid,
+        .image-grid.featured {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Maple Timer Debug Sample</p>
+          <h1>샘플 보기</h1>
+          <p class="lead">
+            제보에 포함된 원본 프레임, ROI, 처리 이미지, evidence 이미지를 한 화면에서 확인합니다.
+            raw JSON은 별도 버튼으로 열 수 있습니다.
+          </p>
+        </div>
+        <div class="top-actions">
+          <button class="theme-toggle" id="themeToggle" type="button">다크 모드</button>
+          <a class="button" id="rawJsonLink" href="#" target="_blank" rel="noreferrer">원본 JSON</a>
+          <a class="button" id="troubleshooterLink" href="#" target="_blank" rel="noreferrer">
+            트러블슈팅
+          </a>
+          <button class="button" id="downloadSampleButton" type="button" disabled>샘플 다운로드</button>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="샘플 조회">
+        <input id="sampleInput" type="text" placeholder="샘플 ID 또는 샘플 조회 URL" />
+        <button class="button primary" id="loadButton" type="button">불러오기</button>
+      </section>
+
+      <p class="status" id="status">샘플을 불러오는 중입니다.</p>
+
+      <section class="card" id="summaryCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>요약</h2>
+          <span class="pill" id="imageCountPill">0개 이미지</span>
+        </div>
+        <div class="card-body">
+          <div class="summary-grid" id="summaryGrid"></div>
+        </div>
+      </section>
+
+      <section class="card" id="primaryCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>주요 이미지</h2>
+          <span class="pill" id="primaryCountPill">0개</span>
+        </div>
+        <div class="card-body">
+          <div class="image-grid featured" id="primaryImages"></div>
+        </div>
+      </section>
+
+      <section class="card" id="evidenceCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>감지 Evidence</h2>
+          <span class="pill" id="evidenceCountPill">0개</span>
+        </div>
+        <div class="card-body">
+          <div class="image-grid" id="evidenceImages"></div>
+        </div>
+      </section>
+
+      <section class="card" id="replayCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>최근 ROI / Replay</h2>
+          <span class="pill" id="replayCountPill">0개</span>
+        </div>
+        <div class="card-body">
+          <div class="image-grid" id="replayImages"></div>
+        </div>
+      </section>
+
+      <section class="card" id="otherCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>기타 이미지</h2>
+          <span class="pill" id="otherCountPill">0개</span>
+        </div>
+        <div class="card-body">
+          <div class="image-grid" id="otherImages"></div>
+        </div>
+      </section>
+
+      <section class="card" id="jsonCard" hidden>
+        <div class="card-header">
+          <h2 class="card-title"><span class="dot"></span>JSON 요약</h2>
+          <span class="pill">이미지는 생략 표시</span>
+        </div>
+        <div class="card-body">
+          <pre class="json-box" id="jsonPreview"></pre>
+        </div>
+      </section>
+    </main>
+
+    <script type="module">
+      import {
+        createZipBlob as createDebugSampleZipBlob,
+        extensionFromDataUrl as getDebugSampleDataUrlExtension,
+        readDataUrlBytes as readDebugSampleDataUrlBytes,
+        sanitizeDebugSampleFileName,
+        textToBytes as debugSampleTextToBytes,
+      } from "./debug-sample-assets.mjs";
+
+      const KIND_LABELS = {
+        "skill-issue": "스킬 알림",
+        "rune-issue": "룬 감지",
+        "hunt-stall-issue": "사냥 멈춤",
+        "buff-expiry-issue": "버프 종료",
+        "booster-expiry-issue": "부스터 종료",
+        "special-core-issue": "특수코어",
+      };
+
+      const IMAGE_KEY_LABELS = {
+        fullFrameDataUrl: "전체 프레임",
+        rawDataUrl: "원본 ROI",
+        processedDataUrl: "처리 이미지",
+        timerDataUrl: "타이머 Crop",
+        candidateDataUrl: "후보 Crop",
+        imageDataUrl: "저장 프레임",
+        normalizedIconDataUrl: "정규화 아이콘",
+        previewDataUrl: "미리보기",
+        dataUrl: "첨부 이미지",
+        rawPreviewUrl: "원본 미리보기",
+        maskPreviewUrl: "마스크 미리보기",
+        processedPreviewUrl: "처리 미리보기",
+        candidatePreviewUrl: "후보 미리보기",
+        candidateRawPreviewUrl: "후보 원본",
+        candidateMaskPreviewUrl: "후보 마스크",
+        timerPreviewUrl: "타이머 미리보기",
+      };
+
+      const els = {
+        themeToggle: document.getElementById("themeToggle"),
+        rawJsonLink: document.getElementById("rawJsonLink"),
+        troubleshooterLink: document.getElementById("troubleshooterLink"),
+        downloadSampleButton: document.getElementById("downloadSampleButton"),
+        sampleInput: document.getElementById("sampleInput"),
+        loadButton: document.getElementById("loadButton"),
+        status: document.getElementById("status"),
+        summaryCard: document.getElementById("summaryCard"),
+        summaryGrid: document.getElementById("summaryGrid"),
+        imageCountPill: document.getElementById("imageCountPill"),
+        primaryCard: document.getElementById("primaryCard"),
+        primaryImages: document.getElementById("primaryImages"),
+        primaryCountPill: document.getElementById("primaryCountPill"),
+        evidenceCard: document.getElementById("evidenceCard"),
+        evidenceImages: document.getElementById("evidenceImages"),
+        evidenceCountPill: document.getElementById("evidenceCountPill"),
+        replayCard: document.getElementById("replayCard"),
+        replayImages: document.getElementById("replayImages"),
+        replayCountPill: document.getElementById("replayCountPill"),
+        otherCard: document.getElementById("otherCard"),
+        otherImages: document.getElementById("otherImages"),
+        otherCountPill: document.getElementById("otherCountPill"),
+        jsonCard: document.getElementById("jsonCard"),
+        jsonPreview: document.getElementById("jsonPreview"),
+      };
+
+      let currentSample = null;
+      let currentImages = [];
+      let currentSampleId = "";
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem("maple-debug-theme", theme);
+        els.themeToggle.textContent = theme === "dark" ? "라이트 모드" : "다크 모드";
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function formatNullable(value) {
+        if (value === null || value === undefined || value === "") {
+          return "-";
+        }
+        return String(value);
+      }
+
+      function formatConfidence(value) {
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) {
+          return "-";
+        }
+        return `${Math.round(numeric * 100)}%`;
+      }
+
+      function getInitialSampleInput() {
+        const params = new URLSearchParams(window.location.search);
+        return (
+          params.get("sampleUrl") ||
+          params.get("sample") ||
+          params.get("id") ||
+          params.get("url") ||
+          ""
+        );
+      }
+
+      function getSampleIdFromValue(value) {
+        const text = String(value ?? "").trim();
+        if (!text) {
+          return "";
+        }
+        try {
+          const url = new URL(text);
+          return url.searchParams.get("id") || url.searchParams.get("sample") || "";
+        } catch {
+          const match = text.match(/[0-9a-fA-F]{8}-[0-9a-fA-F-]{27,}/);
+          return match?.[0] || text;
+        }
+      }
+
+      function getSampleUrl(value) {
+        const text = String(value ?? "").trim();
+        if (!text) {
+          return "";
+        }
+        try {
+          const url = new URL(text);
+          if (url.pathname.includes("/api/debug-samples")) {
+            return url.href;
+          }
+          const id = url.searchParams.get("id") || url.searchParams.get("sample");
+          if (id) {
+            return `${url.origin}/api/debug-samples?id=${encodeURIComponent(id)}`;
+          }
+        } catch {
+          // Fall through to id handling.
+        }
+        const id = getSampleIdFromValue(text);
+        return id ? `${window.location.origin}/api/debug-samples?id=${encodeURIComponent(id)}` : "";
+      }
+
+      function setStatus(message, kind = "info") {
+        els.status.hidden = false;
+        els.status.textContent = message;
+        els.status.className = kind === "error" ? "status error" : "status";
+      }
+
+      function redactDataUrls(value) {
+        if (typeof value === "string") {
+          return value.startsWith("data:image/") ? "[image dataUrl]" : value;
+        }
+        if (Array.isArray(value)) {
+          return value.map(redactDataUrls);
+        }
+        if (value && typeof value === "object") {
+          return Object.fromEntries(
+            Object.entries(value).map(([key, nestedValue]) => [key, redactDataUrls(nestedValue)]),
+          );
+        }
+        return value;
+      }
+
+      function getImageLabel(path) {
+        const lastKey = path[path.length - 1] ?? "";
+        if (path.join(".").toLowerCase().endsWith("sample.source.dataurl")) {
+          return "실제 런타임 parser 입력";
+        }
+        if (path.includes("candidateIcons")) {
+          return "버프칸 후보";
+        }
+        if (IMAGE_KEY_LABELS[lastKey]) {
+          return IMAGE_KEY_LABELS[lastKey];
+        }
+        if (path.includes("acceptedMatches")) {
+          return "수락 매칭";
+        }
+        if (path.includes("rejectedMatches")) {
+          return "거절 매칭";
+        }
+        if (path.includes("timerEvidence")) {
+          return "타이머 증거";
+        }
+        if (path.includes("confirmationEvidence")) {
+          return "확정 증거";
+        }
+        if (path.includes("lastAlertEvidence")) {
+          return "최근 알림 증거";
+        }
+        if (path.includes("frames")) {
+          return "저장 프레임";
+        }
+        return "이미지";
+      }
+
+      function classifyImage(path) {
+        const joined = path.join(".").toLowerCase();
+        const lastKey = String(path[path.length - 1] ?? "");
+        if (joined.endsWith("sample.source.dataurl")) {
+          return "primary";
+        }
+        if (
+          [
+            "fullFrameDataUrl",
+            "rawDataUrl",
+            "processedDataUrl",
+            "timerDataUrl",
+            "candidateDataUrl",
+            "rawPreviewUrl",
+            "maskPreviewUrl",
+            "processedPreviewUrl",
+            "candidatePreviewUrl",
+            "timerPreviewUrl",
+          ].includes(lastKey)
+        ) {
+          return "primary";
+        }
+        if (joined.includes("replay") || joined.includes("recentroi") || joined.includes("frames")) {
+          return "replay";
+        }
+        if (
+          joined.includes("evidence") ||
+          joined.includes("candidateicons") ||
+          joined.includes("acceptedmatches") ||
+          joined.includes("rejectedmatches") ||
+          joined.includes("tracks") ||
+          joined.includes("pendingtracks") ||
+          joined.includes("matches")
+        ) {
+          return "evidence";
+        }
+        return "other";
+      }
+
+      function collectImages(root) {
+        const images = [];
+
+        function add(dataUrl, path) {
+          const pathText = path.join(".");
+          const image = {
+            dataUrl,
+            path,
+            paths: [pathText],
+            label: getImageLabel(path),
+            category: classifyImage(path),
+          };
+          images.push(image);
+        }
+
+        function visit(value, path = []) {
+          if (typeof value === "string") {
+            if (value.startsWith("data:image/")) {
+              add(value, path);
+            }
+            return;
+          }
+          if (Array.isArray(value)) {
+            value.forEach((item, index) => visit(item, [...path, String(index)]));
+            return;
+          }
+          if (value && typeof value === "object") {
+            for (const [key, nestedValue] of Object.entries(value)) {
+              visit(nestedValue, [...path, key]);
+            }
+          }
+        }
+
+        visit(root);
+        return images;
+      }
+
+      function getBody(sample) {
+        return sample?.body ?? sample?.payload?.body ?? sample ?? {};
+      }
+
+      function buildSummary(sample, images) {
+        const body = getBody(sample);
+        const capture = body?.diagnostics?.capture ?? {};
+        const sampleResult = body?.sample?.result ?? {};
+        const build = body?.appBuild ?? {};
+        const issue = body?.reportIssue ?? {};
+        const kind = body?.kind ?? sample?.metadata?.kind ?? "-";
+        return [
+          ["유형", KIND_LABELS[kind] || kind],
+          ["사유", issue.label || issue.reason || sample?.metadata?.issueLabel || "-"],
+          ["상태", sample?.metadata?.status || sampleResult.status || "-"],
+          ["버전", [build.channel, build.branch, build.shortCommit].filter(Boolean).join(" ") || "-"],
+          [
+            "캡처",
+            capture.size?.width && capture.size?.height
+              ? `${capture.size.width}x${capture.size.height}`
+              : "-",
+          ],
+          ["화면 공유", capture.hasStream ? "있음" : "없음"],
+          ["신뢰도", formatConfidence(sampleResult.confidence ?? sample?.metadata?.confidence)],
+          ["이미지", `${images.length}개`],
+        ];
+      }
+
+      function renderSummary(sample, images) {
+        const items = buildSummary(sample, images);
+        els.summaryGrid.innerHTML = items
+          .map(
+            ([label, value]) => `
+              <div class="summary-item">
+                <p class="summary-label">${escapeHtml(label)}</p>
+                <p class="summary-value">${escapeHtml(formatNullable(value))}</p>
+              </div>
+            `,
+          )
+          .join("");
+        els.summaryCard.hidden = false;
+        els.imageCountPill.textContent = `${images.length}개 이미지`;
+      }
+
+      function isSmallPixelImage(image) {
+        const path = image.path.join(".").toLowerCase();
+        return (
+          path.includes("icon") ||
+          path.includes("match") ||
+          path.includes("boxpreview") ||
+          path.includes("evidence")
+        );
+      }
+
+      function renderImages(container, images, options = {}) {
+        if (images.length === 0) {
+          container.innerHTML = `<div class="empty">표시할 이미지가 없습니다.</div>`;
+          return;
+        }
+        container.innerHTML = images
+          .map((image) => {
+            const full = options.featured && image.path.includes("fullFrameDataUrl");
+            const classes = [
+              "image-card",
+              full ? "full" : "",
+              isSmallPixelImage(image) ? "small-pixel" : "",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            const paths = image.paths.slice(0, 4).join("\n");
+            const more = image.paths.length > 4 ? `\n외 ${image.paths.length - 4}개 경로` : "";
+            return `
+              <article class="${classes}">
+                <div class="image-frame">
+                  <img src="${image.dataUrl}" alt="${escapeHtml(image.label)}" loading="lazy" />
+                </div>
+                <div class="image-meta">
+                  <p class="image-title">${escapeHtml(image.label)}</p>
+                  <p class="image-path">${escapeHtml(paths + more)}</p>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function renderSection(card, container, pill, images, options) {
+        card.hidden = false;
+        pill.textContent = `${images.length}개`;
+        renderImages(container, images, options);
+      }
+
+      function getDownloadSection(path) {
+        const category = classifyImage(path);
+        if (category === "primary") return "01-primary";
+        if (category === "replay") return "02-replay";
+        if (category === "evidence") return "03-evidence";
+        return "04-other";
+      }
+
+      async function downloadCurrentSample() {
+        if (!currentSample) return;
+
+        const previousText = els.downloadSampleButton.textContent;
+        els.downloadSampleButton.disabled = true;
+        els.downloadSampleButton.textContent = "묶는 중...";
+
+        try {
+          const id = currentSampleId || getSampleIdFromValue(els.sampleInput.value) || "sample";
+          const files = [
+            {
+              name: "sample.json",
+              bytes: debugSampleTextToBytes(JSON.stringify(currentSample, null, 2)),
+            },
+          ];
+          const manifest = [
+            `sample: ${id}`,
+            `images: ${currentImages.length}`,
+            "",
+          ];
+
+          currentImages.forEach((image, index) => {
+            const folder = getDownloadSection(image.path);
+            const extension = getDebugSampleDataUrlExtension(image.dataUrl);
+            const label = sanitizeDebugSampleFileName(image.label);
+            const filename = `${folder}/${String(index + 1).padStart(2, "0")}-${label}.${extension}`;
+            files.push({
+              name: filename,
+              bytes: readDebugSampleDataUrlBytes(image.dataUrl),
+            });
+            manifest.push(
+              `${index + 1}. ${filename}`,
+              `  label: ${image.label}`,
+              `  payload: ${image.paths?.[0] ?? image.path.join(".")}`,
+              "",
+            );
+          });
+
+          files.push({
+            name: "manifest.txt",
+            bytes: debugSampleTextToBytes(manifest.join("\n")),
+          });
+
+          const blob = createDebugSampleZipBlob(files);
+          const objectUrl = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = objectUrl;
+          link.download = `maple-timer-sample-${sanitizeDebugSampleFileName(id, "sample")}.zip`;
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+        } catch (error) {
+          setStatus(error instanceof Error ? error.message : "샘플 다운로드 실패", "error");
+        } finally {
+          els.downloadSampleButton.disabled = !currentSample;
+          els.downloadSampleButton.textContent = previousText || "샘플 다운로드";
+        }
+      }
+
+      function updateLinks(sampleUrl, sampleId) {
+        const id = sampleId || getSampleIdFromValue(sampleUrl);
+        els.rawJsonLink.href = sampleUrl || "#";
+        els.troubleshooterLink.href = id
+          ? `${window.location.origin}/debug-tools/timer-report-troubleshooter.html?sample=${encodeURIComponent(id)}`
+          : "#";
+      }
+
+      async function loadSample(value) {
+        const sampleUrl = getSampleUrl(value);
+        const sampleId = getSampleIdFromValue(value);
+        if (!sampleUrl) {
+          setStatus("샘플 ID 또는 샘플 조회 URL을 입력하세요.", "error");
+          currentSample = null;
+          currentImages = [];
+          currentSampleId = "";
+          els.downloadSampleButton.disabled = true;
+          return;
+        }
+
+        updateLinks(sampleUrl, sampleId);
+        setStatus("샘플을 불러오는 중입니다.");
+        els.downloadSampleButton.disabled = true;
+
+        const response = await fetch(sampleUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const sample = await response.json();
+        const images = collectImages(sample);
+        currentSample = sample;
+        currentImages = images;
+        currentSampleId = sampleId || sample?.id || sample?.body?.id || "";
+        const primary = images.filter((image) => image.category === "primary");
+        const evidence = images.filter((image) => image.category === "evidence");
+        const replay = images.filter((image) => image.category === "replay");
+        const other = images.filter((image) => image.category === "other");
+
+        renderSummary(sample, images);
+        renderSection(els.primaryCard, els.primaryImages, els.primaryCountPill, primary, {
+          featured: true,
+        });
+        renderSection(els.evidenceCard, els.evidenceImages, els.evidenceCountPill, evidence);
+        renderSection(els.replayCard, els.replayImages, els.replayCountPill, replay);
+        renderSection(els.otherCard, els.otherImages, els.otherCountPill, other);
+        els.jsonPreview.textContent = JSON.stringify(redactDataUrls(sample), null, 2);
+        els.jsonCard.hidden = false;
+        els.status.hidden = true;
+        els.downloadSampleButton.disabled = false;
+      }
+
+      els.themeToggle.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        setTheme(next);
+      });
+
+      els.loadButton.addEventListener("click", async () => {
+        try {
+          await loadSample(els.sampleInput.value);
+        } catch (error) {
+          setStatus(`샘플 조회 실패: ${error.message}`, "error");
+          currentSample = null;
+          currentImages = [];
+          currentSampleId = "";
+          els.downloadSampleButton.disabled = true;
+        }
+      });
+
+      els.downloadSampleButton.addEventListener("click", () => {
+        downloadCurrentSample();
+      });
+
+      els.sampleInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          els.loadButton.click();
+        }
+      });
+
+      const savedTheme = localStorage.getItem("maple-debug-theme");
+      setTheme(savedTheme === "dark" ? "dark" : "light");
+
+      const initial = getInitialSampleInput();
+      if (initial) {
+        els.sampleInput.value = initial;
+        loadSample(initial).catch((error) => {
+          setStatus(`샘플 조회 실패: ${error.message}`, "error");
+        });
+      } else {
+        setStatus("샘플 ID 또는 샘플 조회 URL을 입력하세요.");
+      }
+    </script>
+  </body>
+</html>

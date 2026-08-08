@@ -1,0 +1,166 @@
+.sound-picker {
+  min-width: 0;
+  position: relative;
+}
+
+.sound-picker-trigger {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  min-height: 38px;
+  padding: 5px 9px 5px 11px;
+  text-align: left;
+  width: 100%;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.sound-picker.has-preview .sound-picker-trigger {
+  padding-right: 43px;
+}
+
+.sound-picker-trigger:hover,
+.sound-picker-trigger:focus-visible,
+.sound-picker:has(.sound-picker-preview-button:hover) .sound-picker-trigger,
+.sound-picker:has(.sound-picker-preview-button:focus-visible) .sound-picker-trigger,
+.sound-picker:has(.sound-picker-trigger[aria-expanded="true"]) .sound-picker-trigger {
+  border-color: #8ebda1;
+  box-shadow: 0 0 0 3px rgba(2, 103, 79, 0.1);
+  outline: none;
+}
+
+.sound-picker-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.sound-picker-preview-button {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 34px;
+  border: 0;
+  border-left: 1px solid var(--line);
+  border-radius: 0 7px 7px 0;
+  color: var(--muted);
+  background: transparent;
+  display: inline-flex;
+  line-height: 0;
+  overflow: hidden;
+  transition:
+    color 0.16s ease,
+    background 0.16s ease;
+}
+
+.sound-picker.has-preview .floating-tooltip-button-target {
+  bottom: 1px;
+  display: block;
+  line-height: 0;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 34px;
+  z-index: 2;
+}
+
+.sound-picker.has-preview .floating-tooltip-button-target .sound-picker-preview-button {
+  height: 100%;
+  position: static;
+  width: 100%;
+}
+
+.sound-picker-preview-button svg {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.sound-picker-preview-button:hover,
+.sound-picker-preview-button:focus-visible {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+}
+
+.sound-picker-preview-button:disabled {
+  cursor: not-allowed;
+}
+
+.sound-picker-selected {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 720;
+  line-height: 1.2;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sound-picker-menu {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 18px 44px rgba(27, 39, 30, 0.18);
+  display: grid;
+  gap: 3px;
+  overflow: auto;
+  padding: 5px;
+  position: fixed;
+  z-index: 260;
+}
+
+.sound-picker-option {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 7px;
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  min-height: 34px;
+  padding: 7px 9px;
+  text-align: left;
+}
+
+.sound-picker-option span {
+  font-size: 0.82rem;
+  font-weight: 680;
+  line-height: 1.25;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.sound-picker-option:hover,
+.sound-picker-option:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  outline: none;
+}
+
+.sound-picker-option.selected {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 760;
+}
+
+.sound-picker-manage-option {
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 72%, transparent);
+}
+
+.sound-picker-divider {
+  height: 1px;
+  margin: 3px 4px;
+  background: var(--line);
+}

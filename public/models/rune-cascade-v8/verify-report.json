@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "bundleVersion": "rune-cascade-v8-runtime",
+  "modelVersion": "rune-cascade-v8",
+  "proposalModelVersion": "rune-strict-local-centernet-s4-v6",
+  "parity": {
+    "frames": 90,
+    "candidates": 450,
+    "maximumLogitAbsoluteError": 0.00021457672119140625,
+    "maximumScoreAbsoluteError": 3.993511199951172e-06,
+    "minimumBranchThresholdDistance": 0.0004553341865539684,
+    "scoreErrorToMinimumThresholdDistanceRatio": 0.008770505966561861,
+    "branchClassificationMismatches": 0,
+    "finalClassificationMismatches": 0,
+    "selectedCandidateMismatches": 0,
+    "worstLogitCandidate": "synthetic_rune_positive_pale_rounded_1#1",
+    "worstScoreCandidate": "synthetic_rune_positive_compressed_tiny_1#1"
+  },
+  "tolerance": {
+    "maximumLogitAbsoluteError": 0.0005,
+    "maximumScoreAbsoluteError": 1e-05,
+    "branchClassificationMismatches": 0,
+    "finalClassificationMismatches": 0,
+    "selectedCandidateMismatches": 0
+  },
+  "benchmark": {
+    "environment": "macOS arm64 CPU, single-threaded ONNX sessions",
+    "runs": 200,
+    "proposalInferenceMs": {
+      "median": 1.2936,
+      "p95": 1.317,
+      "maximum": 1.3674
+    },
+    "gateBatchFiveInferenceMs": {
+      "median": 0.3166,
+      "p95": 0.3211,
+      "maximum": 0.3353
+    },
+    "cascadeInferenceOnlyMs": {
+      "median": 1.6133,
+      "p95": 1.637,
+      "maximum": 1.6993
+    },
+    "fullCascadeIncludingPillowPreprocessMs": {
+      "median": 5.4088,
+      "p95": 5.4838,
+      "maximum": 5.916
+    },
+    "v7SingleModelInferenceMs": {
+      "median": 1.5501,
+      "p95": 1.5917,
+      "maximum": 1.6836
+    }
+  },
+  "modelSizes": {
+    "proposalBytes": 45397,
+    "gateBytes": 94513,
+    "totalBytes": 139910,
+    "v7SingleModelBytes": 54663,
+    "increaseOverV7Bytes": 85247,
+    "ratioToV7": 2.5595
+  },
+  "environment": {
+    "torch": "2.13.0",
+    "onnx": "1.22.0",
+    "onnxRuntime": "1.27.0",
+    "numpy": "2.5.1"
+  }
+}
