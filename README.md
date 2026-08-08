@@ -46,6 +46,9 @@ flowchart LR
         J --> A["Alert Scheduler"]
         A --> O1["Sound Alerts"]
         A --> O2["PiP Timer"]
+        J -.-> EV["Evidence Archive<br/>recent frames · decisions"]
+        EV --> TS["Troubleshooter<br/>sample diagnosis · decision replay"]
+        EV --> RP["Report Packager"]
     end
 ```
 
@@ -63,6 +66,7 @@ flowchart LR
     subgraph CF["Cloudflare"]
         PAGES["Pages<br/>maple-timer.com"]
         FN["Pages Functions<br/>report API"]
+        ADMIN["Pages<br/>Feedback Desk (admin)"]
         BOT["Workers<br/>Discord Bot"]
         D1[("D1")]
         TUNNEL["Tunnel"]
@@ -93,6 +97,8 @@ flowchart LR
 
     DISCORD["Discord Community"]
 
+    OPERATOR["Operator"] -->|"review reports<br/>publish notices"| ADMIN
+    ADMIN --> FN
     APP -->|"load app & ONNX models"| PAGES
     APP -->|"send reports"| FN
     APP -->|"remote frames · VP8 1 Hz"| TUNNEL
