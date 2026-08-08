@@ -72,6 +72,22 @@ flowchart LR
 - 인식 모델은 Web Worker + onnxruntime-web(WebGPU, WASM 폴백)으로 실행됩니다.
 - 판정 루프가 프레임 증거를 모아 오탐 게이트를 통과한 것만 알림으로 이어집니다.
 
+### 버프칸 파이프라인 — 화면 한 장이 알림이 되기까지  
+
+위 그림의 `Buff-slot Pipeline` 한 칸을 열면 이렇게 됩니다. 버프 종료 알림과
+스킬 정밀 감지는 사용자가 감지 영역을 지정하지 않아도 동작합니다. 화면에서
+버프칸을 스스로 찾아내기 때문입니다.
+
+**Parser** — 게임 화면에서 서로 붙어 있는 버프칸 덩어리를 낱개 칸으로 분리합니다.
+<img width="1720" height="400" alt="파서가 붙어 있는 버프칸 덩어리를 낱개 버프칸 40개로 분리한 결과" src="https://github.com/user-attachments/assets/5cc58d78-9d88-4cba-bea4-fb080b61883a" />
+
+**Matcher** — 분리된 칸 중 사용자가 등록한 대상만 찾습니다. 버프와 스킬이 같은
+매처를 씁니다.
+
+<img width="1720" height="304" alt="버프 종료 알림과 스킬 정밀 감지가 같은 매처로 찾는 대상 아이콘" src="https://github.com/user-attachments/assets/2a13cb0d-2ad6-4085-a7ee-1ed0428a4561" />
+
+**Number Recognizer** — 찾아낸 칸의 남은 시간을 읽습니다. 이 값이 위 그림의 `Judgment Loop`로 들어갑니다.  
+
 ### 서비스 아키텍처
 
 ```mermaid
