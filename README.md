@@ -19,16 +19,28 @@ Maple Timer는 메이플스토리 플레이 화면을 **브라우저 안에서 �
 
 https://github.com/user-attachments/assets/84975d67-0301-4757-a4f9-7913a1ad0d07
 
+## 사진 
+
+### 어드민 페이지 
+<img width="1832" height="1522" alt="Screenshot 2026-08-09 at 01 40 34" src="https://github.com/user-attachments/assets/ec4fc48f-5b11-46e9-a5bb-37225bdcf80f" />
+
+### 제보 트러블슈팅 페이지 
+<img width="1832" height="1522" alt="Screenshot 2026-08-09 at 01 43 17" src="https://github.com/user-attachments/assets/9aed5bca-c62d-4b76-932c-94057dcc8a46" />
+
+
 ## 성과
+
+**2026-08-09 기준**
+
+- 누적 알림 재생 **19,506,968회** — 2026-06-22 집계 시작
+- 최근 30일(2026-07-10 ~ 2026-08-08) 활성 사용자 **23,989명** (GA MAU)
 
 **2026-07-26 14:19 (KST)** — 실시간 동시 접속 **1,000명**(최근 30분 기준), 알림 재생 이벤트 30분당 1.7만 회.
 
 ![GA 실시간 1,000명](https://github.com/maple-timer/.github/raw/main/profile/ga-realtime.png)
 
-**2026-08-09 기준**
+<img width="1832" height="1522" alt="cloudflare" src="https://github.com/user-attachments/assets/ac100d74-b77d-4f3a-b39f-5f5a43934a7d" />
 
-- 누적 알림 재생 **19,506,968회** — 2026-06-22 집계 시작
-- 최근 30일(2026-07-10 ~ 2026-08-08) 활성 사용자 **23,989명** (MAU)
 
 ## 구조
 
