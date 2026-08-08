@@ -25,6 +25,11 @@ https://github.com/user-attachments/assets/84975d67-0301-4757-a4f9-7913a1ad0d07
 
 ![GA 실시간 1,000명](https://github.com/maple-timer/.github/raw/main/profile/ga-realtime.png)
 
+**2026-08-09 기준**
+
+- 누적 알림 재생 **19,506,968회** — 2026-06-22 집계 시작
+- 최근 30일(2026-07-10 ~ 2026-08-08) 활성 사용자 **23,989명** (MAU)
+
 ## 구조
 
 ### 메인 앱 — 모든 인식이 브라우저 안에서
