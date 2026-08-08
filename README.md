@@ -15,11 +15,9 @@ Maple Timer는 메이플스토리 플레이 화면을 **브라우저 안에서 �
   있어, 저사양·CPU 모드 환경에서도 정밀 감지를 사용할 수 있습니다.
 - 설치가 필요 없는 웹앱으로, 브라우저 탭 하나로 동작합니다.
 
-## 시연
+## 영상
 
-![Maple Timer 시연](https://github.com/maple-timer/.github/raw/main/profile/demo.webp)
-
-> 원본 영상: [demo.mp4](https://github.com/maple-timer/.github/raw/main/profile/demo.mp4)
+https://github.com/user-attachments/assets/84975d67-0301-4757-a4f9-7913a1ad0d07
 
 ## 성과
 
